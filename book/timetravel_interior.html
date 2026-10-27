@@ -1,0 +1,6680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TIMETRAVEL — An Interactive CYOA Poetry Book by Icy Sheets</title>
+  <style>
+    @page {
+      size: 6in 9in;
+      margin: 0.75in 0.65in 0.85in 0.65in;
+      @bottom-center {
+        content: counter(page);
+        font-family: 'Courier Prime', Courier, monospace;
+        font-size: 8.5pt;
+        color: #555;
+      }
+    }
+
+    @page :left {
+      margin-left: 0.85in;
+      margin-right: 0.65in;
+    }
+
+    @page :right {
+      margin-left: 0.65in;
+      margin-right: 0.85in;
+    }
+
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'EB Garamond', 'Georgia', serif;
+      font-size: 10.5pt;
+      line-height: 1.6;
+      color: #111;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* FRONT MATTER STYLES */
+    .page-break {
+      page-break-after: always;
+      break-after: page;
+    }
+
+    .half-title-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 7.2in;
+      text-align: center;
+    }
+
+    .half-title {
+      font-size: 28pt;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-family: 'Courier Prime', 'Consolas', monospace;
+      font-weight: normal;
+      margin-bottom: 0.5em;
+    }
+
+    .half-subtitle {
+      font-size: 10pt;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #666;
+    }
+
+    .title-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 7.2in;
+      text-align: center;
+      padding: 0.5in 0;
+    }
+
+    .title-main {
+      font-size: 34pt;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-family: 'Courier Prime', monospace;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .title-sub {
+      font-size: 12pt;
+      font-style: italic;
+      margin-top: 0.5in;
+      letter-spacing: 0.05em;
+      color: #333;
+    }
+
+    .title-author {
+      font-size: 15pt;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-top: 1in;
+      font-family: 'EB Garamond', Georgia, serif;
+    }
+
+    .title-press {
+      font-size: 9pt;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #555;
+    }
+
+    .colophon-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 7.2in;
+      font-size: 8.5pt;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .colophon-block {
+      border-top: 1px solid #ccc;
+      padding-top: 0.25in;
+    }
+
+    .dedication-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 7.2in;
+      text-align: center;
+      font-style: italic;
+      font-size: 11pt;
+      line-height: 2;
+    }
+
+    /* ESSAY & RETROSPECTIVE */
+    .prose-section {
+      padding: 0.2in 0;
+    }
+
+    .prose-title {
+      font-family: 'Courier Prime', monospace;
+      font-size: 16pt;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 0.1in;
+    }
+
+    .prose-subtitle {
+      font-size: 10pt;
+      font-style: italic;
+      text-align: center;
+      color: #555;
+      margin-bottom: 0.35in;
+    }
+
+    .prose-body p {
+      text-indent: 1.5em;
+      margin: 0;
+      margin-bottom: 0.5em;
+      text-align: justify;
+    }
+
+    .prose-body p:first-of-type {
+      text-indent: 0;
+    }
+
+    .prose-body p:first-of-type:first-letter {
+      float: left;
+      font-size: 38pt;
+      line-height: 0.8;
+      padding-right: 0.1em;
+      font-family: 'Courier Prime', monospace;
+      font-weight: bold;
+    }
+
+    /* GAMEBOOK SECTION STYLING */
+    .gamebook-section {
+      page-break-after: always;
+      break-after: page;
+      padding-top: 0.2in;
+      min-height: 6.8in;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 0.15in;
+    }
+
+    .section-numeral {
+      font-family: 'Courier Prime', 'Consolas', monospace;
+      font-size: 15pt;
+      font-weight: bold;
+      letter-spacing: 0.15em;
+      color: #111;
+      border-bottom: 1.5px solid #111;
+      display: inline-block;
+      padding-bottom: 0.04in;
+      margin-bottom: 0.05in;
+    }
+
+    .section-title {
+      font-size: 8.5pt;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #666;
+      margin-top: 0.04in;
+    }
+
+    .section-divider {
+      text-align: center;
+      font-size: 7.5pt;
+      letter-spacing: 0.3em;
+      color: #999;
+      margin-bottom: 0.2in;
+    }
+
+    .section-content {
+      flex-grow: 1;
+      font-size: 11pt;
+      line-height: 1.65;
+      margin-bottom: 0.2in;
+    }
+
+    .stanza {
+      margin-bottom: 1.1em;
+    }
+
+    /* ART PLATES */
+    .art-plate {
+      margin: 0.2in 0;
+      text-align: center;
+      page-break-inside: avoid;
+    }
+
+    .plate-image {
+      max-width: 90%;
+      max-height: 3.2in;
+      object-fit: contain;
+      filter: grayscale(100%) contrast(115%);
+      border: 1px solid #ddd;
+      padding: 3px;
+    }
+
+    .plate-caption {
+      font-family: 'Courier Prime', monospace;
+      font-size: 6.5pt;
+      letter-spacing: 0.12em;
+      color: #666;
+      margin-top: 0.06in;
+    }
+
+    /* CHOICES CONTAINER */
+    .choices-container {
+      margin-top: 0.25in;
+      padding-top: 0.12in;
+      border-top: 1px solid #111;
+      page-break-inside: avoid;
+    }
+
+    .choices-header {
+      font-family: 'Courier Prime', monospace;
+      font-size: 8.5pt;
+      font-weight: bold;
+      letter-spacing: 0.18em;
+      margin-bottom: 0.08in;
+      color: #222;
+    }
+
+    .choices-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .choice-item {
+      font-size: 9.5pt;
+      line-height: 1.45;
+      margin-bottom: 0.08in;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .choice-text {
+      flex-grow: 1;
+      padding-right: 0.2in;
+    }
+
+    .choice-dest {
+      font-family: 'Courier Prime', monospace;
+      white-space: nowrap;
+      font-size: 9pt;
+      border-bottom: 1px dotted #333;
+    }
+
+    /* ENDING BLOCK */
+    .ending-block {
+      margin-top: 0.3in;
+      padding: 0.2in;
+      border: 1.5px solid #111;
+      background: #fbfbfb;
+      text-align: center;
+      page-break-inside: avoid;
+    }
+
+    .ending-badge {
+      font-family: 'Courier Prime', monospace;
+      font-size: 9.5pt;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      margin-bottom: 0.08in;
+      text-transform: uppercase;
+    }
+
+    .ending-desc {
+      font-size: 9.5pt;
+      font-style: italic;
+      color: #444;
+      margin: 0 0 0.1in 0;
+    }
+
+    .ending-prompt {
+      font-family: 'Courier Prime', monospace;
+      font-size: 8.5pt;
+      letter-spacing: 0.08em;
+      margin: 0;
+      border-top: 1px dashed #ccc;
+      padding-top: 0.08in;
+    }
+
+    /* CONCORDANCE TABLE */
+    .concordance-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.5pt;
+      margin-top: 0.2in;
+    }
+
+    .concordance-table th {
+      font-family: 'Courier Prime', monospace;
+      letter-spacing: 0.1em;
+      font-size: 8pt;
+      text-align: left;
+      border-bottom: 1.5px solid #111;
+      padding: 0.06in 0;
+    }
+
+    .concordance-table td {
+      padding: 0.04in 0;
+      border-bottom: 1px dotted #e0e0e0;
+    }
+
+    .concord-sec {
+      font-family: 'Courier Prime', monospace;
+      text-align: right;
+    }
+
+    .concord-type {
+      color: #666;
+      font-style: italic;
+      padding-left: 0.15in;
+    }
+
+    .concord-art {
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. HALF TITLE -->
+  <div class="half-title-page page-break">
+    <div class="half-title">TIMETRAVEL</div>
+    <div class="half-subtitle">AN INTERACTIVE GAMEBOOK OF SURVIVAL AND VERSE</div>
+  </div>
+
+  <!-- 2. FRONTISPIECE -->
+  <div class="page-break" style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:7.2in;">
+    <div class="art-plate">
+      <img src="../assets/images/PXL_20220215_040013515.jpg" alt="Frontispiece Plate" class="plate-image" style="max-height: 4.8in;">
+      <div class="plate-caption">FRONTISPIECE — THE TIMELINE CROSSROADS (2022 ARCHIVE)</div>
+    </div>
+  </div>
+
+  <!-- 3. TITLE PAGE -->
+  <div class="title-page page-break">
+    <div>
+      <div class="title-main">TIMETRAVEL</div>
+      <div class="title-sub">An Interactive Choose-Your-Own-Adventure Poetry Book</div>
+    </div>
+    
+    <div>
+      <div class="title-author">ICY SHEETS</div>
+    </div>
+
+    <div class="title-press">
+      REQUIEM SPIRE PRESS • SALEM, OREGON
+    </div>
+  </div>
+
+  <!-- 4. COLOPHON & COPYRIGHT -->
+  <div class="colophon-page page-break">
+    <div class="colophon-block">
+      <p><strong>TIMETRAVEL: An Interactive Choose-Your-Own-Adventure Poetry Book</strong><br>
+      Copyright © 2026 by Icy Sheets. All rights reserved.</p>
+
+      <p>Original hyper-poetic passages composed in Twine 2 (Harlowe) between 2014 and 2022.<br>
+      Compiled, topologically woven, and typeset into physical gamebook form in Salem, Oregon, 2026.</p>
+
+      <p>Interior typography set in <em>EB Garamond</em> and <em>Courier Prime</em>.<br>
+      Archival visual plates photographed and preserved from original notebooks, canvases, and motel desk journals.</p>
+
+      <p>No part of this book may be reproduced in any form without written permission from the author, except for brief quotations embodied in critical reviews or scholarly analysis.</p>
+
+      <p>First Physical Edition: October 2026<br>
+      Standard 6" × 9" Trade Paperback Specification<br>
+      ISBN: 979-8-89240-000-0 (IngramSpark / KDP Ready)</p>
+    </div>
+  </div>
+
+  <!-- 5. DEDICATION -->
+  <div class="dedication-page page-break">
+    <p>
+      For Cosmo & Winter,<br>
+      who anchor the present,<br><br>
+      and for the younger self<br>
+      hunkered down in those shitty motel rooms<br>
+      writing on her forearm with a ballpoint pen:<br><br>
+      <em>You made it through the night.</em>
+    </p>
+  </div>
+
+  <!-- 6. OPERATIONAL GUIDE: HOW TO READ THIS BOOK -->
+  <div class="prose-section page-break">
+    <div class="prose-title">OPERATIONAL GUIDE</div>
+    <div class="prose-subtitle">HOW TO NAVIGATE TIME TRAVEL</div>
+    
+    <div class="prose-body">
+      <p>This is not a linear book of poetry. You do not turn from page to page in chronological sequence. Instead, <em>Timetravel</em> is an interactive labyrinth structured across one hundred distinct sections. At the conclusion of almost every passage, you will be presented with a fork in the road—a visceral decision reflecting bodily states, chemical interventions, hallucinated mythologies, motel corridors, and relational risks.</p>
+
+      <p>To begin, turn to <strong>Section 1</strong> on page 1. Read the verse, feel the weight of its cadence, and examine the choices printed at the bottom of the section. When you decide which path to take, turn directly to the indicated Section number. Do not read the intervening pages. In physical gamebooks, turning the page is an intentional act of propulsion; you leap across the volume just as memory leaps across trauma and time.</p>
+
+      <p>Some paths will circle back on themselves, echoing the perseverative loops of psychiatric instability and insomnia. Other paths will terminate at one of four canonical endings—transcendent resting points where the storm recedes and survival is realized. If you encounter an <em>[ENDING]</em> marker, you have completed one timeline. Bookmark it, rest your eyes, and when you are ready, turn back to Section 1 to enter a different branch of the architecture.</p>
+
+      <p>Every single poem in this book is reachable. In the back of this volume, an Alphabetical Concordance is provided so that after you have wandered the labyrinth, you may locate any specific poem or archival plate directly.</p>
+    </div>
+  </div>
+
+  <!-- 7. AUTHOR'S RETROSPECTIVE: I AM I -->
+  <div class="prose-section page-break">
+    <div class="prose-title">I AM I</div>
+    <div class="prose-subtitle">A POST-EQUILIBRIUM RETROSPECTIVE</div>
+
+    <div class="prose-body">
+      <p>Between 2014 and 2022, I lived inside the storm. These passages were not drafted as polished literary exercises for a salon; they were emergency telemetry. When you are moving through severe bipolar cycles, manic flights where angels whisper behind your skull, sensory overloads, medication titrations that leave you either shaking or numb, and long nights staring at motel ceiling tiles, writing is not a hobby—it is an anchor dropped into a fathomless ocean.</p>
+
+      <p>I originally built <em>Timetravel</em> inside Twine because linear form could not hold the multiplicity of those states. In a traditional book, a poem sits quietly on the page, pretending that grief and clarity follow a straight line. But madness is branched. Chemistry is branched. Every morning and every evening presents a fork: <em>Do I take the pills? Do I smash the plate? Do I look at the bees? Do I get in the car and drive seventy miles per hour down highway seventy-six?</em></p>
+
+      <p>To hold this physical book today in 2026—bound in ink, paper, and hard-won somatic peace—is proof that equilibrium is possible. The rust goddess does not own me. The angels have laid down their swords. The dog snores beside the bed, the morning sun breaks over the Oregon ridge, and the timeline holds. I am I.</p>
+    </div>
+  </div>
+
+  <!-- 8. THE 100 GAMEBOOK SECTIONS -->
+  
+    <section class="gamebook-section" id="section-1">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 1</div>
+        <div class="section-title">INTRO</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  1st, grow wings.<br>
+  2nd,<br>
+  3rd,<br>
+  4th,<br>
+  What do you want to see?<br>
+  Someone I could love <br>
+  The beauty I could make <br>
+  Things that never were
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward crossroads</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-60">Section 60</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward the rust goddess</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-57">Section 57</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward let me tell you</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-42">Section 42</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-2">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 2</div>
+        <div class="section-title">CHEMICALS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  fire hearted<br>
+  but yellow-bellied<br>
+  never stable<br>
+  always steadied<br>
+  droves of chemicals<br>
+  swirl in my brain<br>
+  slowing images of<br>
+  sinister pain<br>
+  holding back that<br>
+  unquenchable longing<br>
+  stopping the stars<br>
+  of their strange, sad songing<br>
+  droves of chemicals<br>
+  swim in my brain
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_045824044.jpg" alt="Archival Plate: chemicals" class="plate-image">
+        <div class="plate-caption">PLATE § 2 — ARCHIVAL ARTIFACT: <em>CHEMICALS</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Let the chemistry numb the doubt</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-68">Section 68</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Count the sins between doses</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-19">Section 19</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-3">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 3</div>
+        <div class="section-title">DEAL</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I don’t have<br>
+  much<br>
+  but it’s all yours to take<br>
+  and I’ll strike<br>
+  a deal<br>
+  with you<br>
+  if it flutters your heart<br>
+  just right<br>
+  I’ll wrap you in poetry<br>
+  writing all the words<br>
+  that come to mind<br>
+  I’ll hand my soul to<br>
+  you scribbled on<br>
+  paper<br>
+  with a liberal dash<br>
+  of imagery and<br>
+  rhyme<br>
+  and the modest<br>
+  price I ask<br>
+  is just a tender<br>
+  touching of the<br>
+  lips
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Graze the back of their neck</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-73">Section 73</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-4">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 4</div>
+        <div class="section-title">1001</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  one zero zero<br>
+  one<br>
+  everyone the rain<br>
+  1001everyonetherain<br>
+  one<br>
+  zero zero<br>
+  one<br>
+  everyone the rain
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Watch the rain blur the wipers</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-70">Section 70</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-5">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 5</div>
+        <div class="section-title">A LOVE POEM TO MYSELF</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I&#39;m the kind<br>
+  of asshole<br>
+  who never<br>
+  returns calls<br>
+  you&#39;re the kind of<br>
+  asshole<br>
+  that dubs earth-<br>
+  shattering screams<br>
+  into my relaxation<br>
+  records<br>
+  your overachieving<br>
+  ass<br>
+  is the yang to<br>
+  my apathy<br>
+  we make a<br>
+  dangerous<br>
+  couple
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Look at the scrapbook photos</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-79">Section 79</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-6">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 6</div>
+        <div class="section-title">GOD</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  God
+</div>
+
+<div class="stanza">
+  and if God is<br>
+  dead,<br>
+  who do I pray to<br>
+  about my<br>
+  survivor&#39;s guilt?
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220319_204057937.jpg" alt="Archival Plate: God" class="plate-image">
+        <div class="plate-caption">PLATE § 6 — ARCHIVAL ARTIFACT: <em>GOD</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Wonder if it's all just circles</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-20">Section 20</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-7">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 7</div>
+        <div class="section-title">HANDS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  there are songs<br>
+  to sing about<br>
+  the way<br>
+  we hold our hands<br>
+  together<br>
+  intertwined as if<br>
+  to find<br>
+  some token of<br>
+  remembrance<br>
+  a simple touch<br>
+  that holds<br>
+  back much<br>
+  of what could<br>
+  hunt and<br>
+  find us
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Keep holding  <br>
+  Pull of the road
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward delight</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-66">Section 66</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward uplifted</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-88">Section 88</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-8">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 8</div>
+        <div class="section-title">THRESHOLD</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the faintest smile<br>
+  plays across<br>
+  those pressed-thin lips<br>
+  It’s almost as if I can see<br>
+  a thought dance<br>
+  across your<br>
+  synapses<br>
+  and for a moment<br>
+  (just a moment)<br>
+  your eyes shine<br>
+  so bright I<br>
+  half expect to<br>
+  see your imaginings<br>
+  projected onto<br>
+  the canvas laid<br>
+  before you<br>
+  I can always<br>
+  feel my breath catch<br>
+  then,<br>
+  standing at the threshold<br>
+  of your world
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Reach the bend where the road ends</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-92">Section 92</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-9">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 9</div>
+        <div class="section-title">ABIGAIL</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  snark mouthed,<br>
+  snaggle toothed<br>
+  a crooked smile<br>
+  in a dress a<br>
+  size too big<br>
+  we danced until<br>
+  we forgot that<br>
+  we didn’t know how<br>
+  to dance 
+</div>
+
+<div class="stanza">
+  Keep learning
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward wanderlust</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-100">Section 100</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-10">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 10</div>
+        <div class="section-title">LIES, ALRIGHT?</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  splashing colors<br>
+  swirling sounds<br>
+  the words not spoken<br>
+  burn in my skull<br>
+  whispers<br>
+  (vile) sinister<br>
+  with undulating<br>
+  ill intent<br>
+  sequestered in my mind<br>
+  a simple song<br>
+  of glorious suspicions<br>
+  the so called antics of<br>
+  a childless child<br>
+  stormy weather, wind-<br>
+  tossed bows<br>
+  a fire burning in<br>
+  the heart of the<br>
+  dog<br>
+  (god) an angry conclusion<br>
+  a far-stretched<br>
+  notion<br>
+  of unquenchable longing<br>
+  star-speckled eyes<br>
+  sear me into<br>
+  ashy nothingness<br>
+  a flurry of sparks<br>
+  from the ancient blacksmith’s<br>
+  hammer<br>
+  send quivers down my<br>
+  brain stem<br>
+  a black cat and<br>
+  a bottle of pills<br>
+  what a gut wrenching<br>
+  invention<br>
+  for one so full of suspicion
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Admit the unabridged truth</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-17">Section 17</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-11">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 11</div>
+        <div class="section-title">UNTITLED</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  untitled
+</div>
+
+<div class="stanza">
+  Thrashed about<br>
+  beaten and broken<br>
+  understood to be<br>
+  simply a token<br>
+  of insecurity<br>
+  lies<br>
+  and mistrust<br>
+  lost in this world of cardboard and plastic<br>
+  sin finds my soul decayed and placid<br>
+  what truth can be found<br>
+  from an electron-speckled screen<br>
+  Nothing<br>
+  forever<br>
+  never to be seen<br>
+  life is a fiction written by fools<br>
+  from inside their safe walls<br>
+  built with misguided tools<br>
+  save me.
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Look for shelter by the highway</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-69">Section 69</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-12">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 12</div>
+        <div class="section-title">WHEN I SAY YOUR NAME</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  and when I say your<br>
+  name<br>
+  (your starlight<br>
+  in my<br>
+  eyes)<br>
+  I hear the sound<br>
+  of horses,<br>
+  of chaos,<br>
+  and a fire<br>
+  but the taste on<br>
+  my lips <br>
+  is of <br>
+  cider and <br>
+  sunfire
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Watch the smile dance across their lips</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-8">Section 8</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-13">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 13</div>
+        <div class="section-title">BLANK POEM</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  prove it...<br>
+  When you finish
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward meet someone</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-65">Section 65</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-14">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 14</div>
+        <div class="section-title">BOYS OF TINDER</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  posing there with abs<br>
+  glistening<br>
+  an empty profile<br>
+  beckoning<br>
+  and is that all you have to<br>
+  offer<br>
+  a six pack and<br>
+  designer jeans<br>
+  pushing me to swipe<br>
+  and fuck<br>
+  tap and be fucked<br>
+  so tell me something<br>
+  more than those abs and<br>
+  pricey clothes<br>
+  because I’m cute enough<br>
+  and I’m charming enough<br>
+  to be with that soulless<br>
+  Sixpack<br>
+  for the 5 dollar cover<br>
+  at any bar<br>
+  so tell me something<br>
+  (anything)<br>
+  or I will keep swiping<br>
+  you over my left<br>
+  shoulder<br>
+  like salt in the Devil’s<br>
+  eye
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Write a poem  <br>
+  Swipe right
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward sketch</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-93">Section 93</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward date night</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-53">Section 53</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Reread the unanswered notifications</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-99">Section 99</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-15">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 15</div>
+        <div class="section-title">NIBIRU</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the rust Goddess<br>
+  spoke to me<br>
+  telling me secrets<br>
+  unknown<br>
+  and fair Nibiru<br>
+  is rising in the<br>
+  east again<br>
+  and what am I to do<br>
+  with this?<br>
+  I don&#39;t even have a<br>
+  rocket
+</div>
+
+<div class="stanza">
+  What do you do?
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Pray to the absent creator</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-6">Section 6</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Search the radio waves for rain</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-4">Section 4</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-16">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 16</div>
+        <div class="section-title">THANK YOU</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  when I coughed<br>
+  my lung fell out<br>
+  and spilled<br>
+  into my coffee<br>
+  and you handed<br>
+  me a napkin<br>
+  to blot the<br>
+  wetness from my<br>
+  tie<br>
+  thank you for that
+</div>
+      </div>
+
+      
+
+      
+      <div class="ending-block">
+        <div class="ending-badge">[ ENDING: GRACE IN THE CHAOS ]</div>
+        <p class="ending-desc">You have traveled across the boundary and arrived at the far shore of this memory.</p>
+        <div class="ending-prompt">To re-enter the timeline from the beginning, turn to <strong><a href="#section-1">Section 1</a></strong>.</div>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-17">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 17</div>
+        <div class="section-title">AN UNABRIDGED ADMISSION</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  “haven’t you seen<br>
+  enough to know<br>
+  that nothing will change?<br>
+  grass will grow<br>
+  matadors will be gored<br>
+  and shoes will walk<br>
+  <span style="padding-left: 2.8em">(onward)</span><br>
+  nothing changes except<br>
+  the lividity of our hopes<br>
+  <span style="padding-left: 1.4em">(darkening each time</span>
+</div>
+
+<div class="stanza">
+  #of transient guilt
+</div>
+
+<div class="stanza">
+  we blink)<br>
+  and dreams that<br>
+  swell to fill out<br>
+  bursting seams<br>
+  and with open<br>
+  mouths we stare<br>
+  into the sky<br>
+  grasping at<br>
+  absolution”
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Write a poem <br>
+  Paint
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward writtenpainting</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-82">Section 82</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward paintings</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-91">Section 91</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-18">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 18</div>
+        <div class="section-title">REBELLION</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  swirl and spin<br>
+  and turn and<br>
+  Sing<br>
+  Skyward bound<br>
+  and determined as<br>
+  Hell. even<br>
+  the father can’t<br>
+  stop us now<br>
+  with 9 feet<br>
+  of ribbon we<br>
+  bind our<br>
+  left arms to<br>
+  the sky<br>
+  reunited
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Spin into the untrue truth</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-44">Section 44</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-19">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 19</div>
+        <div class="section-title">SINS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  sing and swallow something sold<br>
+  sound of sorrow<br>
+  sins unfold<br>
+  pour a drink<br>
+  drain another<br>
+  lies are told<br>
+  lose a lover<br>
+  sing and swallow something sold<br>
+  sound of sorrow<br>
+  sins unfold<br>
+  drain another<br>
+  pour one more<br>
+  truth is told<br>
+  soul left sore<br>
+  sing and swallow something sold<br>
+  sound of silence<br>
+  sins unfold
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Drive a knife into the headache</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-27">Section 27</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-20">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 20</div>
+        <div class="section-title">REBIRTH</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  rebirth
+</div>
+
+<div class="stanza">
+  the root of<br>
+  metempsychois<br>
+  is still just<br>
+  psychosis<br>
+  can I have the<br>
+  metem-<br>
+  free of its dependee?<br>
+  <span style="padding-left: 0.7em">or is it all</span><br>
+  just<br>
+  circles?
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220319_204240244.jpg" alt="Archival Plate: rebirth" class="plate-image">
+        <div class="plate-caption">PLATE § 20 — ARCHIVAL ARTIFACT: <em>REBIRTH</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Awaken at the beginning of the timeline</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-1">Section 1</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-21">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 21</div>
+        <div class="section-title">CHANGELING</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the wind blows loose<br>
+  the multicolor<br>
+  scintillation<br>
+  of your hair<br>
+  and with the<br>
+  shimmer shammer<br>
+  fae wings are<br>
+  drawn to mind<br>
+  and with those<br>
+  wings fluttering against<br>
+  my parietal lobe<br>
+  it’s barely a step<br>
+  to smell the fair<br>
+  folks blood within<br>
+  your veins<br>
+  their laugh upon<br>
+  your lips<br>
+  their adventure in<br>
+  your heart
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Run fingers through the drifting hair</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-78">Section 78</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-22">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 22</div>
+        <div class="section-title">DRINKING</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I&#39;ve been drinking <br>
+  more than I&#39;ve<br>
+  been writing<br>
+  and smoking more<br>
+  than I drink<br>
+  and nothing seems<br>
+  quite so right<br>
+  as hiding from<br>
+  the wind<br>
+  I hear their <br>
+  voices softly<br>
+  whipping<br>
+  round my<br>
+  skull<br>
+  mumbles, cries, screams,<br>
+  and moans<br>
+  begin to take<br>
+  a toll
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Have a smoke <br>
+  Have a drink<br>
+  Go for a drive
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward aliens</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-75">Section 75</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward my bones</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-67">Section 67</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward take the wheel</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-71">Section 71</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-23">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 23</div>
+        <div class="section-title">BACK ON THE ROAD</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I&#39;m back on<br>
+  the road<br>
+  after what feels<br>
+  like forever<br>
+  my hands still itch<br>
+  to throw myself<br>
+  onto the wrong side<br>
+  the road keeps<br>
+  coming<br>
+  flying past<br>
+  and all I can do<br>
+  is sigh
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Stop where the river meets the asphalt</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-36">Section 36</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-24">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 24</div>
+        <div class="section-title">THE SPIDER</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  a spider’s leg<br>
+  <span style="padding-left: 1.4em">is hovering</span><br>
+  over my right<br>
+  <span style="padding-left: 1.4em">arm again</span><br>
+  it weaves and<br>
+  <span style="padding-left: 1.4em">bobs</span><br>
+  in time to my<br>
+  <span style="padding-left: 1.4em">nervous energy</span><br>
+  it fades away<br>
+  <span style="padding-left: 1.4em">when I settle</span><br>
+  <span style="padding-left: 1.4em">down</span><br>
+  it’s not scary<br>
+  <span style="padding-left: 0.7em">(I come to realize)</span><br>
+  <span style="padding-left: 1.4em">just strange</span><br>
+  <span style="padding-left: 1.4em">is this</span><br>
+  <span style="padding-left: 1.4em">life</span><br>
+  <span style="padding-left: 1.4em">now?</span>
+</div>
+
+<div class="stanza">
+  <span style="padding-left: 1.4em">Blink</span>
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward let me tell you</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-42">Section 42</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-25">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 25</div>
+        <div class="section-title">MISTRESS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  mistress<br>
+  #
+</div>
+
+<div class="stanza">
+  And in times of greatest need<br>
+  I always turn to<br>
+  poetry<br>
+  She&#39;s a mistress unlike any other<br>
+  who never screens her calls<br>
+  she whispers silent nothings<br>
+  and moans her Verse into<br>
+  my ear<br>
+  speaking of any taboo I<br>
+  wish to hear	<br>
+  Our relationship is one of<br>
+  debauchery ripe<br>
+  with holding of hands<br>
+  and tender moments<br>
+  but fear not<br>
+  dear reader<br>
+  we are not without<br>
+  our violent unions<br>
+  and frigid silences<br>
+  but as of yet they’ve only<br>
+  led to a closer tie<br>
+  and though shes a fictitious<br>
+  personification<br>
+  I still love her<br>
+  smile
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Make a deal with the verse</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-3">Section 3</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-26">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 26</div>
+        <div class="section-title">WINGS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  there are so many<br>
+  birds overhead<br>
+  and I can feel my<br>
+  every cell<br>
+  call out to them<br>
+  breaking off and<br>
+  taking flight<br>
+  pulled skyward by<br>
+  the sound of their <br>
+  wings
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Feel the bones crack and pop</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-84">Section 84</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-27">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 27</div>
+        <div class="section-title">BULLETS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  Nights like this make<br>
+  <span style="padding-left: 2.0999999999999996em">me want to</span><br>
+  <span style="padding-left: 1.4em">drive a heated</span><br>
+  <span style="padding-left: 0.7em">knife deep inside my</span><br>
+  head<br>
+  <span style="padding-left: 1.4em">I just want the red-</span><br>
+  <span style="padding-left: 2.0999999999999996em">hot tip to touch the firing</span><br>
+  <span style="padding-left: 0.7em">pins of the bullets that line</span><br>
+  <span style="padding-left: 0.7em">my brain</span><br>
+  <span style="padding-left: 2.8em">because lately my</span><br>
+  <span style="padding-left: 1.4em">mind has felt like bullets</span><br>
+  <span style="padding-left: 2.0999999999999996em">every thought so sudden</span><br>
+  <span style="padding-left: 4.199999999999999em">jarring</span><br>
+  <span style="padding-left: 4.8999999999999995em">scary</span><br>
+  <span style="padding-left: 5.6em">loud</span><br>
+  Ijust(dangerous)needthesebulletsoutofme<br>
+  <span style="padding-left: 1.4em">and I don&#39;t know</span><br>
+  <span style="padding-left: 2.0999999999999996em">if a firing pin is even</span><br>
+  <span style="padding-left: 4.199999999999999em">how bullets work</span><br>
+  <span style="padding-left: 1.4em">I don&#39;t understand bullets</span><br>
+  <span style="padding-left: 3.5em">I don&#39;t understand much</span>
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Charge your hollow chest</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-38">Section 38</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-28">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 28</div>
+        <div class="section-title">MEMORY</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  puffing cigarettes<br>
+  and talking about<br>
+  the good old days<br>
+  (before all the cigarettes)<br>
+  meandering through memories<br>
+  and classic tales<br>
+  when it strikes<br>
+  me<br>
+  the times<br>
+  are far from over<br>
+  (really just begun)<br>
+  so let’s puff another<br>
+  cigarette and talk<br>
+  about that 
+</div>
+
+<div class="stanza">
+  [3rd line]
+</div>
+
+<div class="stanza">
+  Blink
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward Intro</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-1">Section 1</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-29">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 29</div>
+        <div class="section-title">ANGELS IN MY BRAIN</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  cheribum and seraphim<br>
+  are floating in my brain<br>
+  fighting against the<br>
+  medicine<br>
+  that makes me less insane<br>
+  an endless war that<br>
+  shakes and stirs<br>
+  the pictures in my head<br>
+  with wing and sword<br>
+  they swoop and swirl<br>
+  and fill my heart with dread
+</div>
+
+<div class="stanza">
+  A bottle of risperidone is in your hand.<br>
+  What do you do?<br>
+  Take your meds  <br>
+  Maybe later
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_050729829.jpg" alt="Archival Plate: angels in my brain" class="plate-image">
+        <div class="plate-caption">PLATE § 29 — ARCHIVAL ARTIFACT: <em>ANGELS IN MY BRAIN</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward 1311</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-50">Section 50</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward nephilim</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-31">Section 31</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-30">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 30</div>
+        <div class="section-title">LEFTWRIST TWIST</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  Have you ever<br>
+  been in love?<br>
+  a smirk a smile<br>
+  a half-assed grin<br>
+  do fictitious personifications<br>
+  count?<br>
+  if so then<br>
+  twice but<br>
+  really just with<br>
+  one<br>
+  Hailey (the one<br>
+  with ribbon at her<br>
+  wrist)<br>
+  and her quieter self <br>
+  her of smiles and secrets<br>
+  and silent places<br>
+  (the one with<br>
+  ribbon at her wrist)
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Let irony take the driver's seat</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-62">Section 62</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-31">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 31</div>
+        <div class="section-title">NEPHILIM</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  angel wings<br>
+  and mortal sins<br>
+  these two things<br>
+  should not fit <br>
+  together<br>
+  my broken heart<br>
+  and your wild locks<br>
+  these two things<br>
+  should not fit<br>
+  together<br>
+  but they do<br>
+  they do<br>
+  they gloriously<br>
+  do<br>
+  with broken bones<br>
+  and graffitied <br>
+  stones<br>
+  they do<br>
+  they do<br>
+  they gloriously<br>
+  do
+</div>
+
+<div class="stanza">
+  A bottle of risperidone is in your hand.<br>
+  What do you do?<br>
+  Take your meds  <br>
+  Maybe later
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_043013098.jpg" alt="Archival Plate: nephilim" class="plate-image">
+        <div class="plate-caption">PLATE § 31 — ARCHIVAL ARTIFACT: <em>NEPHILIM</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward new eyes</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-86">Section 86</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward cinnamon</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-64">Section 64</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-32">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 32</div>
+        <div class="section-title">CAR CRASHES</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  and car crashes<br>
+  are such a<br>
+  romantic endeavor<br>
+  the total<br>
+  and complete<br>
+  giving of yourself<br>
+  to the road<br>
+  A love affair<br>
+  with<br>
+  the yellow line<br>
+  A crimson splash<br>
+  speckles the road<br>
+  in the vague outline<br>
+  of a heart<br>
+  And we quietly<br>
+  ate our chinese<br>
+  food<br>
+  contemplating the<br>
+  sudden outpouring of<br>
+  insight<br>
+  and the shy one<br>
+  (with a grin)<br>
+  began to speak<br>
+  emboldened by<br>
+  the chance to<br>
+  be the clever one<br>
+  What about the other car?<br>
+  And the response came<br>
+  It’s a polyamorous relationship
+</div>
+
+<div class="stanza">
+  Fall in love
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_040523016.jpg" alt="Archival Plate: car crashes" class="plate-image">
+        <div class="plate-caption">PLATE § 32 — ARCHIVAL ARTIFACT: <em>CAR CRASHES</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward timelines</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-96">Section 96</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Gamble on the hurricane</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-41">Section 41</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-33">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 33</div>
+        <div class="section-title">WAR</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  war
+</div>
+
+<div class="stanza">
+  I fall asleep and<br>
+  I am at war<br>
+  flashes of angels<br>
+  in shining armor<br>
+  spark across my<br>
+  optic nerves<br>
+  their spears<br>
+  grinding into my<br>
+  memories<br>
+  until there is a victor<br>
+  until there is a <br>
+  silence<br>
+  until we hang there<br>
+  crucified<br>
+  our weapons laid<br>
+  beside us
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Count the extra fingers on your hand</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-94">Section 94</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Look up at the cherubs in the canopy</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-34">Section 34</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-34">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 34</div>
+        <div class="section-title">CHERUB</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  fox quick<br>
+  and sickly<br>
+  black<br>
+  writhing across<br>
+  the forest floor<br>
+  they slink and<br>
+  slither<br>
+  coil and<br>
+  hide<br>
+  and I,<br>
+  watching a cherub<br>
+  making its way<br>
+  across<br>
+  my woods
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Preach the untrue gospel</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-48">Section 48</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-35">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 35</div>
+        <div class="section-title">70MPH</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  sitting and watching<br>
+  the mile markers<br>
+  flit away<br>
+  one eye to the sky<br>
+  as the clouds lazily<br>
+  leapfrog each other<br>
+  and I can’t help<br>
+  but smile to<br>
+  think you may be<br>
+  doing the same,<br>
+  sitting and watching <br>
+  the mile markers<br>
+  flit away 
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Faster <br>
+  Slower <br>
+  Stop
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward car crashes</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-32">Section 32</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward the rain</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-70">Section 70</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward Staunton</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-54">Section 54</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-36">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 36</div>
+        <div class="section-title">ALLENSVILLE</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  there&#39;s a place<br>
+  where the river<br>
+  meets the road<br>
+  and underneath<br>
+  lies my heart<br>
+  beat, beat,<br>
+  beating<br>
+  like graffiti<br>
+  done in oil<br>
+  pastel<br>
+  just out of reach<br>
+  of the stormy<br>
+  season<br>
+  the water always<br>
+  lapping, try<br>
+  trying<br>
+  but never quite<br>
+  reaching high<br>
+  enough
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Push the pedal till you pop off</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-81">Section 81</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-37">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 37</div>
+        <div class="section-title">SO MANY</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  “you&#39;ve got so many<br>
+  hands”<br>
+  I remember telling<br>
+  her<br>
+  as we lay by the<br>
+  stream<br>
+  ans she smiled and <br>
+  hushed me<br>
+  “you&#39;ve got so many<br>
+  fears”<br>
+  and then we both <br>
+  grew some<br>
+  more
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Twist the left wrist and confess</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-30">Section 30</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-38">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 38</div>
+        <div class="section-title">BATTERY</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  battery
+</div>
+
+<div class="stanza">
+  when the angel&#39;s war<br>
+  lulls<br>
+  they fill me with<br>
+  their excess souls<br>
+  (like a battery)<br>
+  pushing me to the brink of<br>
+  bursting<br>
+  and I can hear <br>
+  those souls<br>
+  screaming inside <br>
+  me until<br>
+  the angels drain <br>
+  me and  leave <br>
+  me broken
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220319_202012303.jpg" alt="Archival Plate: battery" class="plate-image">
+        <div class="plate-caption">PLATE § 38 — ARCHIVAL ARTIFACT: <em>BATTERY</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Let the angels drain you into war</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-33">Section 33</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-39">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 39</div>
+        <div class="section-title">SAINT GLORIA</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  Saint Gloria<br>
+  Saint Gloria<br>
+  tattered wires<br>
+  wrap around<br>
+  Saint Gloria<br>
+  Saint Gloria<br>
+  the rust Goddess<br>
+  has her now<br>
+  a poor sad<br>
+  forsaken soul<br>
+  Saint Gloria<br>
+  Saint Gloria<br>
+  the rust Goddess always<br>
+  takes her toll
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220211_203450843.jpg" alt="Archival Plate: Saint Gloria" class="plate-image">
+        <div class="plate-caption">PLATE § 39 — ARCHIVAL ARTIFACT: <em>SAINT GLORIA</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Search for who she prayed to</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-6">Section 6</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Listen to the gears inside your skull</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-2">Section 2</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-40">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 40</div>
+        <div class="section-title">LINES</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the lines in my eyes<br>
+  are getting wider<br>
+  all the time<br>
+  it&#39;s getting harder now<br>
+  to peer past them<br>
+  and see the stars<br>
+  so clear
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Ask for a napkin for the blood and coffee</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-16">Section 16</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-41">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 41</div>
+        <div class="section-title">RISK</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  batwings and butterflies<br>
+  busted jaws and hurricanes<br>
+  find your place among<br>
+  the lost, broken, and sedated<br>
+  nothing ventured, nothing gained<br>
+  nothing lost<br>
+  nothing sane<br>
+  torn apart<br>
+  left behind<br>
+  the lady in the pink dress<br>
+  says it all<br>
+  with her silent words<br>
+  and cricket song<br>
+  moving slowly<br>
+  through space and time<br>
+  not sure how I got here
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Grip the wheel and hold on</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-71">Section 71</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-42">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 42</div>
+        <div class="section-title">LET ME TELL YOU</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  there have been spiders<br>
+  climbing up my arms<br>
+  and I feel the web<br>
+  settle over me<br>
+  but this web is not<br>
+  spider silk<br>
+  it&#39;s carefully cultivated<br>
+  chosen and bolstered<br>
+  lies for the government<br>
+  and I think you should <br>
+  know<br>
+  we faked the moon <br>
+  landing<br>
+  and that&#39;s just <br>
+  the start
+</div>
+
+<div class="stanza">
+  &quot;untethered from our destinies&quot;
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Follow the lies <br>
+  Investigate the moon landing <br>
+  Think about spiders
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220212_041333419.jpg" alt="Archival Plate: let me tell you" class="plate-image">
+        <div class="plate-caption">PLATE § 42 — ARCHIVAL ARTIFACT: <em>LET ME TELL YOU</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward Humira</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-49">Section 49</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward Nibiru</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-15">Section 15</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward the spider</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-24">Section 24</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-43">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 43</div>
+        <div class="section-title">A STONE FROM HOME</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  a stone from home
+</div>
+
+<div class="stanza">
+  a stone from<br>
+  home<br>
+  spinning down<br>
+  into the well<br>
+  skittering and bouncing<br>
+  past my head<br>
+  where I&#39;m hunkered<br>
+  down and<br>
+  hiding out<br>
+  I just can&#39;t let<br>
+  them find me
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220319_203511452.jpg" alt="Archival Plate: a stone from home" class="plate-image">
+        <div class="plate-caption">PLATE § 43 — ARCHIVAL ARTIFACT: <em>A STONE FROM HOME</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Break down in the cardboard world</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-11">Section 11</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-44">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 44</div>
+        <div class="section-title">REVOLUTIONS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  forsooth the truth<br>
+  behold<br>
+  untold<br>
+  the needless naught<br>
+  of which we<br>
+  were taught<br>
+  the untrue truth<br>
+  that binds us<br>
+  from our youth<br>
+  And with that I’m done<br>
+  with Mark’s<br>
+  style<br>
+  (for he kindly stays from mine)<br>
+  what I’m trying to<br>
+  say<br>
+  is keep yourself<br>
+  from other’s words<br>
+  and find what you must<br>
+  find
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Catch the feathers falling from the sky</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-26">Section 26</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-45">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 45</div>
+        <div class="section-title">HIM</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  a grin among the<br>
+  branches<br>
+  a smile white with<br>
+  bone and<br>
+  drip drip drip<br>
+  dripping<br>
+  saliva (sour)<br>
+  and Abigail screams<br>
+  and we all<br>
+  hear her<br>
+  and no one<br>
+  hears her<br>
+  and if she<br>
+  (SHE)<br>
+  is scared<br>
+  so should we all<br>
+  be<br>
+  but that grin<br>
+  a smile white with<br>
+  bone and<br>
+  attached a face<br>
+  pale (but not as<br>
+  pale as Abigail’s)<br>
+  his suit unrumpled<br>
+  and he sits<br>
+  and the words<br>
+  begin 
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Listen  <br>
+  Don&#39;t listen
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220212_035504630.jpg" alt="Archival Plate: him" class="plate-image">
+        <div class="plate-caption">PLATE § 45 — ARCHIVAL ARTIFACT: <em>HIM</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward blink</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-56">Section 56</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward simpler time</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-83">Section 83</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Count the hands holding yours</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-37">Section 37</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-46">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 46</div>
+        <div class="section-title">MY PATH</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the clouds<br>
+  (Like the picassoed<br>
+  fists of god)<br>
+  guide my path into the sky<br>
+  I follow
+</div>
+
+<div class="stanza">
+  Drive
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_053533509.jpg" alt="Archival Plate: my path" class="plate-image">
+        <div class="plate-caption">PLATE § 46 — ARCHIVAL ARTIFACT: <em>MY PATH</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Turn the page</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-35">Section 35</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-47">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 47</div>
+        <div class="section-title">MORNING</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I just don’t think you<br>
+  understand just<br>
+  how great the<br>
+  morning is<br>
+  I get up early<br>
+  rivaling even the<br>
+  birds<br>
+  and celebrate<br>
+  making it through<br>
+  another night<br>
+  with a victory<br>
+  cigarette<br>
+  for my hero<br>
+  (pointed tipward to the sky)<br>
+  It&#39;s not every night<br>
+  you fall from grace<br>
+  so I think that<br>
+  is ample cause<br>
+  for celebration
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220319_203009275.jpg" alt="Archival Plate: morning" class="plate-image">
+        <div class="plate-caption">PLATE § 47 — ARCHIVAL ARTIFACT: <em>MORNING</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="ending-block">
+        <div class="ending-badge">[ ENDING: SUNRISE SURVIVAL ]</div>
+        <p class="ending-desc">You have traveled across the boundary and arrived at the far shore of this memory.</p>
+        <div class="ending-prompt">To re-enter the timeline from the beginning, turn to <strong><a href="#section-1">Section 1</a></strong>.</div>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-48">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 48</div>
+        <div class="section-title">HERETIC</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  everytime I open my<br>
+  mouth the<br>
+  words<br>
+  spill onto my paper<br>
+  drip drip<br>
+  dripping<br>
+  into your eyes<br>
+  but listen not to my<br>
+  words<br>
+  for I am not a poet<br>
+  I am a heretic<br>
+  and these<br>
+  words<br>
+  my words<br>
+  will linger like<br>
+  cancer<br>
+  of the soul<br>
+  my words<br>
+  will decay your<br>
+  morals<br>
+  and cast you out of<br>
+  the grace of<br>
+  god<br>
+  for my<br>
+  poetry<br>
+  my poetry<br>
+  is blasphemy
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Question the survivor's guilt</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-6">Section 6</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-49">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 49</div>
+        <div class="section-title">HUMIRA</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I keep seeing<br>
+  commercials for<br>
+  Humira<br>
+  but I know that<br>
+  it&#39;s a government<br>
+  plot a ploy a plan<br>
+  a tricky trap to<br>
+  reduce our<br>
+  resistance to tuberculosis<br>
+  but I don&#39;t know<br>
+  how to stop this <br>
+  government plot<br>
+  this ploy this plan<br>
+  so I&#39;ll just lay<br>
+  here and <br>
+  drown this<br>
+  migraine
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Have a smoke <br>
+  Have a drink
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_053755121.jpg" alt="Archival Plate: Humira" class="plate-image">
+        <div class="plate-caption">PLATE § 49 — ARCHIVAL ARTIFACT: <em>HUMIRA</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward porch</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-80">Section 80</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward dad's beer</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-98">Section 98</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-50">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 50</div>
+        <div class="section-title">1311</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  700mg to level me out<br>
+  10 to take it easy<br>
+  a brisk walk<br>
+  through fluorescent halls<br>
+  while I’m working<br>
+  towards a moment of clarity<br>
+  another milligram to stop the<br>
+  shakes<br>
+  and hold my pencil steady<br>
+  600 more to stop the pain<br>
+  and keep my thinking level<br>
+  1311 swirls inside my head<br>
+  as I work on<br>
+  my epiphany
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Write a poem  <br>
+  Swipe through dating aps
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward sketch</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-93">Section 93</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward boys of Tinder</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-14">Section 14</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-51">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 51</div>
+        <div class="section-title">TOBY</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the dog’s gentle snores<br>
+  prod at me<br>
+  yelling that I shouldn’t<br>
+  be here<br>
+  there is a bed waiting<br>
+  just a few footfalls<br>
+  away a bed<br>
+  that offers warmth<br>
+  and comfort<br>
+  and companionship<br>
+  yet still I sit<br>
+  listening to the dog’s<br>
+  gentle snoring<br>
+  my eyes dance<br>
+  searching for spies<br>
+  in a room devoid<br>
+  of all life<br>
+  save myself<br>
+  and a gently snoring<br>
+  dog
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220319_202957180.jpg" alt="Archival Plate: toby" class="plate-image">
+        <div class="plate-caption">PLATE § 51 — ARCHIVAL ARTIFACT: <em>TOBY</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Wake early to greet the sunrise</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-47">Section 47</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-52">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 52</div>
+        <div class="section-title">SPRING</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  its almost funny<br>
+  how little<br>
+  it takes<br>
+  these days<br>
+  a flash of light<br>
+  in a darkened<br>
+  pane and the<br>
+  wheels begin<br>
+  to spin<br>
+  those familiar suspicious<br>
+  gears click<br>
+  click clicking<br>
+  into place<br>
+  but how is<br>
+  one supposed<br>
+  to feel in the<br>
+  spring<br>
+  once the flowers bloom<br>
+  every hill<br>
+  is a grassy knoll 
+</div>
+
+<div class="stanza">
+  Get a drink
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward CJ</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-72">Section 72</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-53">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 53</div>
+        <div class="section-title">DATE NIGHT</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  this seems like<br>
+  the kind of<br>
+  day<br>
+  where I just<br>
+  need to focus on<br>
+  myself<br>
+  just get some ice<br>
+  cream<br>
+  maybe go to the park<br>
+  just have a date<br>
+  with myself<br>
+  and if I play my cards<br>
+  right<br>
+  maybe I’ll<br>
+  get lucky 
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Play your cards right
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward a love poem to myself</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-5">Section 5</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-54">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 54</div>
+        <div class="section-title">STAUNTON</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I’ve spent<br>
+  <span style="padding-left: 0.7em">hours on</span><br>
+  this unfeeling<br>
+  <span style="padding-left: 0.7em">highway</span><br>
+  <span style="padding-left: 1.4em">because lately</span><br>
+  when I close my<br>
+  <span style="padding-left: 0.7em">eyes all</span><br>
+  <span style="padding-left: 2.8em">I</span><br>
+  <span style="padding-left: 0.7em">see is your</span><br>
+  <span style="padding-left: 1.4em">smile</span><br>
+  and I want<br>
+  <span style="padding-left: 1.4em">(if only for a</span><br>
+  <span style="padding-left: 1.4em">moment)</span><br>
+  for reality<br>
+  to mirror<br>
+  my daydreams
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Write the room number on your forearm</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-69">Section 69</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-55">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 55</div>
+        <div class="section-title">DANCE</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  swirling and spinning<br>
+  twirling about<br>
+  your legs<br>
+  white with<br>
+  blue dots<br>
+  (of the polka<br>
+  type)<br>
+  picking up the<br>
+  moon&#39;s beams<br>
+  running away from<br>
+  the ball,<br>
+  finally finding reason<br>
+  to dance<br>
+  “and darling<br>
+  that dress suits<br>
+  the night so<br>
+  well”
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Sing along to the grocery store radio</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-85">Section 85</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-56">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 56</div>
+        <div class="section-title">BLINK</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  blink and you’’ll<br>
+  miss it<br>
+  but never have I<br>
+  seen them blink<br>
+  unwavering<br>
+  they watch<br>
+  telling him<br>
+  telling all they<br>
+  see<br>
+  and they see most<br>
+  everything<br>
+  but they don’t see<br>
+  her<br>
+  precious Abigail<br>
+  always in her Sunday<br>
+  best<br>
+  “dress for everyday<br>
+  as if it’s your last”<br>
+  a sigh<br>
+  “between the jello shots<br>
+  and the Ambien<br>
+  who can really say?”<br>
+  born (like the rest of<br>
+  us) veiled<br>
+  to the world<br>
+  killed in the haze of<br>
+  someone else’s<br>
+  self-medication<br>
+  yet here<br>
+  she stands<br>
+  hunted<br>
+  terrified<br>
+  unafraid
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Blink
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/IMG_20220214_231011.jpg" alt="Archival Plate: blink" class="plate-image">
+        <div class="plate-caption">PLATE § 56 — ARCHIVAL ARTIFACT: <em>BLINK</em> (IMG)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward timelines</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-96">Section 96</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-57">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 57</div>
+        <div class="section-title">THE RUST GODDESS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  smoking bummed cigarettes<br>
+  quoting other people’s songs<br>
+  and when I think quiet enough<br>
+  my own words may come to mind<br>
+  So cross your legs, clasp your hands<br>
+  let your thoughts wander till<br>
+  the pencil starts to move<br>
+  invent small gods, build bodies of rust<br>
+  and pledge unceasing devotion<br>
+  move the pencil, write those words<br>
+  the rust goddess<br>
+  has much to say<br>
+  so heed well her words of wisdom 
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Write  <br>
+  Invent a god<br>
+  Ignore her
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward a question</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-95">Section 95</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward this party</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-97">Section 97</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Pity Saint Gloria</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-39">Section 39</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-58">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 58</div>
+        <div class="section-title">MY EYES</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  swirl and twirl<br>
+  whine and dine<br>
+  hold on tight<br>
+  the time is nigh<br>
+  with angels in my<br>
+  mind<br>
+  it&#39;s hard to see<br>
+  you clearly dear<br>
+  with so many angels in my<br>
+  eyes<br>
+  there&#39;s barely room<br>
+  for you there
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Blink <br>
+  Fly Higher
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_050458866.jpg" alt="Archival Plate: my eyes" class="plate-image">
+        <div class="plate-caption">PLATE § 58 — ARCHIVAL ARTIFACT: <em>MY EYES</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward angels in my brain</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-29">Section 29</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward rebellion</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-18">Section 18</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-59">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 59</div>
+        <div class="section-title">ORANGES</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I&#39;ve always <br>
+  loved the<br>
+  smell of oranges<br>
+  (especially on<br>
+  your skin)<br>
+  they have a zest<br>
+  that screams<br>
+  adventure<br>
+  (nights flying down<br>
+  the highway)<br>
+  and that hint of acid<br>
+  (“Get a job, you&#39;re <br>
+  not man enough<br>
+  for me”)<br>
+  but mostly they<br>
+  remind me of<br>
+  (you)
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Speak their name like starlight</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-12">Section 12</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-60">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 60</div>
+        <div class="section-title">CROSSROADS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  and every time we came to a<br>
+  crossroad<br>
+  I prayed for a red light<br>
+  but your damndable luck<br>
+  kept the greens<br>
+  acoming<br>
+  all I wanted was to steal <br>
+  a single<br>
+  kiss<br>
+  a prize on par with<br>
+  Prometheus<br>
+  and his burning flame<br>
+  rising higher in my heart <br>
+  than those reds that<br>
+  never came<br>
+  to steal a thought from Hailey<br>
+  (for sometimes I feel like Sam)<br>
+  you&#39;ve got me wound tighter<br>
+  than my left-wrist twist<br>
+  so baby<br>
+  pull off the road<br>
+  and let me<br>
+  get that <br>
+  kiss
+</div>
+
+<div class="stanza">
+  What do you do?
+</div>
+
+<div class="stanza">
+  Pull off the road  <br>
+  Take their hand  <br>
+  Keep going
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward uplifted</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-88">Section 88</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward hands</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-7">Section 7</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward my path</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-46">Section 46</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-61">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 61</div>
+        <div class="section-title">INTROSPECTIVE POETRY</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  writing introspective<br>
+  poetry can<br>
+  <span style="padding-left: 1.4em">be such</span><br>
+  a drag<br>
+  so lets focus<br>
+  instead on<br>
+  <span style="padding-left: 1.4em">bees</span><br>
+  they bumble and<br>
+  drift<br>
+  <span style="padding-left: 1.4em">spreading life</span><br>
+  <span style="padding-left: 1.4em">and making</span><br>
+  <span style="padding-left: 1.4em">sweets</span>
+</div>
+
+<div class="stanza">
+  you can thank me<br>
+  <span style="padding-left: 1.4em">for this poem</span><br>
+  <span style="padding-left: 2.0999999999999996em">later</span>
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Watch the bees in the garden</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-74">Section 74</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-62">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 62</div>
+        <div class="section-title">ME(BOTHOFUS)</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  me(bothofus)
+</div>
+
+<div class="stanza">
+  her eyes<br>
+  <span style="padding-left: 1.4em">burning into me</span><br>
+  Sliding<br>
+  please allow us to introduce ourselves<br>
+  his name is irony<br>
+  <span style="padding-left: 1.4em">and he’s normally in control</span><br>
+  and him,<br>
+  <span style="padding-left: 1.4em">just ignore him</span><br>
+  he makes the decisions<br>
+  <span style="padding-left: 2.0999999999999996em">at least the ones that really</span><br>
+  <span style="padding-left: 3.5em">matter</span><br>
+  let’s see what we can<br>
+  <span style="padding-left: 2.0999999999999996em">do about</span><br>
+  making this a little easier<br>
+  <span style="padding-left: 1.4em">let me pour you a</span><br>
+  <span style="padding-left: 2.8em">drink</span>
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Wrap them in the warmth of the quilt</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-76">Section 76</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-63">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 63</div>
+        <div class="section-title">THE THINGS I HEAR</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the things I hear
+</div>
+
+<div class="stanza">
+  fly into the stratosphere<br>
+  talk about the things I hear<br>
+  all the angels there<br>
+  screaming in my head<br>
+  pushing my hands to deeds<br>
+  untoward<br>
+  wield my weapon like a sword<br>
+  I just want to clarify<br>
+  they need my blood to sanctify<br>
+  the land to have their war<br>
+  smashing shields,<br>
+  clashing swords<br>
+  they sent their snake<br>
+  to poison my veins<br>
+  switch the dreams inside<br>
+  my head<br>
+  until I draw my blood<br>
+  for them<br>
+  and spill it<br>
+  on the ground
+</div>
+
+<div class="stanza">
+  A syringe of risperidone is in your hand.<br>
+  What do you do?<br>
+  Take your meds  <br>
+  Maybe later
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_045911737.jpg" alt="Archival Plate: the things I hear" class="plate-image">
+        <div class="plate-caption">PLATE § 63 — ARCHIVAL ARTIFACT: <em>THE THINGS I HEAR</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward new eyes</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-86">Section 86</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward war</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-33">Section 33</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-64">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 64</div>
+        <div class="section-title">CINNAMON</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  cinnamon
+</div>
+
+<div class="stanza">
+  the smell of<br>
+  cinnamon<br>
+  lazy on the<br>
+  wind<br>
+  the angels<br>
+  coming down<br>
+  to torment me again<br>
+  with wicked wing<br>
+  and sickly<br>
+  sword<br>
+  they chase across<br>
+  the land<br>
+  they hope to <br>
+  catch<br>
+  and snap and<br>
+  bite<br>
+  to take their power<br>
+  from my<br>
+  hand
+</div>
+
+<div class="stanza">
+  A bottle of risperidone is in your hand.<br>
+  What do you do?<br>
+  Take your meds  <br>
+  Maybe later
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220214_043236281.jpg" alt="Archival Plate: cinnamon" class="plate-image">
+        <div class="plate-caption">PLATE § 64 — ARCHIVAL ARTIFACT: <em>CINNAMON</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward new eyes</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-86">Section 86</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward the things I hear</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-63">Section 63</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-65">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 65</div>
+        <div class="section-title">MEET SOMEONE</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  That was beautiful. <br>
+  I want you to meet someone.<br>
+  She&#39;s very important to me.<br>
+  She isn&#39;t real.<br>
+  She has saved my life so many times.
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220212_063741920.jpg" alt="Archival Plate: meet someone" class="plate-image">
+        <div class="plate-caption">PLATE § 65 — ARCHIVAL ARTIFACT: <em>MEET SOMEONE</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward Abigail</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-9">Section 9</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-66">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 66</div>
+        <div class="section-title">DELIGHT</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  happily holding<br>
+  and smile filled<br>
+  folding<br>
+  of simple, miraculous<br>
+  hands<br>
+  spirit filling songing<br>
+  and lip quivering<br>
+  longing<br>
+  red stars collapsing and<br>
+  synapses snapping<br>
+  with open mouth gasping<br>
+  as the universe slowly<br>
+  explodes<br>
+  and still the<br>
+  happily holding<br>
+  and smile filled<br>
+  folding<br>
+  of simple, miraculous<br>
+  hands 
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Keep holding  <br>
+  Pull of the road
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward hands</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-7">Section 7</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward uplifted</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-88">Section 88</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-67">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 67</div>
+        <div class="section-title">MY BONES</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the rust Goddess<br>
+  reaches in<br>
+  and takes hold<br>
+  of my bones<br>
+  rotting out and<br>
+  reaching in to<br>
+  take hold <br>
+  of my soul<br>
+  with bones of <br>
+  iron quickly<br>
+  gone<br>
+  I fall before<br>
+  her now
+</div>
+
+<div class="stanza">
+  Fall before her now
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward timelines</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-96">Section 96</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-68">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 68</div>
+        <div class="section-title">PRETENTIOUS CRAP</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  a cyclonic path of everbuilding doubt<br>
+  a fragile pretense<br>
+  shattered<br>
+  by the mind altering<br>
+  chemicals that<br>
+  hold me accountable<br>
+  for actions I have<br>
+  yet to conceive<br>
+  gut-wrenching, bowel-turning, blood-<br>
+  curdling<br>
+  streams of semi-viscous<br>
+  sin<br>
+  pour forth from my eyes<br>
+  and bring life to my <br>
+  senses<br>
+  pseudogenesis<br>
+  twisted tale of creation<br>
+  and on the seventh day he<br>
+  rested<br>
+  sometimes God gets all the<br>
+  breaks
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Abandon pretension for bees</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-61">Section 61</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-69">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 69</div>
+        <div class="section-title">LONG NIGHTS IN A SHITTY MOTEL</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I wrote it on my arm<br>
+  <span style="padding-left: 3.5em">last night</span><br>
+  if lack of memory<br>
+  <span style="padding-left: 2.8em">serves me right</span><br>
+  I don’t really remember<br>
+  <span style="padding-left: 1.4em">yesterday</span><br>
+  <span style="padding-left: 1.4em">and less still of the</span><br>
+  day before<br>
+  <span style="padding-left: 2.0999999999999996em">but I must have</span><br>
+  found something in<br>
+  that green haze<br>
+  for here the beauty lies<br>
+  simple, serene, resounding<br>
+  <span style="padding-left: 1.4em">truth</span><br>
+  it’s indisputable really<br>
+  <span style="padding-left: 3.5em">“I AM I”</span>
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220319_202053812.jpg" alt="Archival Plate: long nights in a shitty motel" class="plate-image">
+        <div class="plate-caption">PLATE § 69 — ARCHIVAL ARTIFACT: <em>LONG NIGHTS IN A SHITTY MOTEL</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Test your senses against the mirror</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-94">Section 94</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-70">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 70</div>
+        <div class="section-title">THE RAIN</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the rain is<br>
+  <span style="padding-left: 0.7em">dripping on my</span><br>
+  windshield<br>
+  <span style="padding-left: 2.8em">and my tattered</span><br>
+  wiper blades<br>
+  <span style="padding-left: 1.4em">valiantly wipe them</span><br>
+  away<br>
+  <span style="padding-left: 1.4em">clearing the glass -</span><br>
+  <span style="padding-left: 1.4em">and my mind</span><br>
+  <span style="padding-left: 1.4em">the world goes from</span><br>
+  <span style="padding-left: 3.5em">a blur</span><br>
+  <span style="padding-left: 1.4em">to crystal clear in a</span><br>
+  <span style="padding-left: 2.0999999999999996em">single slash</span><br>
+  <span style="padding-left: 0.7em">only to fall prey to</span><br>
+  <span style="padding-left: 2.0999999999999996em">the liquid occlusion</span><br>
+  <span style="padding-left: 2.0999999999999996em">once again</span><br>
+  <span style="padding-left: 1.4em">yet through this</span><br>
+  <span style="padding-left: 2.8em">futility my</span><br>
+  <span style="padding-left: 2.8em">wipers soldier on</span><br>
+  <span style="padding-left: 2.0999999999999996em">nobly slicing out</span><br>
+  <span style="padding-left: 2.0999999999999996em">glimpses of the</span><br>
+  <span style="padding-left: 2.0999999999999996em">blacktop ahead</span>
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Hunker down with a stone from home</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-43">Section 43</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-71">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 71</div>
+        <div class="section-title">TAKE THE WHEEL</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  toss the keys and<br>
+  shine the headlights<br>
+  Who has the wheel now?<br>
+  how loud is their voice?<br>
+  a simple monotone?<br>
+  counting<br>
+  one<br>
+  1(oneoneoneone)<br>
+  2358<br>
+  keeping time to the heart(head)<br>
+  holding it all in<br>
+  toss the keys and<br>
+  shine the headlights<br>
+  new fingers on<br>
+  the wheel<br>
+  and with trembling<br>
+  hands she lights<br>
+  a cigarette<br>
+  I have to kill myself<br>
+  slowly,<br>
+  to feel I’m really<br>
+  alive<br>
+  Keys?<br>
+  tossed.<br>
+  Headlights?<br>
+  shone.<br>
+  the new one<br>
+  the voice from<br>
+  outside<br>
+  hands grip the<br>
+  wheel<br>
+  tighter<br>
+  faster<br>
+  I’m done 
+</div>
+
+<div class="stanza">
+  Where do you sit?<br>
+  Driver seat <br>
+  Shotgun <br>
+  In the back
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward my path</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-46">Section 46</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward changeling</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-21">Section 21</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward wings</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-26">Section 26</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-72">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 72</div>
+        <div class="section-title">CJ</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  seven ball<br>
+  corner pocket<br>
+  line the shots<br>
+  and then we<br>
+  drop &#39;em<br>
+  whiskey fire burns<br>
+  in my gut<br>
+  making me feel lucky<br>
+  an irresponsible<br>
+  amount of money<br>
+  on black<br>
+  it&#39;s in the rust<br>
+  Goddess&#39; hands<br>
+  now<br>
+  spin it
+</div>
+
+<div class="stanza">
+  Go to a party
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward this party</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-97">Section 97</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-73">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 73</div>
+        <div class="section-title">CONNECTED</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  my fingertips graze<br>
+  that place on<br>
+  the back of<br>
+  your neck<br>
+  just barely<br>
+  above the spot<br>
+  where thoughts<br>
+  collect and<br>
+  coalesce<br>
+  and translate<br>
+  into movement<br>
+  and actions<br>
+  and my fingertips<br>
+  are my conduit<br>
+  sharing those signals<br>
+  moving in time<br>
+  to your<br>
+  synaptic<br>
+  feedback
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Breathe in the citrus in the air</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-59">Section 59</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-74">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 74</div>
+        <div class="section-title">BEES ARE DYING AT AN ALARMING RATE</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  bees are dying<br>
+  at an alarming<br>
+  rate and<br>
+  I’m looking in a<br>
+  mirror wondering<br>
+  if my hair looks<br>
+  better parted to the<br>
+  left and<br>
+  bees are dying<br>
+  at an alarming<br>
+  rate and<br>
+  I don’t know<br>
+  for sure but<br>
+  maybe a thousand<br>
+  died while I<br>
+  was adjusting my<br>
+  shirt<br>
+  and if all the<br>
+  bees die something<br>
+  sciencey and<br>
+  bad happens and<br>
+  I’m standing<br>
+  here trying to<br>
+  decide if I’m<br>
+  too old for a<br>
+  lipring and<br>
+  bees are dying<br>
+  at an alarming<br>
+  rate
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Laugh into the mirror and thank the world</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-16">Section 16</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-75">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 75</div>
+        <div class="section-title">ALIENS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I got too high<br>
+  to write a poem<br>
+  so I&#39;ll just <br>
+  fucking tell you<br>
+  angels are amongst<br>
+  us<br>
+  and the government <br>
+  knows<br>
+  and aliens were<br>
+  here a long time<br>
+  ago 
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Have a smoke <br>
+  Have a drink<br>
+  Go for a drive
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220214_043308752.jpg" alt="Archival Plate: aliens" class="plate-image">
+        <div class="plate-caption">PLATE § 75 — ARCHIVAL ARTIFACT: <em>ALIENS</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward my bones</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-67">Section 67</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward drinking</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-22">Section 22</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward take the wheel</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-71">Section 71</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-76">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 76</div>
+        <div class="section-title">WARMTH</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the warmth always<br>
+  astonishes me<br>
+  how can being<br>
+  so warm<br>
+  be so comforting<br>
+  shaking off that<br>
+  familiar cold<br>
+  the shawl woven<br>
+  (and worn with<br>
+  pride)<br>
+  of tangled half-<br>
+  truths(<br>
+  half-smiles)<br>
+  half-lies<br>
+  and yet the warmth<br>
+  always astonishes<br>
+  me<br>
+  always draws me<br>
+  closer
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Listen to Toby snoring beside the bed</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-51">Section 51</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-77">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 77</div>
+        <div class="section-title">FULL OF EYES</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I&#39;m full of eyes<br>
+  and my eyes<br>
+  are full<br>
+  of something <br>
+  not much unlike <br>
+  tears<br>
+  and the moon is<br>
+  full of secret bases<br>
+  hidden in their<br>
+  secret places<br>
+  and I don&#39;t know<br>
+  what to do
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Step through the blinding threshold</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-8">Section 8</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-78">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 78</div>
+        <div class="section-title">HAIR</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  your hair<br>
+  between my<br>
+  fingers<br>
+  swirling, moving<br>
+  the tips then linger<br>
+  holding on<br>
+  (and holding out)<br>
+  lost in you<br>
+  and lost<br>
+  without
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Dance through the supermarket aisles</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-55">Section 55</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-79">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 79</div>
+        <div class="section-title">SCRAPBOOK</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  Column 1
+</div>
+
+<div class="stanza">
+  What do you do?
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220214_043308752.jpg" alt="Archival Plate: Scrapbook" class="plate-image">
+        <div class="plate-caption">PLATE § 79 — ARCHIVAL ARTIFACT: <em>SCRAPBOOK</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="ending-block">
+        <div class="ending-badge">[ ENDING: ARCHIVE COMPLETE ]</div>
+        <p class="ending-desc">You have traveled across the boundary and arrived at the far shore of this memory.</p>
+        <div class="ending-prompt">To re-enter the timeline from the beginning, turn to <strong><a href="#section-1">Section 1</a></strong>.</div>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-80">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 80</div>
+        <div class="section-title">PORCH</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  sitting on my porch<br>
+  with a spliff in<br>
+  one hand and a<br>
+  pen<br>
+  in the other<br>
+  (I’ve never been a<br>
+  left-handed smoker;<br>
+  tonight I’ll make an<br>
+  exception)<br>
+  the day’s storm clouds<br>
+  lazily cover the<br>
+  stars<br>
+  and someone is<br>
+  setting off<br>
+  fireworks<br>
+  in august<br>
+  It’s<br>
+  a good night
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Have a smoke <br>
+  Have a drink
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220214_042741699.jpg" alt="Archival Plate: porch" class="plate-image">
+        <div class="plate-caption">PLATE § 80 — ARCHIVAL ARTIFACT: <em>PORCH</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward aliens</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-75">Section 75</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward dad's beer</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-98">Section 98</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-81">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 81</div>
+        <div class="section-title">BURN OUT</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I&#39;m a burn out<br>
+  hopped up<br>
+  and let down<br>
+  hoping I&#39;m not<br>
+  too washed up<br>
+  to get the <br>
+  message out<br>
+  just praying<br>
+  that my words<br>
+  will touch something<br>
+  inside you<br>
+  help and guide<br>
+  you to a<br>
+  happier home
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Point the headlights toward home</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-87">Section 87</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-82">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 82</div>
+        <div class="section-title">WRITTENPAINTING</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  What do you do?<br>
+  Paint
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward paintings</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-91">Section 91</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-83">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 83</div>
+        <div class="section-title">SIMPLER TIME</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  simpler time
+</div>
+
+<div class="stanza">
+  I&#39;m yearning for<br>
+  a simpler time<br>
+  when we were<br>
+  angels in the sky<br>
+  no broken bones<br>
+  no bloodshot eyes<br>
+  just simple wings<br>
+  and clouds so high<br>
+  so take my hand<br>
+  and take a step<br>
+  let&#39;s try and fly<br>
+  with what wings<br>
+  we have left
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Drive
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward take the wheel</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-71">Section 71</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-84">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 84</div>
+        <div class="section-title">CRACKPOP</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  scintillating<br>
+  sin spat<br>
+  soar into<br>
+  the ethersphere<br>
+  broken bones<br>
+  spore soaked<br>
+  sighs run red-<br>
+  hot rivulets<br>
+  through my mind<br>
+  searing shut<br>
+  my synapses<br>
+  burning off my<br>
+  senses<br>
+  A medic’s<br>
+  scalpel hastily<br>
+  heated on a<br>
+  lighter<br>
+  the same lighter<br>
+  that ignited<br>
+  the cigarette<br>
+  that<br>
+  drew the<br>
+  sniper’s fire<br>
+  a gunshot<br>
+  (impersonal)<br>
+  through the left<br>
+  eye. ripping<br>
+  tearing<br>
+  respectfully<br>
+  cauterizing<br>
+  erasing the exit<br>
+  wound to keep<br>
+  the roundthought<br>
+  inside
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Look through the eyes of the beast</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-77">Section 77</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-85">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 85</div>
+        <div class="section-title">SONG</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  “Its like shes dancing…<br>
+  can’t she ever just<br>
+  walk?”<br>
+  and dance<br>
+  we(she)<br>
+  did<br>
+  bouncing past<br>
+  toiletries<br>
+  waltzing amongst<br>
+  the produce<br>
+  and from the<br>
+  front pocket<br>
+  blasted the<br>
+  song<br>
+  that song<br>
+  that holds<br>
+  it all together<br>
+  the one that<br>
+  Hailey<br>
+  sings/sang/sung
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Wander into the arms of Abigail</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-9">Section 9</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-86">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 86</div>
+        <div class="section-title">NEW EYES</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the privilege of the<br>
+  emotionally dead<br>
+  is to never be unsure<br>
+  no broken fragments<br>
+  of hidden doubt<br>
+  florescent fields<br>
+  of greenred grass<br>
+  a picture book haunting<br>
+  of a dirty<br>
+  back alley<br>
+  so give me Tricyclics<br>
+  give me SSRIs<br>
+  hand me more truth<br>
+  or at least more trusting eyes
+</div>
+
+<div class="stanza">
+  .
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Sleep
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_053156730.jpg" alt="Archival Plate: new eyes" class="plate-image">
+        <div class="plate-caption">PLATE § 86 — ARCHIVAL ARTIFACT: <em>NEW EYES</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward 1311</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-50">Section 50</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-87">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 87</div>
+        <div class="section-title">HOMEWARD BOUND</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  homeward bound<br>
+  but already<br>
+  there<br>
+  I&#39;m holding out<br>
+  (onto a prayer)<br>
+  and do you<br>
+  remember that day<br>
+  six years from <br>
+  now?<br>
+  Well hold my drink<br>
+  I think I&#39;m <br>
+  done
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220319_202249397.jpg" alt="Archival Plate: homeward bound" class="plate-image">
+        <div class="plate-caption">PLATE § 87 — ARCHIVAL ARTIFACT: <em>HOMEWARD BOUND</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Sit on the porch with Dad's beer</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-80">Section 80</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-88">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 88</div>
+        <div class="section-title">UPLIFTED</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  and in the park<br>
+  that day<br>
+  nothing captivated us<br>
+  no steel structures<br>
+  drew our eyes<br>
+  and so<br>
+  (in defiance of<br>
+  our upbringing)<br>
+  we grew wings<br>
+  and left the<br>
+  grass behind
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Fly
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward my eyes</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-58">Section 58</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-89">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 89</div>
+        <div class="section-title">SKETCH2</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  What do you do?<br>
+  Try to write a poem <br>
+  Paint
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220212_210243574.jpg" alt="Archival Plate: sketch2" class="plate-image">
+        <div class="plate-caption">PLATE § 89 — ARCHIVAL ARTIFACT: <em>SKETCH2</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward sketch3</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-90">Section 90</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward paintings</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-91">Section 91</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-90">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 90</div>
+        <div class="section-title">SKETCH3</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  What do you do?<br>
+  Try desperatly to write a poem <br>
+  Paint
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220211_203408826.jpg" alt="Archival Plate: sketch3" class="plate-image">
+        <div class="plate-caption">PLATE § 90 — ARCHIVAL ARTIFACT: <em>SKETCH3</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward an unabridged admission</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-17">Section 17</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward paintings</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-91">Section 91</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-91">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 91</div>
+        <div class="section-title">PAINTINGS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <p class="prose-empty"><em>(The page is filled with deliberate, ringing silence.)</em></p>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220201_022655045.jpg" alt="Archival Plate: paintings" class="plate-image">
+        <div class="plate-caption">PLATE § 91 — ARCHIVAL ARTIFACT: <em>PAINTINGS</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Confront the unspoken splashes of color</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-10">Section 10</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-92">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 92</div>
+        <div class="section-title">THE ENDING</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I kindly suggest you<br>
+  back off<br>
+  cause I&#39;m about<br>
+  to pop off<br>
+  show up<br>
+  throw down<br>
+  now you know<br>
+  whats going round<br>
+  it&#39;s just that sometimes<br>
+  I feel so empty<br>
+  but even then it <br>
+  thrills me<br>
+  feeling all the things<br>
+  that could kill me<br>
+  I&#39;m left just thinking<br>
+  bout the ending<br>
+  and wondering where<br>
+  that release could<br>
+  send me
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220319_203352934.jpg" alt="Archival Plate: the ending" class="plate-image">
+        <div class="plate-caption">PLATE § 92 — ARCHIVAL ARTIFACT: <em>THE ENDING</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="ending-block">
+        <div class="ending-badge">[ ENDING: THE FINAL THRESHOLD ]</div>
+        <p class="ending-desc">You have traveled across the boundary and arrived at the far shore of this memory.</p>
+        <div class="ending-prompt">To re-enter the timeline from the beginning, turn to <strong><a href="#section-1">Section 1</a></strong>.</div>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-93">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 93</div>
+        <div class="section-title">SKETCH</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  What do you do?<br>
+  Try to write a poem <br>
+  Paint
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220212_210139131.jpg" alt="Archival Plate: sketch" class="plate-image">
+        <div class="plate-caption">PLATE § 93 — ARCHIVAL ARTIFACT: <em>SKETCH</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward sketch2</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-89">Section 89</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward paintings</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-91">Section 91</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-94">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 94</div>
+        <div class="section-title">HOW MANY FINGERS AM I HOLDING UP?</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  how many fingers am<br>
+  I holding<br>
+  up<br>
+  four? seven?<br>
+  nine?<br>
+  And why can I<br>
+  not tell?<br>
+  I try to count<br>
+  -burning up-<br>
+  while my fingers<br>
+  fade in and out<br>
+  how many fingers am<br>
+  I holding<br>
+  up?<br>
+  your guess is <br>
+  as good as<br>
+  mine
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Turn the ignition and face the asphalt</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-23">Section 23</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-95">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 95</div>
+        <div class="section-title">A QUESTION</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  if I loaned you my hands<br>
+  could you write<br>
+  like me?<br>
+  Or do you need my<br>
+  eyes and heart<br>
+  too?<br>
+  How much is muscle<br>
+  memory<br>
+  place the (<br>
+  isn&#39;t it<br>
+  peculiar?)<br>
+  hidden in the<br>
+  rafters<br>
+  the rust<br>
+  Goddess<br>
+  ever after
+</div>
+
+<div class="stanza">
+  Yes <br>
+  No
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward blank poem</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-13">Section 13</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward mistress</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-25">Section 25</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-96">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 96</div>
+        <div class="section-title">TIMELINES</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  the timelines are<br>
+  slipping<br>
+  sliding through my<br>
+  brain<br>
+  criss cross<br>
+  slip dash<br>
+  tossing into<br>
+  another plane
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Blink  <br>
+  Breathe
+</div>
+      </div>
+
+      
+      <div class="art-plate">
+        <img src="../assets/images/PXL_20220215_040013515.jpg" alt="Archival Plate: timelines" class="plate-image">
+        <div class="plate-caption">PLATE § 96 — ARCHIVAL ARTIFACT: <em>TIMELINES</em> (PXL)</div>
+      </div>
+    
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward Intro</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-1">Section 1</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward memory</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-28">Section 28</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-97">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 97</div>
+        <div class="section-title">THIS PARTY</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I was at this party<br>
+  with all my friends<br>
+  all standing round<br>
+  and all I remember<br>
+  is starting to drown<br>
+  I don&#39;t mean to perseverate<br>
+  upon this fancy<br>
+  dinner plate<br>
+  but I just wanted to<br>
+  smash it to dust<br>
+  light a fire,<br>
+  watch it rust<br>
+  because the rust Goddess<br>
+  is always standing round<br>
+  waiting to tear it all<br>
+  to the ground
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Smash it  <br>
+  Don&#39;t smash it
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward Nibiru</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-15">Section 15</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward spring</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-52">Section 52</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-98">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 98</div>
+        <div class="section-title">DAD'S BEER</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  and Dad’s beer sat warm in<br>
+  my stomach<br>
+  as I pondered slipping clutches<br>
+  and failing transmissions<br>
+  flying through the night<br>
+  grinding gears<br>
+  up the mountain<br>
+  starry nights<br>
+  above me<br>
+  starry nights<br>
+  above you<br>
+  and your car<br>
+  and here I am wishing<br>
+  on Dad’s warm beer in<br>
+  my stomach<br>
+  that your slipping clutch<br>
+  and failing transmission<br>
+  get you<br>
+  home safe 
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Have a smoke <br>
+  Have a drink
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward porch</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-80">Section 80</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward drinking</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-22">Section 22</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-99">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 99</div>
+        <div class="section-title">TEXTS</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  I spend so much<br>
+  time rerereading<br>
+  texts<br>
+  making sure they<br>
+  trigger some<br>
+  synaptic crackfiresnap,<br>
+  some memory<br>
+  (no matter how ill-<br>
+  defined)<br>
+  I&#39;m scared you see.<br>
+  I&#39;ve been losing time<br>
+  (cracks in the plaster (running counter<br>
+  to the cracks I&#39;m familiar<br>
+  with))<br>
+  and reading these<br>
+  texts<br>
+  is the only way to know<br>
+  I haven&#39;t lost time<br>
+  with you
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Trace lines of dialogue in the dark</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-40">Section 40</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+
+    <section class="gamebook-section" id="section-100">
+      <div class="section-header">
+        <div class="section-numeral">SECTION 100</div>
+        <div class="section-title">WANDERLUST</div>
+      </div>
+      <div class="section-divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+      
+      <div class="section-content">
+        <div class="stanza">
+  wanderlust<br>
+  (if lust had<br>
+  survived the<br>
+  media smear campaign)<br>
+  wander-longings<br>
+  a wander-yearn<br>
+  puling your heart strings<br>
+  across this land<br>
+  up into the mount-<br>
+  ains<br>
+  leaving trace amounts<br>
+  of rubber<br>
+  forming a crisscrossing<br>
+  map<br>
+  veins across<br>
+  the earth 
+</div>
+
+<div class="stanza">
+  But he was watching wasn&#39;t he?<br>
+  We don&#39;t have to talk about him.<br>
+  We can talk about better days.
+</div>
+
+<div class="stanza">
+  What do you do?<br>
+  Talk about him  <br>
+  Talk about better days
+</div>
+      </div>
+
+      
+
+      
+      <div class="choices-container">
+        <div class="choices-header">WHAT DO YOU DO?</div>
+        <ul class="choices-list">
+          
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward him</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-45">Section 45</a></strong>.</span>
+        </li>
+      
+
+        <li class="choice-item">
+          <span class="choice-text">• If you choose to <em>Follow the path toward simpler time</em>:</span>
+          <span class="choice-dest">turn to <strong><a href="#section-83">Section 83</a></strong>.</span>
+        </li>
+      
+        </ul>
+      </div>
+    
+    </section>
+  
+
+  <!-- 9. MASTER CONCORDANCE / INDEX -->
+  <div class="prose-section page-break">
+    <div class="prose-title">MASTER CONCORDANCE</div>
+    <div class="prose-subtitle">ALPHABETICAL INDEX OF POEMS & SECTIONS</div>
+
+    <table class="concordance-table">
+      <thead>
+        <tr>
+          <th>POEM TITLE</th>
+          <th style="text-align: right;">SECTION</th>
+          <th style="padding-left: 0.15in;">ROLE</th>
+          <th style="text-align: center;">ART PLATE</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+    <tr>
+      <td class="concord-title"><a href="#section-4">1001</a></td>
+      <td class="concord-sec"><strong>§ 4</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-50">1311</a></td>
+      <td class="concord-sec"><strong>§ 50</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-35">70mph</a></td>
+      <td class="concord-sec"><strong>§ 35</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-5">a love poem to myself</a></td>
+      <td class="concord-sec"><strong>§ 5</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-95">a question</a></td>
+      <td class="concord-sec"><strong>§ 95</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-43">a stone from home</a></td>
+      <td class="concord-sec"><strong>§ 43</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-9">Abigail</a></td>
+      <td class="concord-sec"><strong>§ 9</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-75">aliens</a></td>
+      <td class="concord-sec"><strong>§ 75</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-36">allensville</a></td>
+      <td class="concord-sec"><strong>§ 36</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-17">an unabridged admission</a></td>
+      <td class="concord-sec"><strong>§ 17</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-29">angels in my brain</a></td>
+      <td class="concord-sec"><strong>§ 29</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-23">back on the road</a></td>
+      <td class="concord-sec"><strong>§ 23</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-38">battery</a></td>
+      <td class="concord-sec"><strong>§ 38</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-74">bees are dying at an alarming rate</a></td>
+      <td class="concord-sec"><strong>§ 74</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-13">blank poem</a></td>
+      <td class="concord-sec"><strong>§ 13</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-56">blink</a></td>
+      <td class="concord-sec"><strong>§ 56</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-14">boys of Tinder</a></td>
+      <td class="concord-sec"><strong>§ 14</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-27">bullets</a></td>
+      <td class="concord-sec"><strong>§ 27</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-81">burn out</a></td>
+      <td class="concord-sec"><strong>§ 81</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-32">car crashes</a></td>
+      <td class="concord-sec"><strong>§ 32</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-21">changeling</a></td>
+      <td class="concord-sec"><strong>§ 21</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-2">chemicals</a></td>
+      <td class="concord-sec"><strong>§ 2</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-34">cherub</a></td>
+      <td class="concord-sec"><strong>§ 34</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-64">cinnamon</a></td>
+      <td class="concord-sec"><strong>§ 64</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-72">CJ</a></td>
+      <td class="concord-sec"><strong>§ 72</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-73">connected</a></td>
+      <td class="concord-sec"><strong>§ 73</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-84">crackpop</a></td>
+      <td class="concord-sec"><strong>§ 84</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-60">crossroads</a></td>
+      <td class="concord-sec"><strong>§ 60</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-98">dad's beer</a></td>
+      <td class="concord-sec"><strong>§ 98</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-55">dance</a></td>
+      <td class="concord-sec"><strong>§ 55</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-53">date night</a></td>
+      <td class="concord-sec"><strong>§ 53</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-3">deal</a></td>
+      <td class="concord-sec"><strong>§ 3</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-66">delight</a></td>
+      <td class="concord-sec"><strong>§ 66</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-22">drinking</a></td>
+      <td class="concord-sec"><strong>§ 22</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-77">full of eyes</a></td>
+      <td class="concord-sec"><strong>§ 77</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-6">God</a></td>
+      <td class="concord-sec"><strong>§ 6</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-78">hair</a></td>
+      <td class="concord-sec"><strong>§ 78</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-7">hands</a></td>
+      <td class="concord-sec"><strong>§ 7</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-48">heretic</a></td>
+      <td class="concord-sec"><strong>§ 48</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-45">him</a></td>
+      <td class="concord-sec"><strong>§ 45</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-87">homeward bound</a></td>
+      <td class="concord-sec"><strong>§ 87</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-94">how many fingers am I holding up?</a></td>
+      <td class="concord-sec"><strong>§ 94</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-49">Humira</a></td>
+      <td class="concord-sec"><strong>§ 49</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-1">Intro</a></td>
+      <td class="concord-sec"><strong>§ 1</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-61">introspective poetry</a></td>
+      <td class="concord-sec"><strong>§ 61</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-30">leftwrist twist</a></td>
+      <td class="concord-sec"><strong>§ 30</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-42">let me tell you</a></td>
+      <td class="concord-sec"><strong>§ 42</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-10">lies, alright?</a></td>
+      <td class="concord-sec"><strong>§ 10</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-40">lines</a></td>
+      <td class="concord-sec"><strong>§ 40</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-69">long nights in a shitty motel</a></td>
+      <td class="concord-sec"><strong>§ 69</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-62">me(bothofus)</a></td>
+      <td class="concord-sec"><strong>§ 62</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-65">meet someone</a></td>
+      <td class="concord-sec"><strong>§ 65</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-28">memory</a></td>
+      <td class="concord-sec"><strong>§ 28</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-25">mistress</a></td>
+      <td class="concord-sec"><strong>§ 25</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-47">morning</a></td>
+      <td class="concord-sec"><strong>§ 47</strong></td>
+      <td class="concord-type">Ending</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-67">my bones</a></td>
+      <td class="concord-sec"><strong>§ 67</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-58">my eyes</a></td>
+      <td class="concord-sec"><strong>§ 58</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-46">my path</a></td>
+      <td class="concord-sec"><strong>§ 46</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-31">nephilim</a></td>
+      <td class="concord-sec"><strong>§ 31</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-86">new eyes</a></td>
+      <td class="concord-sec"><strong>§ 86</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-15">Nibiru</a></td>
+      <td class="concord-sec"><strong>§ 15</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-59">oranges</a></td>
+      <td class="concord-sec"><strong>§ 59</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-91">paintings</a></td>
+      <td class="concord-sec"><strong>§ 91</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-80">porch</a></td>
+      <td class="concord-sec"><strong>§ 80</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-68">pretentious crap</a></td>
+      <td class="concord-sec"><strong>§ 68</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-18">rebellion</a></td>
+      <td class="concord-sec"><strong>§ 18</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-20">rebirth</a></td>
+      <td class="concord-sec"><strong>§ 20</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-44">revolutions</a></td>
+      <td class="concord-sec"><strong>§ 44</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-41">risk</a></td>
+      <td class="concord-sec"><strong>§ 41</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-39">Saint Gloria</a></td>
+      <td class="concord-sec"><strong>§ 39</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-79">Scrapbook</a></td>
+      <td class="concord-sec"><strong>§ 79</strong></td>
+      <td class="concord-type">Ending</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-83">simpler time</a></td>
+      <td class="concord-sec"><strong>§ 83</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-19">sins</a></td>
+      <td class="concord-sec"><strong>§ 19</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-93">sketch</a></td>
+      <td class="concord-sec"><strong>§ 93</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-89">sketch2</a></td>
+      <td class="concord-sec"><strong>§ 89</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-90">sketch3</a></td>
+      <td class="concord-sec"><strong>§ 90</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-37">so many</a></td>
+      <td class="concord-sec"><strong>§ 37</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-85">song</a></td>
+      <td class="concord-sec"><strong>§ 85</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-52">spring</a></td>
+      <td class="concord-sec"><strong>§ 52</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-54">Staunton</a></td>
+      <td class="concord-sec"><strong>§ 54</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-71">take the wheel</a></td>
+      <td class="concord-sec"><strong>§ 71</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-99">texts</a></td>
+      <td class="concord-sec"><strong>§ 99</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-16">thank you</a></td>
+      <td class="concord-sec"><strong>§ 16</strong></td>
+      <td class="concord-type">Ending</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-92">the ending</a></td>
+      <td class="concord-sec"><strong>§ 92</strong></td>
+      <td class="concord-type">Ending</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-70">the rain</a></td>
+      <td class="concord-sec"><strong>§ 70</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-57">the rust goddess</a></td>
+      <td class="concord-sec"><strong>§ 57</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-24">the spider</a></td>
+      <td class="concord-sec"><strong>§ 24</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-63">the things I hear</a></td>
+      <td class="concord-sec"><strong>§ 63</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-97">this party</a></td>
+      <td class="concord-sec"><strong>§ 97</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-8">threshold</a></td>
+      <td class="concord-sec"><strong>§ 8</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-96">timelines</a></td>
+      <td class="concord-sec"><strong>§ 96</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-51">toby</a></td>
+      <td class="concord-sec"><strong>§ 51</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">✦ Plate</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-11">untitled</a></td>
+      <td class="concord-sec"><strong>§ 11</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-88">uplifted</a></td>
+      <td class="concord-sec"><strong>§ 88</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-100">wanderlust</a></td>
+      <td class="concord-sec"><strong>§ 100</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-33">war</a></td>
+      <td class="concord-sec"><strong>§ 33</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-76">warmth</a></td>
+      <td class="concord-sec"><strong>§ 76</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-12">when I say your name</a></td>
+      <td class="concord-sec"><strong>§ 12</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-26">wings</a></td>
+      <td class="concord-sec"><strong>§ 26</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+
+    <tr>
+      <td class="concord-title"><a href="#section-82">writtenpainting</a></td>
+      <td class="concord-sec"><strong>§ 82</strong></td>
+      <td class="concord-type">Branch</td>
+      <td class="concord-art">—</td>
+    </tr>
+  
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 10. CLOSING COLOPHON -->
+  <div class="colophon-page" style="text-align: center; justify-content: center;">
+    <p style="font-family: 'Courier Prime', monospace; font-size: 11pt; letter-spacing: 0.2em; text-transform: uppercase;">
+      TIMETRAVEL IS COMPLETE.<br>
+      ✦ &nbsp; ✦ &nbsp; ✦<br>
+      SALEM, OREGON • 2026
+    </p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,1670 @@
+{
+  "unlinkedPassages": [
+    {
+      "name": "Intro",
+      "poemText": "1st, (text-style:&quot;blurrier&quot;)[grow wings.]\r\n---\r\n2nd,\r\n---\r\n3rd,\r\n---\r\n4th,\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---",
+      "body": "#Time travel is simple.\r\n\r\n=|=\r\n1st, (text-style:&quot;blurrier&quot;)[grow wings.]\r\n---\r\n2nd,\r\n---\r\n3rd,\r\n---\r\n4th,\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n=|=\r\n[ADD+ GLITCH ART]\r\n|==|\r\n\r\n\r\n\r\n\r\nWhat do you want to see?\r\nSomeone I could love [[Turn to page -&gt;crossroads]]\r\nThe beauty I could make [[Turn to page -&gt;the rust goddess]]\r\nThings that never were [[Turn to page -&gt;let me tell you]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;crossroads",
+          "prompt": "Turn to page -&gt;crossroads",
+          "target": "Turn to page -&gt;crossroads"
+        },
+        {
+          "raw": "Turn to page -&gt;the rust goddess",
+          "prompt": "Turn to page -&gt;the rust goddess",
+          "target": "Turn to page -&gt;the rust goddess"
+        },
+        {
+          "raw": "Turn to page -&gt;let me tell you",
+          "prompt": "Turn to page -&gt;let me tell you",
+          "target": "Turn to page -&gt;let me tell you"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "my bones",
+      "poemText": "",
+      "body": "#my bones\r\n\r\n\r\nthe rust Goddess\r\nreaches in\r\nand takes hold\r\nof my bones\r\nrotting out and\r\nreaching in to\r\ntake hold \r\nof my soul\r\nwith bones of \r\niron quickly\r\ngone\r\nI fall before\r\nher now\r\n\r\nFall before her now [[Turn to page -&gt;timelines]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;timelines",
+          "prompt": "Turn to page -&gt;timelines",
+          "target": "Turn to page -&gt;timelines"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "the rust goddess",
+      "poemText": "",
+      "body": "#the rust goddess\r\n\r\nsmoking bummed cigarettes\r\nquoting other people’s songs\r\nand when I think quiet enough\r\nmy own words may come to mind\r\nSo cross your legs, clasp your hands\r\nlet your thoughts wander till\r\nthe pencil starts to move\r\ninvent small gods, build bodies of rust\r\nand pledge unceasing devotion\r\nmove the pencil, write those words\r\nthe rust goddess\r\nhas much to say\r\nso heed well her words of wisdom \r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nWrite [[Turn to page-&gt;a question]] \r\nInvent a god\r\nIgnore her [[Turn to page-&gt;this party]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;a question",
+          "prompt": "Turn to page-&gt;a question",
+          "target": "Turn to page-&gt;a question"
+        },
+        {
+          "raw": "Turn to page-&gt;this party",
+          "prompt": "Turn to page-&gt;this party",
+          "target": "Turn to page-&gt;this party"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "this party",
+      "poemText": "",
+      "body": "#this party\r\n\r\n\r\nI was at this party\r\nwith all my friends\r\nall standing round\r\nand all I remember\r\nis starting to drown\r\nI don&#39;t mean to perseverate\r\nupon this fancy\r\ndinner plate\r\nbut I just wanted to\r\nsmash it to dust\r\nlight a fire,\r\nwatch it rust\r\nbecause the rust Goddess\r\nis always standing round\r\nwaiting to tear it all\r\nto the ground\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nSmash it [[Turn to page-&gt;Nibiru]] \r\nDon&#39;t smash it [[Turn to page-&gt;spring]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;Nibiru",
+          "prompt": "Turn to page-&gt;Nibiru",
+          "target": "Turn to page-&gt;Nibiru"
+        },
+        {
+          "raw": "Turn to page-&gt;spring",
+          "prompt": "Turn to page-&gt;spring",
+          "target": "Turn to page-&gt;spring"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "Saint Gloria",
+      "poemText": "",
+      "body": "Saint Gloria\r\nSaint Gloria\r\ntattered wires\r\nwrap around\r\nSaint Gloria\r\nSaint Gloria\r\nthe rust Goddess\r\nhas her now\r\na poor sad\r\nforsaken soul\r\nSaint Gloria\r\nSaint Gloria\r\nthe rust Goddess always\r\ntakes her toll",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "timelines",
+      "poemText": "#timelines\r\n\r\nthe timelines are\r\nslipping\r\nsliding through my\r\nbrain\r\ncriss cross\r\nslip dash\r\ntossing into\r\nanother plane",
+      "body": "=|=\r\n#timelines\r\n\r\nthe timelines are\r\nslipping\r\nsliding through my\r\nbrain\r\ncriss cross\r\nslip dash\r\ntossing into\r\nanother plane\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/awoecgp1rs8twyu/PXL_20220215_040013515.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nBlink [[Turn to page-&gt;Intro]] \r\nBreathe [[Turn to page-&gt;memory]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;Intro",
+          "prompt": "Turn to page-&gt;Intro",
+          "target": "Turn to page-&gt;Intro"
+        },
+        {
+          "raw": "Turn to page-&gt;memory",
+          "prompt": "Turn to page-&gt;memory",
+          "target": "Turn to page-&gt;memory"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/awoecgp1rs8twyu/PXL_20220215_040013515.jpg",
+          "filename": "PXL_20220215_040013515.jpg"
+        }
+      ]
+    },
+    {
+      "name": "a question",
+      "poemText": "",
+      "body": "#a question\r\n\r\n\r\nif I loaned you my hands\r\ncould you write\r\nlike me?\r\nOr do you need my\r\neyes and heart\r\ntoo?\r\nHow much is muscle\r\nmemory\r\nplace the (\r\nisn&#39;t it\r\npeculiar?)\r\nhidden in the\r\nrafters\r\nthe rust\r\nGoddess\r\never after\r\n\r\nYes [[Turn to page-&gt;blank poem]]\r\nNo [[Turn to page-&gt;mistress]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;blank poem",
+          "prompt": "Turn to page-&gt;blank poem",
+          "target": "Turn to page-&gt;blank poem"
+        },
+        {
+          "raw": "Turn to page-&gt;mistress",
+          "prompt": "Turn to page-&gt;mistress",
+          "target": "Turn to page-&gt;mistress"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "CJ",
+      "poemText": "",
+      "body": "#CJ\r\n\r\n\r\nseven ball\r\ncorner pocket\r\nline the shots\r\nand then we\r\ndrop &#39;em\r\nwhiskey fire burns\r\nin my gut\r\nmaking me feel lucky\r\nan irresponsible\r\namount of money\r\non black\r\nit&#39;s in the rust\r\nGoddess&#39; hands\r\nnow\r\nspin it\r\n\r\nGo to a party [[Turn to page-&gt;this party]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;this party",
+          "prompt": "Turn to page-&gt;this party",
+          "target": "Turn to page-&gt;this party"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "nephilim",
+      "poemText": "#nephilim\r\n\r\n\r\nangel wings\r\nand mortal sins\r\nthese two things\r\nshould not fit \r\ntogether\r\nmy broken heart\r\nand your wild locks\r\nthese two things\r\nshould not fit\r\ntogether\r\nbut they do\r\nthey do\r\nthey gloriously\r\ndo\r\nwith broken bones\r\nand graffitied \r\nstones\r\nthey do\r\nthey do\r\nthey gloriously\r\ndo",
+      "body": "=|=\r\n#nephilim\r\n\r\n\r\nangel wings\r\nand mortal sins\r\nthese two things\r\nshould not fit \r\ntogether\r\nmy broken heart\r\nand your wild locks\r\nthese two things\r\nshould not fit\r\ntogether\r\nbut they do\r\nthey do\r\nthey gloriously\r\ndo\r\nwith broken bones\r\nand graffitied \r\nstones\r\nthey do\r\nthey do\r\nthey gloriously\r\ndo\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/c8vhpwytzghv46q/PXL_20220215_043013098.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\nA bottle of risperidone is in your hand.\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nTake your meds [[Turn to page-&gt;new eyes]] \r\nMaybe later [[Turn to page-&gt;cinnamon]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;new eyes",
+          "prompt": "Turn to page-&gt;new eyes",
+          "target": "Turn to page-&gt;new eyes"
+        },
+        {
+          "raw": "Turn to page-&gt;cinnamon",
+          "prompt": "Turn to page-&gt;cinnamon",
+          "target": "Turn to page-&gt;cinnamon"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/c8vhpwytzghv46q/PXL_20220215_043013098.jpg",
+          "filename": "PXL_20220215_043013098.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Nibiru",
+      "poemText": "",
+      "body": "#Nibiru\r\n\r\n\r\nthe rust Goddess\r\nspoke to me\r\ntelling me secrets\r\nunknown\r\nand fair Nibiru\r\nis rising in the\r\neast again\r\nand what am I to do\r\nwith this?\r\nI don&#39;t even have a\r\nrocket\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "my eyes",
+      "poemText": "#my eyes\r\n\r\n\r\nswirl and twirl\r\nwhine and dine\r\nhold on tight\r\nthe time is nigh\r\nwith angels in my\r\nmind\r\nit&#39;s hard to see\r\nyou clearly dear\r\nwith so many angels in my\r\neyes\r\nthere&#39;s barely room\r\nfor you there",
+      "body": "=|=\r\n#my eyes\r\n\r\n\r\nswirl and twirl\r\nwhine and dine\r\nhold on tight\r\nthe time is nigh\r\nwith angels in my\r\nmind\r\nit&#39;s hard to see\r\nyou clearly dear\r\nwith so many angels in my\r\neyes\r\nthere&#39;s barely room\r\nfor you there\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/g2lymujya2gd8ho/PXL_20220215_050458866.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nBlink [[Turn to page-&gt;angels in my brain]]\r\nFly Higher [[Turn to page-&gt;rebellion]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;angels in my brain",
+          "prompt": "Turn to page-&gt;angels in my brain",
+          "target": "Turn to page-&gt;angels in my brain"
+        },
+        {
+          "raw": "Turn to page-&gt;rebellion",
+          "prompt": "Turn to page-&gt;rebellion",
+          "target": "Turn to page-&gt;rebellion"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/g2lymujya2gd8ho/PXL_20220215_050458866.jpg",
+          "filename": "PXL_20220215_050458866.jpg"
+        }
+      ]
+    },
+    {
+      "name": "battery",
+      "poemText": "",
+      "body": "battery\r\n\r\n\r\nwhen the angel&#39;s war\r\nlulls\r\nthey fill me with\r\ntheir excess souls\r\n(like a battery)\r\npushing me to the brink of\r\nbursting\r\nand I can hear \r\nthose souls\r\nscreaming inside \r\nme until\r\nthe angels drain \r\nme and  leave \r\nme broken",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "angels in my brain",
+      "poemText": "#angels in my brain\r\n\r\n\r\ncheribum and seraphim\r\nare floating in my brain\r\nfighting against the\r\nmedicine\r\nthat makes me less insane\r\nan endless war that\r\nshakes and stirs\r\nthe pictures in my head\r\nwith wing and sword\r\nthey swoop and swirl\r\nand fill my heart with dread",
+      "body": "=|=\r\n#angels in my brain\r\n\r\n\r\ncheribum and seraphim\r\nare floating in my brain\r\nfighting against the\r\nmedicine\r\nthat makes me less insane\r\nan endless war that\r\nshakes and stirs\r\nthe pictures in my head\r\nwith wing and sword\r\nthey swoop and swirl\r\nand fill my heart with dread\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/s9abk7wg2inh997/PXL_20220215_050729829.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\nA bottle of risperidone is in your hand.\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nTake your meds [[Turn to page-&gt;1311]] \r\nMaybe later [[Turn to page-&gt;nephilim]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;1311",
+          "prompt": "Turn to page-&gt;1311",
+          "target": "Turn to page-&gt;1311"
+        },
+        {
+          "raw": "Turn to page-&gt;nephilim",
+          "prompt": "Turn to page-&gt;nephilim",
+          "target": "Turn to page-&gt;nephilim"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/s9abk7wg2inh997/PXL_20220215_050729829.jpg",
+          "filename": "PXL_20220215_050729829.jpg"
+        }
+      ]
+    },
+    {
+      "name": "simpler time",
+      "poemText": "",
+      "body": "simpler time\r\n\r\n\r\nI&#39;m yearning for\r\na simpler time\r\nwhen we were\r\nangels in the sky\r\nno broken bones\r\nno bloodshot eyes\r\njust simple wings\r\nand clouds so high\r\nso take my hand\r\nand take a step\r\nlet&#39;s try and fly\r\nwith what wings\r\nwe have left\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nDrive [[Turn to page -&gt;take the wheel]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;take the wheel",
+          "prompt": "Turn to page -&gt;take the wheel",
+          "target": "Turn to page -&gt;take the wheel"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "aliens",
+      "poemText": "#aliens\r\n\r\n\r\nI got too high\r\nto write a poem\r\nso I&#39;ll just \r\nfucking tell you\r\nangels are amongst\r\nus\r\nand the government \r\nknows\r\nand aliens were\r\nhere a long time\r\nago",
+      "body": "=|=\r\n#aliens\r\n\r\n\r\nI got too high\r\nto write a poem\r\nso I&#39;ll just \r\nfucking tell you\r\nangels are amongst\r\nus\r\nand the government \r\nknows\r\nand aliens were\r\nhere a long time\r\nago \r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/htt50sguyr40i9m/PXL_20220214_043308752.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nHave a smoke[[Turn to page-&gt;my bones]] \r\nHave a drink[[Turn to page-&gt;drinking]]\r\nGo for a drive [[Turn to page -&gt;take the wheel]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;my bones",
+          "prompt": "Turn to page-&gt;my bones",
+          "target": "Turn to page-&gt;my bones"
+        },
+        {
+          "raw": "Turn to page-&gt;drinking",
+          "prompt": "Turn to page-&gt;drinking",
+          "target": "Turn to page-&gt;drinking"
+        },
+        {
+          "raw": "Turn to page -&gt;take the wheel",
+          "prompt": "Turn to page -&gt;take the wheel",
+          "target": "Turn to page -&gt;take the wheel"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/htt50sguyr40i9m/PXL_20220214_043308752.jpg",
+          "filename": "PXL_20220214_043308752.jpg"
+        }
+      ]
+    },
+    {
+      "name": "war",
+      "poemText": "",
+      "body": "war\r\n\r\n\r\nI fall asleep and\r\nI am at war\r\nflashes of angels\r\nin shining armor\r\nspark across my\r\noptic nerves\r\ntheir spears\r\ngrinding into my\r\nmemories\r\nuntil there is a victor\r\nuntil there is a \r\nsilence\r\nuntil we hang there\r\ncrucified\r\nour weapons laid\r\nbeside us",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "the things I hear",
+      "poemText": "the things I hear\r\n\r\n\r\nfly into the stratosphere\r\ntalk about the things I hear\r\nall the angels there\r\nscreaming in my head\r\npushing my hands to deeds\r\nuntoward\r\nwield my weapon like a sword\r\nI just want to clarify\r\nthey need my blood to sanctify\r\nthe land to have their war\r\nsmashing shields,\r\nclashing swords\r\nthey sent their snake\r\nto poison my veins\r\nswitch the dreams inside\r\nmy head\r\nuntil I draw my blood\r\nfor them\r\nand spill it\r\non the ground",
+      "body": "=|=\r\nthe things I hear\r\n\r\n\r\nfly into the stratosphere\r\ntalk about the things I hear\r\nall the angels there\r\nscreaming in my head\r\npushing my hands to deeds\r\nuntoward\r\nwield my weapon like a sword\r\nI just want to clarify\r\nthey need my blood to sanctify\r\nthe land to have their war\r\nsmashing shields,\r\nclashing swords\r\nthey sent their snake\r\nto poison my veins\r\nswitch the dreams inside\r\nmy head\r\nuntil I draw my blood\r\nfor them\r\nand spill it\r\non the ground\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/ck9vqpwefjqv4o6/PXL_20220215_045911737.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\nA syringe of risperidone is in your hand.\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nTake your meds [[Turn to page-&gt;new eyes]] \r\nMaybe later [[Turn to page-&gt;war]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;new eyes",
+          "prompt": "Turn to page-&gt;new eyes",
+          "target": "Turn to page-&gt;new eyes"
+        },
+        {
+          "raw": "Turn to page-&gt;war",
+          "prompt": "Turn to page-&gt;war",
+          "target": "Turn to page-&gt;war"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/ck9vqpwefjqv4o6/PXL_20220215_045911737.jpg",
+          "filename": "PXL_20220215_045911737.jpg"
+        }
+      ]
+    },
+    {
+      "name": "cinnamon",
+      "poemText": "cinnamon\r\n\r\n\r\nthe smell of\r\ncinnamon\r\nlazy on the\r\nwind\r\nthe angels\r\ncoming down\r\nto torment me again\r\nwith wicked wing\r\nand sickly\r\nsword\r\nthey chase across\r\nthe land\r\nthey hope to \r\ncatch\r\nand snap and\r\nbite\r\nto take their power\r\nfrom my\r\nhand",
+      "body": "=|=\r\ncinnamon\r\n\r\n\r\nthe smell of\r\ncinnamon\r\nlazy on the\r\nwind\r\nthe angels\r\ncoming down\r\nto torment me again\r\nwith wicked wing\r\nand sickly\r\nsword\r\nthey chase across\r\nthe land\r\nthey hope to \r\ncatch\r\nand snap and\r\nbite\r\nto take their power\r\nfrom my\r\nhand\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/5ox9j24a15bgroh/PXL_20220214_043236281.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\nA bottle of risperidone is in your hand.\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nTake your meds [[Turn to page-&gt;new eyes]] \r\nMaybe later [[Turn to page-&gt;the things I hear]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;new eyes",
+          "prompt": "Turn to page-&gt;new eyes",
+          "target": "Turn to page-&gt;new eyes"
+        },
+        {
+          "raw": "Turn to page-&gt;the things I hear",
+          "prompt": "Turn to page-&gt;the things I hear",
+          "target": "Turn to page-&gt;the things I hear"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/5ox9j24a15bgroh/PXL_20220214_043236281.jpg",
+          "filename": "PXL_20220214_043236281.jpg"
+        }
+      ]
+    },
+    {
+      "name": "a stone from home",
+      "poemText": "",
+      "body": "a stone from home\r\n\r\n\r\na stone from\r\nhome\r\nspinning down\r\ninto the well\r\nskittering and bouncing\r\npast my head\r\nwhere I&#39;m hunkered\r\ndown and\r\nhiding out\r\nI just can&#39;t let\r\nthem find me",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "God",
+      "poemText": "",
+      "body": "God\r\n\r\n\r\nand if God is\r\ndead,\r\nwho do I pray to\r\nabout my\r\nsurvivor&#39;s guilt?",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "let me tell you",
+      "poemText": "#let me tell you\r\n\r\n\r\nthere have been spiders\r\nclimbing up my arms\r\nand I feel the web\r\nsettle over me\r\nbut this web is not\r\nspider silk\r\nit&#39;s carefully cultivated\r\nchosen and bolstered\r\nlies for the government\r\nand I think you should \r\nknow\r\nwe faked the moon \r\nlanding\r\nand that&#39;s just \r\nthe start",
+      "body": "=|=\r\n#let me tell you\r\n\r\n\r\nthere have been spiders\r\nclimbing up my arms\r\nand I feel the web\r\nsettle over me\r\nbut this web is not\r\nspider silk\r\nit&#39;s carefully cultivated\r\nchosen and bolstered\r\nlies for the government\r\nand I think you should \r\nknow\r\nwe faked the moon \r\nlanding\r\nand that&#39;s just \r\nthe start\r\n\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/3uovuw5bnq1mnj6/PXL_20220212_041333419.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n(text-style:&quot;subscript&quot;)[&quot;untethered from our destinies&quot;]\r\n|==|\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nFollow the lies [[Turn to page -&gt; Humira]]\r\nInvestigate the moon landing [[Turn to page -&gt;Nibiru]]\r\nThink about spiders [[Turn to page -&gt;the spider]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt; Humira",
+          "prompt": "Turn to page -&gt; Humira",
+          "target": "Turn to page -&gt; Humira"
+        },
+        {
+          "raw": "Turn to page -&gt;Nibiru",
+          "prompt": "Turn to page -&gt;Nibiru",
+          "target": "Turn to page -&gt;Nibiru"
+        },
+        {
+          "raw": "Turn to page -&gt;the spider",
+          "prompt": "Turn to page -&gt;the spider",
+          "target": "Turn to page -&gt;the spider"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/3uovuw5bnq1mnj6/PXL_20220212_041333419.jpg",
+          "filename": "PXL_20220212_041333419.jpg"
+        }
+      ]
+    },
+    {
+      "name": "crossroads",
+      "poemText": "",
+      "body": "#crossroads\r\n\r\n\r\nand every time we came to a\r\ncrossroad\r\nI prayed for a red light\r\nbut your damndable luck\r\nkept the greens\r\nacoming\r\nall I wanted was to steal \r\na single\r\nkiss\r\na prize on par with\r\nPrometheus\r\nand his burning flame\r\nrising higher in my heart \r\nthan those reds that\r\nnever came\r\nto steal a thought from Hailey\r\n(for sometimes I feel like Sam)\r\nyou&#39;ve got me wound tighter\r\nthan my left-wrist twist\r\nso baby\r\npull off the road\r\nand let me\r\nget that \r\nkiss\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\n\r\nPull off the road [[Turn to page -&gt;uplifted]] \r\nTake their hand [[Turn to page -&gt;hands]] \r\nKeep going [[Turn to page -&gt;my path]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;uplifted",
+          "prompt": "Turn to page -&gt;uplifted",
+          "target": "Turn to page -&gt;uplifted"
+        },
+        {
+          "raw": "Turn to page -&gt;hands",
+          "prompt": "Turn to page -&gt;hands",
+          "target": "Turn to page -&gt;hands"
+        },
+        {
+          "raw": "Turn to page -&gt;my path",
+          "prompt": "Turn to page -&gt;my path",
+          "target": "Turn to page -&gt;my path"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "memory",
+      "poemText": "",
+      "body": "#memory\r\n\r\n\r\npuffing cigarettes\r\nand talking about\r\nthe good old days\r\n(before all the cigarettes)\r\nmeandering through memories\r\nand classic tales\r\nwhen it strikes\r\nme\r\nthe times\r\nare far from over\r\n(really just begun)\r\nso let’s puff another\r\ncigarette and talk\r\nabout that \r\n\r\n[3rd line]\r\n\r\nBlink [[Turn to page-&gt;Intro]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;Intro",
+          "prompt": "Turn to page-&gt;Intro",
+          "target": "Turn to page-&gt;Intro"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "my path",
+      "poemText": "#my path\r\n\r\n\r\nthe clouds\r\n(Like the picassoed\r\nfists of god)\r\nguide my path into the sky\r\nI follow",
+      "body": "=|=\r\n#my path\r\n\r\n\r\nthe clouds\r\n(Like the picassoed\r\nfists of god)\r\nguide my path into the sky\r\nI follow\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/01xhnx34e2csx5p/PXL_20220215_053533509.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\nDrive [[Turn the page -&gt;70mph]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn the page -&gt;70mph",
+          "prompt": "Turn the page -&gt;70mph",
+          "target": "Turn the page -&gt;70mph"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/01xhnx34e2csx5p/PXL_20220215_053533509.jpg",
+          "filename": "PXL_20220215_053533509.jpg"
+        }
+      ]
+    },
+    {
+      "name": "threshold",
+      "poemText": "",
+      "body": "#threshold\r\n\r\n\r\nthe faintest smile\r\nplays across\r\nthose pressed-thin lips\r\nIt’s almost as if I can see\r\na thought dance\r\nacross your\r\nsynapses\r\nand for a moment\r\n(just a moment)\r\nyour eyes shine\r\nso bright I\r\nhalf expect to\r\nsee your imaginings\r\nprojected onto\r\nthe canvas laid\r\nbefore you\r\nI can always\r\nfeel my breath catch\r\nthen,\r\nstanding at the threshold\r\nof your world",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "uplifted",
+      "poemText": "",
+      "body": "#uplifted\r\n\r\nand in the park\r\nthat day\r\nnothing captivated us\r\nno steel structures\r\ndrew our eyes\r\nand so\r\n(in defiance of\r\nour upbringing)\r\nwe grew wings\r\nand left the\r\ngrass behind\r\n\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nFly [[Turn to page -&gt;my eyes]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;my eyes",
+          "prompt": "Turn to page -&gt;my eyes",
+          "target": "Turn to page -&gt;my eyes"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "him",
+      "poemText": "#him\r\n\r\n\r\na grin among the\r\nbranches\r\na smile white with\r\nbone and\r\ndrip drip drip\r\ndripping\r\nsaliva (sour)\r\nand Abigail screams\r\nand we all\r\nhear her\r\nand no one\r\nhears her\r\nand if she\r\n(SHE)\r\nis scared\r\nso should we all\r\nbe\r\nbut that grin\r\na smile white with\r\nbone and\r\nattached a face\r\npale (but not as\r\npale as Abigail’s)\r\nhis suit unrumpled\r\nand he sits\r\nand the words\r\nbegin",
+      "body": "=|=\r\n#him\r\n\r\n\r\na grin among the\r\nbranches\r\na smile white with\r\nbone and\r\ndrip drip drip\r\ndripping\r\nsaliva (sour)\r\nand Abigail screams\r\nand we all\r\nhear her\r\nand no one\r\nhears her\r\nand if she\r\n(SHE)\r\nis scared\r\nso should we all\r\nbe\r\nbut that grin\r\na smile white with\r\nbone and\r\nattached a face\r\npale (but not as\r\npale as Abigail’s)\r\nhis suit unrumpled\r\nand he sits\r\nand the words\r\nbegin \r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/8d6q8w53aew7g7g/PXL_20220212_035504630.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nListen [[Turn to page -&gt;blink]] \r\nDon&#39;t listen [[Turn to page -&gt;simpler time]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;blink",
+          "prompt": "Turn to page -&gt;blink",
+          "target": "Turn to page -&gt;blink"
+        },
+        {
+          "raw": "Turn to page -&gt;simpler time",
+          "prompt": "Turn to page -&gt;simpler time",
+          "target": "Turn to page -&gt;simpler time"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/8d6q8w53aew7g7g/PXL_20220212_035504630.jpg",
+          "filename": "PXL_20220212_035504630.jpg"
+        }
+      ]
+    },
+    {
+      "name": "hands",
+      "poemText": "",
+      "body": "#hands\r\n\r\nthere are songs\r\nto sing about\r\nthe way\r\nwe hold our hands\r\ntogether\r\nintertwined as if\r\nto find\r\nsome token of\r\nremembrance\r\na simple touch\r\nthat holds\r\nback much\r\nof what could\r\nhunt and\r\nfind us\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nKeep holding [[Turn to page -&gt;delight]] \r\nPull of the road [[Turn to page -&gt;uplifted]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;delight",
+          "prompt": "Turn to page -&gt;delight",
+          "target": "Turn to page -&gt;delight"
+        },
+        {
+          "raw": "Turn to page -&gt;uplifted",
+          "prompt": "Turn to page -&gt;uplifted",
+          "target": "Turn to page -&gt;uplifted"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "wanderlust",
+      "poemText": "#wanderlust\r\n\r\nwanderlust\r\n(if lust had\r\nsurvived the\r\nmedia smear campaign)\r\nwander-longings\r\na wander-yearn\r\npuling your heart strings\r\nacross this land\r\nup into the mount-\r\nains\r\nleaving trace amounts\r\nof rubber\r\nforming a crisscrossing\r\nmap\r\nveins across\r\nthe earth",
+      "body": "=|=\r\n#wanderlust\r\n\r\nwanderlust\r\n(if lust had\r\nsurvived the\r\nmedia smear campaign)\r\nwander-longings\r\na wander-yearn\r\npuling your heart strings\r\nacross this land\r\nup into the mount-\r\nains\r\nleaving trace amounts\r\nof rubber\r\nforming a crisscrossing\r\nmap\r\nveins across\r\nthe earth \r\n=|=\r\nBut he was watching wasn&#39;t he?\r\nWe don&#39;t have to talk about him.\r\nWe can talk about better days.\r\n|==|\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nTalk about him [[Turn to page -&gt;him]] \r\nTalk about better days [[Turn to page -&gt;simpler time]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;him",
+          "prompt": "Turn to page -&gt;him",
+          "target": "Turn to page -&gt;him"
+        },
+        {
+          "raw": "Turn to page -&gt;simpler time",
+          "prompt": "Turn to page -&gt;simpler time",
+          "target": "Turn to page -&gt;simpler time"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "Scrapbook",
+      "poemText": "Column 1",
+      "body": "=|=\r\nColumn 1\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/htt50sguyr40i9m/PXL_20220214_043308752.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\n\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]",
+      "outgoingLinks": [],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/htt50sguyr40i9m/PXL_20220214_043308752.jpg",
+          "filename": "PXL_20220214_043308752.jpg"
+        }
+      ]
+    },
+    {
+      "name": " Humira",
+      "poemText": "#Humira\r\n\r\n\r\nI keep seeing\r\ncommercials for\r\nHumira\r\nbut I know that\r\nit&#39;s a government\r\nplot a ploy a plan\r\na tricky trap to\r\nreduce our\r\nresistance to tuberculosis\r\nbut I don&#39;t know\r\nhow to stop this \r\ngovernment plot\r\nthis ploy this plan\r\nso I&#39;ll just lay\r\nhere and \r\ndrown this\r\nmigraine",
+      "body": "=|=\r\n#Humira\r\n\r\n\r\nI keep seeing\r\ncommercials for\r\nHumira\r\nbut I know that\r\nit&#39;s a government\r\nplot a ploy a plan\r\na tricky trap to\r\nreduce our\r\nresistance to tuberculosis\r\nbut I don&#39;t know\r\nhow to stop this \r\ngovernment plot\r\nthis ploy this plan\r\nso I&#39;ll just lay\r\nhere and \r\ndrown this\r\nmigraine\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/xhqwhh4ja52z9gm/PXL_20220215_053755121.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nHave a smoke[[Turn to page-&gt;porch]] \r\nHave a drink[[Turn to page-&gt;dad&#39;s beer]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;porch",
+          "prompt": "Turn to page-&gt;porch",
+          "target": "Turn to page-&gt;porch"
+        },
+        {
+          "raw": "Turn to page-&gt;dad&#39;s beer",
+          "prompt": "Turn to page-&gt;dad&#39;s beer",
+          "target": "Turn to page-&gt;dad&#39;s beer"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/xhqwhh4ja52z9gm/PXL_20220215_053755121.jpg",
+          "filename": "PXL_20220215_053755121.jpg"
+        }
+      ]
+    },
+    {
+      "name": "spring",
+      "poemText": "",
+      "body": "#spring\r\n\r\n\r\nits almost funny\r\nhow little\r\nit takes\r\nthese days\r\na flash of light\r\nin a darkened\r\npane and the\r\nwheels begin\r\nto spin\r\nthose familiar suspicious\r\ngears click\r\nclick clicking\r\ninto place\r\nbut how is\r\none supposed\r\nto feel in the\r\nspring\r\nonce the flowers bloom\r\nevery hill\r\nis a grassy knoll \r\n\r\nGet a drink [[Turn to page-&gt;CJ]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;CJ",
+          "prompt": "Turn to page-&gt;CJ",
+          "target": "Turn to page-&gt;CJ"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "blank poem",
+      "poemText": "",
+      "body": "prove it...\r\n\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n---\r\n\r\n\r\nWhen you finish [[Turn to page-&gt;meet someone]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;meet someone",
+          "prompt": "Turn to page-&gt;meet someone",
+          "target": "Turn to page-&gt;meet someone"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "Abigail",
+      "poemText": "",
+      "body": "#Abigail\r\n\r\nsnark mouthed,\r\nsnaggle toothed\r\na crooked smile\r\nin a dress a\r\nsize too big\r\nwe danced until\r\nwe forgot that\r\nwe didn’t know how\r\nto dance \r\n\r\nKeep learning [[Turn to page-&gt;wanderlust]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;wanderlust",
+          "prompt": "Turn to page-&gt;wanderlust",
+          "target": "Turn to page-&gt;wanderlust"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "meet someone",
+      "poemText": "That was beautiful. \r\nI want you to meet someone.\r\nShe&#39;s very important to me.\r\nShe isn&#39;t real.\r\nShe has saved my life so many times.",
+      "body": "=|=\r\nThat was beautiful. \r\nI want you to meet someone.\r\nShe&#39;s very important to me.\r\nShe isn&#39;t real.\r\nShe has saved my life so many times.\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/kx1snlen1z3r3e0/PXL_20220212_063741920.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n[[Turn to page-&gt;Abigail]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;Abigail",
+          "prompt": "Turn to page-&gt;Abigail",
+          "target": "Turn to page-&gt;Abigail"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/kx1snlen1z3r3e0/PXL_20220212_063741920.jpg",
+          "filename": "PXL_20220212_063741920.jpg"
+        }
+      ]
+    },
+    {
+      "name": "blink",
+      "poemText": "#blink\r\n\r\n\r\nblink and you’’ll\r\nmiss it\r\nbut never have I\r\nseen them blink\r\nunwavering\r\nthey watch\r\ntelling him\r\ntelling all they\r\nsee\r\nand they see most\r\neverything\r\nbut they don’t see\r\nher\r\nprecious Abigail\r\nalways in her Sunday\r\nbest\r\n“dress for everyday\r\nas if it’s your last”\r\na sigh\r\n“between the jello shots\r\nand the Ambien\r\nwho can really say?”\r\nborn (like the rest of\r\nus) veiled\r\nto the world\r\nkilled in the haze of\r\nsomeone else’s\r\nself-medication\r\nyet here\r\nshe stands\r\nhunted\r\nterrified\r\nunafraid",
+      "body": "=|=\r\n#blink\r\n\r\n\r\nblink and you’’ll\r\nmiss it\r\nbut never have I\r\nseen them blink\r\nunwavering\r\nthey watch\r\ntelling him\r\ntelling all they\r\nsee\r\nand they see most\r\neverything\r\nbut they don’t see\r\nher\r\nprecious Abigail\r\nalways in her Sunday\r\nbest\r\n“dress for everyday\r\nas if it’s your last”\r\na sigh\r\n“between the jello shots\r\nand the Ambien\r\nwho can really say?”\r\nborn (like the rest of\r\nus) veiled\r\nto the world\r\nkilled in the haze of\r\nsomeone else’s\r\nself-medication\r\nyet here\r\nshe stands\r\nhunted\r\nterrified\r\nunafraid\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/oyhq2q1an2zlaqm/IMG_20220214_231011.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nBlink [[Turn to page -&gt;timelines]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;timelines",
+          "prompt": "Turn to page -&gt;timelines",
+          "target": "Turn to page -&gt;timelines"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/oyhq2q1an2zlaqm/IMG_20220214_231011.jpg",
+          "filename": "IMG_20220214_231011.jpg"
+        }
+      ]
+    },
+    {
+      "name": "dad&#39;s beer",
+      "poemText": "",
+      "body": "#dad&#39;s beer\r\n\r\n\r\nand Dad’s beer sat warm in\r\nmy stomach\r\nas I pondered slipping clutches\r\nand failing transmissions\r\nflying through the night\r\ngrinding gears\r\nup the mountain\r\nstarry nights\r\nabove me\r\nstarry nights\r\nabove you\r\nand your car\r\nand here I am wishing\r\non Dad’s warm beer in\r\nmy stomach\r\nthat your slipping clutch\r\nand failing transmission\r\nget you\r\nhome safe \r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nHave a smoke[[Turn to page-&gt;porch]] \r\nHave a drink[[Turn to page-&gt;drinking]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;porch",
+          "prompt": "Turn to page-&gt;porch",
+          "target": "Turn to page-&gt;porch"
+        },
+        {
+          "raw": "Turn to page-&gt;drinking",
+          "prompt": "Turn to page-&gt;drinking",
+          "target": "Turn to page-&gt;drinking"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "70mph",
+      "poemText": "",
+      "body": "#70mph\r\n\r\n\r\nsitting and watching\r\nthe mile markers\r\nflit away\r\none eye to the sky\r\nas the clouds lazily\r\nleapfrog each other\r\nand I can’t help\r\nbut smile to\r\nthink you may be\r\ndoing the same,\r\nsitting and watching \r\nthe mile markers\r\nflit away \r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nFaster [[Turn to page-&gt;car crashes]]\r\nSlower [[Turn to page-&gt;the rain]]\r\nStop [[Turn to page-&gt;Staunton]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;car crashes",
+          "prompt": "Turn to page-&gt;car crashes",
+          "target": "Turn to page-&gt;car crashes"
+        },
+        {
+          "raw": "Turn to page-&gt;the rain",
+          "prompt": "Turn to page-&gt;the rain",
+          "target": "Turn to page-&gt;the rain"
+        },
+        {
+          "raw": "Turn to page-&gt;Staunton",
+          "prompt": "Turn to page-&gt;Staunton",
+          "target": "Turn to page-&gt;Staunton"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "the spider",
+      "poemText": "",
+      "body": "#the spider\r\n\r\n\r\na spider’s leg\r\n  is hovering\r\nover my right\r\n  arm again\r\nit weaves and\r\n  bobs\r\nin time to my\r\n  nervous energy\r\nit fades away\r\n  when I settle\r\n  down\r\nit’s not scary\r\n (I come to realize)\r\n  just strange\r\n  is this\r\n  life\r\n  now? \r\n  \r\n  Blink [[Turn to page -&gt;let me tell you]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;let me tell you",
+          "prompt": "Turn to page -&gt;let me tell you",
+          "target": "Turn to page -&gt;let me tell you"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "mistress",
+      "poemText": "",
+      "body": "mistress\r\n#\r\n\r\nAnd in times of greatest need\r\nI always turn to\r\npoetry\r\nShe&#39;s a mistress unlike any other\r\nwho never screens her calls\r\nshe whispers silent nothings\r\nand moans her Verse into\r\nmy ear\r\nspeaking of any taboo I\r\nwish to hear\t\r\nOur relationship is one of\r\ndebauchery ripe\r\nwith holding of hands\r\nand tender moments\r\nbut fear not\r\ndear reader\r\nwe are not without\r\nour violent unions\r\nand frigid silences\r\nbut as of yet they’ve only\r\nled to a closer tie\r\nand though shes a fictitious\r\npersonification\r\nI still love her\r\nsmile",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "drinking",
+      "poemText": "",
+      "body": "#drinking\r\n\r\n\r\nI&#39;ve been drinking \r\nmore than I&#39;ve\r\nbeen writing\r\nand smoking more\r\nthan I drink\r\nand nothing seems\r\nquite so right\r\nas hiding from\r\nthe wind\r\nI hear their \r\nvoices softly\r\nwhipping\r\nround my\r\nskull\r\nmumbles, cries, screams,\r\nand moans\r\nbegin to take\r\na toll\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nHave a smoke[[Turn to page-&gt;aliens]] \r\nHave a drink[[Turn to page-&gt;my bones]]\r\nGo for a drive [[Turn to page -&gt;take the wheel]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;aliens",
+          "prompt": "Turn to page-&gt;aliens",
+          "target": "Turn to page-&gt;aliens"
+        },
+        {
+          "raw": "Turn to page-&gt;my bones",
+          "prompt": "Turn to page-&gt;my bones",
+          "target": "Turn to page-&gt;my bones"
+        },
+        {
+          "raw": "Turn to page -&gt;take the wheel",
+          "prompt": "Turn to page -&gt;take the wheel",
+          "target": "Turn to page -&gt;take the wheel"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "porch",
+      "poemText": "#porch\r\n\r\n\r\nsitting on my porch\r\nwith a spliff in\r\none hand and a\r\npen\r\nin the other\r\n(I’ve never been a\r\nleft-handed smoker;\r\ntonight I’ll make an\r\nexception)\r\nthe day’s storm clouds\r\nlazily cover the\r\nstars\r\nand someone is\r\nsetting off\r\nfireworks\r\nin august\r\nIt’s\r\na good night",
+      "body": "=|=\r\n#porch\r\n\r\n\r\nsitting on my porch\r\nwith a spliff in\r\none hand and a\r\npen\r\nin the other\r\n(I’ve never been a\r\nleft-handed smoker;\r\ntonight I’ll make an\r\nexception)\r\nthe day’s storm clouds\r\nlazily cover the\r\nstars\r\nand someone is\r\nsetting off\r\nfireworks\r\nin august\r\nIt’s\r\na good night\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/4xklfjpem5bnaiq/PXL_20220214_042741699.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nHave a smoke[[Turn to page-&gt;aliens]] \r\nHave a drink[[Turn to page-&gt;dad&#39;s beer]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;aliens",
+          "prompt": "Turn to page-&gt;aliens",
+          "target": "Turn to page-&gt;aliens"
+        },
+        {
+          "raw": "Turn to page-&gt;dad&#39;s beer",
+          "prompt": "Turn to page-&gt;dad&#39;s beer",
+          "target": "Turn to page-&gt;dad&#39;s beer"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/4xklfjpem5bnaiq/PXL_20220214_042741699.jpg",
+          "filename": "PXL_20220214_042741699.jpg"
+        }
+      ]
+    },
+    {
+      "name": "take the wheel",
+      "poemText": "",
+      "body": "#take the wheel\r\n\r\n\r\ntoss the keys and\r\nshine the headlights\r\nWho has the wheel now?\r\nhow loud is their voice?\r\na simple monotone?\r\ncounting\r\none\r\n1(oneoneoneone)\r\n2358\r\nkeeping time to the heart(head)\r\nholding it all in\r\ntoss the keys and\r\nshine the headlights\r\nnew fingers on\r\nthe wheel\r\nand with trembling\r\nhands she lights\r\na cigarette\r\nI have to kill myself\r\nslowly,\r\nto feel I’m really\r\nalive\r\nKeys?\r\ntossed.\r\nHeadlights?\r\nshone.\r\nthe new one\r\nthe voice from\r\noutside\r\nhands grip the\r\nwheel\r\ntighter\r\nfaster\r\nI’m done \r\n\r\n\r\n(text-style:&quot;bold&quot;)[Where do you sit?]\r\nDriver seat [[Turn to page-&gt;my path]]\r\nShotgun [[Turn to page-&gt;changeling]]\r\nIn the back [[Turn to page-&gt;wings]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;my path",
+          "prompt": "Turn to page-&gt;my path",
+          "target": "Turn to page-&gt;my path"
+        },
+        {
+          "raw": "Turn to page-&gt;changeling",
+          "prompt": "Turn to page-&gt;changeling",
+          "target": "Turn to page-&gt;changeling"
+        },
+        {
+          "raw": "Turn to page-&gt;wings",
+          "prompt": "Turn to page-&gt;wings",
+          "target": "Turn to page-&gt;wings"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "delight",
+      "poemText": "",
+      "body": "#delight\r\n\r\n\r\nhappily holding\r\nand smile filled\r\nfolding\r\nof simple, miraculous\r\nhands\r\nspirit filling songing\r\nand lip quivering\r\nlonging\r\nred stars collapsing and\r\nsynapses snapping\r\nwith open mouth gasping\r\nas the universe slowly\r\nexplodes\r\nand still the\r\nhappily holding\r\nand smile filled\r\nfolding\r\nof simple, miraculous\r\nhands \r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nKeep holding [[Turn to page -&gt;hands]] \r\nPull of the road [[Turn to page -&gt;uplifted]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;hands",
+          "prompt": "Turn to page -&gt;hands",
+          "target": "Turn to page -&gt;hands"
+        },
+        {
+          "raw": "Turn to page -&gt;uplifted",
+          "prompt": "Turn to page -&gt;uplifted",
+          "target": "Turn to page -&gt;uplifted"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "crackpop",
+      "poemText": "",
+      "body": "#crackpop\r\n\r\n\r\nscintillating\r\nsin spat\r\nsoar into\r\nthe ethersphere\r\nbroken bones\r\nspore soaked\r\nsighs run red-\r\nhot rivulets\r\nthrough my mind\r\nsearing shut\r\nmy synapses\r\nburning off my\r\nsenses\r\nA medic’s\r\nscalpel hastily\r\nheated on a\r\nlighter\r\nthe same lighter\r\nthat ignited\r\nthe cigarette\r\nthat\r\ndrew the\r\nsniper’s fire\r\na gunshot\r\n(impersonal)\r\nthrough the left\r\neye. ripping\r\ntearing\r\nrespectfully\r\ncauterizing\r\nerasing the exit\r\nwound to keep\r\nthe roundthought\r\ninside",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "the rain",
+      "poemText": "",
+      "body": "#the rain\r\n\r\n\r\nthe rain is\r\n dripping on my\r\nwindshield\r\n    and my tattered\r\nwiper blades\r\n  valiantly wipe them\r\naway\r\n  clearing the glass -\r\n  and my mind\r\n  the world goes from\r\n     a blur\r\n  to crystal clear in a\r\n   single slash\r\n only to fall prey to\r\n   the liquid occlusion\r\n   once again\r\n  yet through this\r\n    futility my\r\n    wipers soldier on\r\n   nobly slicing out\r\n   glimpses of the\r\n   blacktop ahead",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "bees are dying at an alarming rate",
+      "poemText": "",
+      "body": "#bees are dying at an alarming rate\r\n\r\n\r\nbees are dying\r\nat an alarming\r\nrate and\r\nI’m looking in a\r\nmirror wondering\r\nif my hair looks\r\nbetter parted to the\r\nleft and\r\nbees are dying\r\nat an alarming\r\nrate and\r\nI don’t know\r\nfor sure but\r\nmaybe a thousand\r\ndied while I\r\nwas adjusting my\r\nshirt\r\nand if all the\r\nbees die something\r\nsciencey and\r\nbad happens and\r\nI’m standing\r\nhere trying to\r\ndecide if I’m\r\ntoo old for a\r\nlipring and\r\nbees are dying\r\nat an alarming\r\nrate",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "boys of Tinder",
+      "poemText": "",
+      "body": "#boys of Tinder\r\n\r\n\r\nposing there with abs\r\nglistening\r\nan empty profile\r\nbeckoning\r\nand is that all you have to\r\noffer\r\na six pack and\r\ndesigner jeans\r\npushing me to swipe\r\nand fuck\r\ntap and be fucked\r\nso tell me something\r\nmore than those abs and\r\npricey clothes\r\nbecause I’m cute enough\r\nand I’m charming enough\r\nto be with that soulless\r\nSixpack\r\nfor the 5 dollar cover\r\nat any bar\r\nso tell me something\r\n(anything)\r\nor I will keep swiping\r\nyou over my left\r\nshoulder\r\nlike salt in the Devil’s\r\neye\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nWrite a poem [[Turn to page-&gt;sketch]] \r\nSwipe right [[Turn to page-&gt;date night]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;sketch",
+          "prompt": "Turn to page-&gt;sketch",
+          "target": "Turn to page-&gt;sketch"
+        },
+        {
+          "raw": "Turn to page-&gt;date night",
+          "prompt": "Turn to page-&gt;date night",
+          "target": "Turn to page-&gt;date night"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "date night",
+      "poemText": "",
+      "body": "#date night\r\n\r\n\r\nthis seems like\r\nthe kind of\r\nday\r\nwhere I just\r\nneed to focus on\r\nmyself\r\njust get some ice\r\ncream\r\nmaybe go to the park\r\njust have a date\r\nwith myself\r\nand if I play my cards\r\nright\r\nmaybe I’ll\r\nget lucky \r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nPlay your cards right [[Turn to page-&gt;a love poem to myself]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;a love poem to myself",
+          "prompt": "Turn to page-&gt;a love poem to myself",
+          "target": "Turn to page-&gt;a love poem to myself"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "a love poem to myself",
+      "poemText": "",
+      "body": "#a love poem to myself\r\n\r\n\r\nI&#39;m the kind\r\nof asshole\r\nwho never\r\nreturns calls\r\nyou&#39;re the kind of\r\nasshole\r\nthat dubs earth-\r\nshattering screams\r\ninto my relaxation\r\nrecords\r\nyour overachieving\r\nass\r\nis the yang to\r\nmy apathy\r\nwe make a\r\ndangerous\r\ncouple",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "leftwrist twist",
+      "poemText": "",
+      "body": "#leftwrist twist\r\n\r\n\r\nHave you ever\r\nbeen in love?\r\na smirk a smile\r\na half-assed grin\r\ndo fictitious personifications\r\ncount?\r\nif so then\r\ntwice but\r\nreally just with\r\none\r\nHailey (the one\r\nwith ribbon at her\r\nwrist)\r\nand her quieter self \r\nher of smiles and secrets\r\nand silent places\r\n(the one with\r\nribbon at her wrist)",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "connected",
+      "poemText": "",
+      "body": "#connected\r\n\r\n\r\nmy fingertips graze\r\nthat place on\r\nthe back of\r\nyour neck\r\njust barely\r\nabove the spot\r\nwhere thoughts\r\ncollect and\r\ncoalesce\r\nand translate\r\ninto movement\r\nand actions\r\nand my fingertips\r\nare my conduit\r\nsharing those signals\r\nmoving in time\r\nto your\r\nsynaptic\r\nfeedback",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "risk",
+      "poemText": "",
+      "body": "#risk\r\n\r\n\r\nbatwings and butterflies\r\nbusted jaws and hurricanes\r\nfind your place among\r\nthe lost, broken, and sedated\r\nnothing ventured, nothing gained\r\nnothing lost\r\nnothing sane\r\ntorn apart\r\nleft behind\r\nthe lady in the pink dress\r\nsays it all\r\nwith her silent words\r\nand cricket song\r\nmoving slowly\r\nthrough space and time\r\nnot sure how I got here",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "an unabridged admission",
+      "poemText": "#an unabridged admission\r\n\r\n“haven’t you seen\r\nenough to know\r\nthat nothing will change?\r\ngrass will grow\r\nmatadors will be gored\r\nand shoes will walk\r\n    (onward)\r\nnothing changes except\r\nthe lividity of our hopes\r\n  (darkening each time",
+      "body": "=|=\r\n#an unabridged admission\r\n\r\n“haven’t you seen\r\nenough to know\r\nthat nothing will change?\r\ngrass will grow\r\nmatadors will be gored\r\nand shoes will walk\r\n    (onward)\r\nnothing changes except\r\nthe lividity of our hopes\r\n  (darkening each time\r\n=|=\r\n#of transient guilt\r\n\r\n\r\nwe blink)\r\nand dreams that\r\nswell to fill out\r\nbursting seams\r\nand with open\r\nmouths we stare\r\ninto the sky\r\ngrasping at\r\nabsolution”\r\n|==|\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nWrite a poem [[Turn to page-&gt;writtenpainting]]\r\nPaint [[Turn to page-&gt;paintings]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;writtenpainting",
+          "prompt": "Turn to page-&gt;writtenpainting",
+          "target": "Turn to page-&gt;writtenpainting"
+        },
+        {
+          "raw": "Turn to page-&gt;paintings",
+          "prompt": "Turn to page-&gt;paintings",
+          "target": "Turn to page-&gt;paintings"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "changeling",
+      "poemText": "",
+      "body": "#changeling\r\n\r\n\r\nthe wind blows loose\r\nthe multicolor\r\nscintillation\r\nof your hair\r\nand with the\r\nshimmer shammer\r\nfae wings are\r\ndrawn to mind\r\nand with those\r\nwings fluttering against\r\nmy parietal lobe\r\nit’s barely a step\r\nto smell the fair\r\nfolks blood within\r\nyour veins\r\ntheir laugh upon\r\nyour lips\r\ntheir adventure in\r\nyour heart",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "deal",
+      "poemText": "",
+      "body": "#deal\r\n\r\n\r\nI don’t have\r\nmuch\r\nbut it’s all yours to take\r\nand I’ll strike\r\na deal\r\nwith you\r\nif it flutters your heart\r\njust right\r\nI’ll wrap you in poetry\r\nwriting all the words\r\nthat come to mind\r\nI’ll hand my soul to\r\nyou scribbled on\r\npaper\r\nwith a liberal dash\r\nof imagery and\r\nrhyme\r\nand the modest\r\nprice I ask\r\nis just a tender\r\ntouching of the\r\nlips",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "warmth",
+      "poemText": "",
+      "body": "#warmth\r\n\r\n\r\nthe warmth always\r\nastonishes me\r\nhow can being\r\nso warm\r\nbe so comforting\r\nshaking off that\r\nfamiliar cold\r\nthe shawl woven\r\n(and worn with\r\npride)\r\nof tangled half-\r\ntruths(\r\nhalf-smiles)\r\nhalf-lies\r\nand yet the warmth\r\nalways astonishes\r\nme\r\nalways draws me\r\ncloser",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "rebellion",
+      "poemText": "",
+      "body": "#rebellion\r\n\r\n\r\nswirl and spin\r\nand turn and\r\nSing\r\nSkyward bound\r\nand determined as\r\nHell. even\r\nthe father can’t\r\nstop us now\r\nwith 9 feet\r\nof ribbon we\r\nbind our\r\nleft arms to\r\nthe sky\r\nreunited",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "Staunton",
+      "poemText": "",
+      "body": "#Staunton\r\n\r\n\r\nI’ve spent\r\n hours on\r\nthis unfeeling\r\n highway\r\n  because lately\r\nwhen I close my\r\n eyes all\r\n    I\r\n see is your\r\n  smile\r\nand I want\r\n  (if only for a\r\n  moment)\r\nfor reality\r\nto mirror\r\nmy daydreams",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "new eyes",
+      "poemText": "#new eyes\r\n\r\n\r\nthe privilege of the\r\nemotionally dead\r\nis to never be unsure\r\nno broken fragments\r\nof hidden doubt\r\nflorescent fields\r\nof greenred grass\r\na picture book haunting\r\nof a dirty\r\nback alley\r\nso give me Tricyclics\r\ngive me SSRIs\r\nhand me more truth\r\nor at least more trusting eyes",
+      "body": "=|=\r\n#new eyes\r\n\r\n\r\nthe privilege of the\r\nemotionally dead\r\nis to never be unsure\r\nno broken fragments\r\nof hidden doubt\r\nflorescent fields\r\nof greenred grass\r\na picture book haunting\r\nof a dirty\r\nback alley\r\nso give me Tricyclics\r\ngive me SSRIs\r\nhand me more truth\r\nor at least more trusting eyes\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/qvrw400hhp1lo7k/PXL_20220215_053156730.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|.\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nSleep [[Turn to page-&gt;1311]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;1311",
+          "prompt": "Turn to page-&gt;1311",
+          "target": "Turn to page-&gt;1311"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/qvrw400hhp1lo7k/PXL_20220215_053156730.jpg",
+          "filename": "PXL_20220215_053156730.jpg"
+        }
+      ]
+    },
+    {
+      "name": "car crashes",
+      "poemText": "#car crashes\r\n\r\n\r\nand car crashes\r\nare such a\r\nromantic endeavor\r\nthe total\r\nand complete\r\ngiving of yourself\r\nto the road\r\nA love affair\r\nwith\r\nthe yellow line\r\nA crimson splash\r\nspeckles the road\r\nin the vague outline\r\nof a heart\r\nAnd we quietly\r\nate our chinese\r\nfood\r\ncontemplating the\r\nsudden outpouring of\r\ninsight\r\nand the shy one\r\n(with a grin)\r\nbegan to speak\r\nemboldened by\r\nthe chance to\r\nbe the clever one\r\nWhat about the other car?\r\nAnd the response came\r\nIt’s a polyamorous relationship",
+      "body": "=|=\r\n#car crashes\r\n\r\n\r\nand car crashes\r\nare such a\r\nromantic endeavor\r\nthe total\r\nand complete\r\ngiving of yourself\r\nto the road\r\nA love affair\r\nwith\r\nthe yellow line\r\nA crimson splash\r\nspeckles the road\r\nin the vague outline\r\nof a heart\r\nAnd we quietly\r\nate our chinese\r\nfood\r\ncontemplating the\r\nsudden outpouring of\r\ninsight\r\nand the shy one\r\n(with a grin)\r\nbegan to speak\r\nemboldened by\r\nthe chance to\r\nbe the clever one\r\nWhat about the other car?\r\nAnd the response came\r\nIt’s a polyamorous relationship\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/hds4p19qc6a7d7k/PXL_20220215_040523016.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|\r\n\r\nFall in love [[Turn to page -&gt;timelines]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page -&gt;timelines",
+          "prompt": "Turn to page -&gt;timelines",
+          "target": "Turn to page -&gt;timelines"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/hds4p19qc6a7d7k/PXL_20220215_040523016.jpg",
+          "filename": "PXL_20220215_040523016.jpg"
+        }
+      ]
+    },
+    {
+      "name": "1311",
+      "poemText": "",
+      "body": "#1311\r\n\r\n\r\n700mg to level me out\r\n10 to take it easy\r\na brisk walk\r\nthrough fluorescent halls\r\nwhile I’m working\r\ntowards a moment of clarity\r\nanother milligram to stop the\r\nshakes\r\nand hold my pencil steady\r\n600 more to stop the pain\r\nand keep my thinking level\r\n1311 swirls inside my head\r\nas I work on\r\nmy epiphany\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nWrite a poem [[Turn to page-&gt;sketch]] \r\nSwipe through dating aps [[Turn to page-&gt;boys of Tinder]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;sketch",
+          "prompt": "Turn to page-&gt;sketch",
+          "target": "Turn to page-&gt;sketch"
+        },
+        {
+          "raw": "Turn to page-&gt;boys of Tinder",
+          "prompt": "Turn to page-&gt;boys of Tinder",
+          "target": "Turn to page-&gt;boys of Tinder"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "sketch",
+      "poemText": "",
+      "body": "&lt;img src=&quot;https://www.dropbox.com/s/9eoil97ihsmkfhp/PXL_20220212_210139131.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nTry to write a poem [[Turn to page-&gt;sketch2]]\r\nPaint [[Turn to page-&gt;paintings]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;sketch2",
+          "prompt": "Turn to page-&gt;sketch2",
+          "target": "Turn to page-&gt;sketch2"
+        },
+        {
+          "raw": "Turn to page-&gt;paintings",
+          "prompt": "Turn to page-&gt;paintings",
+          "target": "Turn to page-&gt;paintings"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/9eoil97ihsmkfhp/PXL_20220212_210139131.jpg",
+          "filename": "PXL_20220212_210139131.jpg"
+        }
+      ]
+    },
+    {
+      "name": "sketch2",
+      "poemText": "",
+      "body": "&lt;img src=&quot;https://www.dropbox.com/s/hctrnjaamx3s64h/PXL_20220212_210243574.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nTry to write a poem [[Turn to page-&gt;sketch3]]\r\nPaint [[Turn to page-&gt;paintings]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;sketch3",
+          "prompt": "Turn to page-&gt;sketch3",
+          "target": "Turn to page-&gt;sketch3"
+        },
+        {
+          "raw": "Turn to page-&gt;paintings",
+          "prompt": "Turn to page-&gt;paintings",
+          "target": "Turn to page-&gt;paintings"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/hctrnjaamx3s64h/PXL_20220212_210243574.jpg",
+          "filename": "PXL_20220212_210243574.jpg"
+        }
+      ]
+    },
+    {
+      "name": "sketch3",
+      "poemText": "",
+      "body": "&lt;img src=&quot;https://www.dropbox.com/s/jazib2vlaw60oz8/PXL_20220211_203408826.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n\r\n(text-style:&quot;bold&quot;)[What do you do?]\r\nTry desperatly to write a poem [[Turn to page-&gt;an unabridged admission]]\r\nPaint [[Turn to page-&gt;paintings]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;an unabridged admission",
+          "prompt": "Turn to page-&gt;an unabridged admission",
+          "target": "Turn to page-&gt;an unabridged admission"
+        },
+        {
+          "raw": "Turn to page-&gt;paintings",
+          "prompt": "Turn to page-&gt;paintings",
+          "target": "Turn to page-&gt;paintings"
+        }
+      ],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/jazib2vlaw60oz8/PXL_20220211_203408826.jpg",
+          "filename": "PXL_20220211_203408826.jpg"
+        }
+      ]
+    },
+    {
+      "name": "paintings",
+      "poemText": "&lt;img src=&quot;https://www.dropbox.com/s/l4qzmr6hgoijp16/PXL_20220201_022655045.jpg?raw=1&quot; width=&quot;500&quot;&gt;",
+      "body": "=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/l4qzmr6hgoijp16/PXL_20220201_022655045.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n=|=\r\n&lt;img src=&quot;https://www.dropbox.com/s/hwaq72w01rbcb8p/PXL_20220202_045851771.jpg?raw=1&quot; width=&quot;500&quot;&gt;\r\n|==|",
+      "outgoingLinks": [],
+      "images": [
+        {
+          "cleanUrl": "https://www.dropbox.com/s/l4qzmr6hgoijp16/PXL_20220201_022655045.jpg",
+          "filename": "PXL_20220201_022655045.jpg"
+        },
+        {
+          "cleanUrl": "https://www.dropbox.com/s/hwaq72w01rbcb8p/PXL_20220202_045851771.jpg",
+          "filename": "PXL_20220202_045851771.jpg"
+        }
+      ]
+    },
+    {
+      "name": "writtenpainting",
+      "poemText": "",
+      "body": "(text-style:&quot;bold&quot;)[What do you do?]\r\nPaint [[Turn to page-&gt;paintings]]",
+      "outgoingLinks": [
+        {
+          "raw": "Turn to page-&gt;paintings",
+          "prompt": "Turn to page-&gt;paintings",
+          "target": "Turn to page-&gt;paintings"
+        }
+      ],
+      "images": []
+    },
+    {
+      "name": "wings",
+      "poemText": "",
+      "body": "#wings\r\n\r\n\r\nthere are so many\r\nbirds overhead\r\nand I can feel my\r\nevery cell\r\ncall out to them\r\nbreaking off and\r\ntaking flight\r\npulled skyward by\r\nthe sound of their \r\nwings",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "dance",
+      "poemText": "",
+      "body": "#dance\r\n\r\n\r\nswirling and spinning\r\ntwirling about\r\nyour legs\r\nwhite with\r\nblue dots\r\n(of the polka\r\ntype)\r\npicking up the\r\nmoon&#39;s beams\r\nrunning away from\r\nthe ball,\r\nfinally finding reason\r\nto dance\r\n“and darling\r\nthat dress suits\r\nthe night so\r\nwell”",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "how many fingers am I holding up?",
+      "poemText": "",
+      "body": "#how many fingers am I holding up?\r\n\r\n\r\nhow many fingers am\r\nI holding\r\nup\r\nfour? seven?\r\nnine?\r\nAnd why can I\r\nnot tell?\r\nI try to count\r\n-burning up-\r\nwhile my fingers\r\nfade in and out\r\nhow many fingers am\r\nI holding\r\nup?\r\nyour guess is \r\nas good as\r\nmine",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "hair",
+      "poemText": "",
+      "body": "#hair\r\n\r\n\r\nyour hair\r\nbetween my\r\nfingers\r\nswirling, moving\r\nthe tips then linger\r\nholding on\r\n(and holding out)\r\nlost in you\r\nand lost\r\nwithout",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "cherub",
+      "poemText": "",
+      "body": "#cherub\r\n\r\n\r\nfox quick\r\nand sickly\r\nblack\r\nwrithing across\r\nthe forest floor\r\nthey slink and\r\nslither\r\ncoil and\r\nhide\r\nand I,\r\nwatching a cherub\r\nmaking its way\r\nacross\r\nmy woods",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "oranges",
+      "poemText": "",
+      "body": "#oranges\r\n\r\n\r\nI&#39;ve always \r\nloved the\r\nsmell of oranges\r\n(especially on\r\nyour skin)\r\nthey have a zest\r\nthat screams\r\nadventure\r\n(nights flying down\r\nthe highway)\r\nand that hint of acid\r\n(“Get a job, you&#39;re \r\nnot man enough\r\nfor me”)\r\nbut mostly they\r\nremind me of\r\n(you)",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "when I say your name",
+      "poemText": "",
+      "body": "#when I say your name\r\n\r\n\r\nand when I say your\r\nname\r\n(your starlight\r\nin my\r\neyes)\r\nI hear the sound\r\nof horses,\r\nof chaos,\r\nand a fire\r\nbut the taste on\r\nmy lips \r\nis of \r\ncider and \r\nsunfire",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "back on the road",
+      "poemText": "",
+      "body": "#back on the road\r\n\r\n\r\nI&#39;m back on\r\nthe road\r\nafter what feels\r\nlike forever\r\nmy hands still itch\r\nto throw myself\r\nonto the wrong side\r\nthe road keeps\r\ncoming\r\nflying past\r\nand all I can do\r\nis sigh",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "1001",
+      "poemText": "",
+      "body": "#1001\r\n\r\n\r\none zero zero\r\none\r\neveryone the rain\r\n1001everyonetherain\r\none\r\nzero zero\r\none\r\neveryone the rain",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "lines",
+      "poemText": "",
+      "body": "#lines\r\n\r\n\r\nthe lines in my eyes\r\nare getting wider\r\nall the time\r\nit&#39;s getting harder now\r\nto peer past them\r\nand see the stars\r\nso clear",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "homeward bound",
+      "poemText": "",
+      "body": "#homeward bound\r\n\r\n\r\nhomeward bound\r\nbut already\r\nthere\r\nI&#39;m holding out\r\n(onto a prayer)\r\nand do you\r\nremember that day\r\nsix years from \r\nnow?\r\nWell hold my drink\r\nI think I&#39;m \r\ndone",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "burn out",
+      "poemText": "",
+      "body": "#burn out\r\n\r\n\r\nI&#39;m a burn out\r\nhopped up\r\nand let down\r\nhoping I&#39;m not\r\ntoo washed up\r\nto get the \r\nmessage out\r\njust praying\r\nthat my words\r\nwill touch something\r\ninside you\r\nhelp and guide\r\nyou to a\r\nhappier home",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "the ending",
+      "poemText": "",
+      "body": "#the ending\r\n\r\n\r\nI kindly suggest you\r\nback off\r\ncause I&#39;m about\r\nto pop off\r\nshow up\r\nthrow down\r\nnow you know\r\nwhats going round\r\nit&#39;s just that sometimes\r\nI feel so empty\r\nbut even then it \r\nthrills me\r\nfeeling all the things\r\nthat could kill me\r\nI&#39;m left just thinking\r\nbout the ending\r\nand wondering where\r\nthat release could\r\nsend me",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "allensville",
+      "poemText": "",
+      "body": "#allensville\r\n\r\n\r\nthere&#39;s a place\r\nwhere the river\r\nmeets the road\r\nand underneath\r\nlies my heart\r\nbeat, beat,\r\nbeating\r\nlike graffiti\r\ndone in oil\r\npastel\r\njust out of reach\r\nof the stormy\r\nseason\r\nthe water always\r\nlapping, try\r\ntrying\r\nbut never quite\r\nreaching high\r\nenough",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "thank you",
+      "poemText": "",
+      "body": "#thank you\r\n\r\n\r\nwhen I coughed\r\nmy lung fell out\r\nand spilled\r\ninto my coffee\r\nand you handed\r\nme a napkin\r\nto blot the\r\nwetness from my\r\ntie\r\nthank you for that",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "so many",
+      "poemText": "",
+      "body": "#so many\r\n\r\n\r\n“you&#39;ve got so many\r\nhands”\r\nI remember telling\r\nher\r\nas we lay by the\r\nstream\r\nans she smiled and \r\nhushed me\r\n“you&#39;ve got so many\r\nfears”\r\nand then we both \r\ngrew some\r\nmore",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "full of eyes",
+      "poemText": "",
+      "body": "#full of eyes\r\n\r\n\r\nI&#39;m full of eyes\r\nand my eyes\r\nare full\r\nof something \r\nnot much unlike \r\ntears\r\nand the moon is\r\nfull of secret bases\r\nhidden in their\r\nsecret places\r\nand I don&#39;t know\r\nwhat to do",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "chemicals",
+      "poemText": "",
+      "body": "#chemicals\r\n\r\n\r\nfire hearted\r\nbut yellow-bellied\r\nnever stable\r\nalways steadied\r\ndroves of chemicals\r\nswirl in my brain\r\nslowing images of\r\nsinister pain\r\nholding back that\r\nunquenchable longing\r\nstopping the stars\r\nof their strange, sad songing\r\ndroves of chemicals\r\nswim in my brain",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "bullets",
+      "poemText": "",
+      "body": "#bullets\r\n\r\nNights like this make\r\n   me want to\r\n  drive a heated\r\n knife deep inside my\r\nhead\r\n  I just want the red-\r\n   hot tip to touch the firing\r\n pins of the bullets that line\r\n my brain\r\n    because lately my\r\n  mind has felt like bullets\r\n   every thought so sudden\r\n      jarring\r\n       scary\r\n        loud\r\nIjust(dangerous)needthesebulletsoutofme\r\n  and I don&#39;t know\r\n   if a firing pin is even\r\n      how bullets work\r\n  I don&#39;t understand bullets\r\n     I don&#39;t understand much",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "song",
+      "poemText": "",
+      "body": "#song\r\n\r\n“Its like shes dancing…\r\ncan’t she ever just\r\nwalk?”\r\nand dance\r\nwe(she)\r\ndid\r\nbouncing past\r\ntoiletries\r\nwaltzing amongst\r\nthe produce\r\nand from the\r\nfront pocket\r\nblasted the\r\nsong\r\nthat song\r\nthat holds\r\nit all together\r\nthe one that\r\nHailey\r\nsings/sang/sung",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "morning",
+      "poemText": "",
+      "body": "#morning\r\n\r\nI just don’t think you\r\nunderstand just\r\nhow great the\r\nmorning is\r\nI get up early\r\nrivaling even the\r\nbirds\r\nand celebrate\r\nmaking it through\r\nanother night\r\nwith a victory\r\ncigarette\r\nfor my hero\r\n(pointed tipward to the sky)\r\nIt&#39;s not every night\r\nyou fall from grace\r\nso I think that\r\nis ample cause\r\nfor celebration",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "toby",
+      "poemText": "",
+      "body": "#toby\r\n\r\nthe dog’s gentle snores\r\nprod at me\r\nyelling that I shouldn’t\r\nbe here\r\nthere is a bed waiting\r\njust a few footfalls\r\naway a bed\r\nthat offers warmth\r\nand comfort\r\nand companionship\r\nyet still I sit\r\nlistening to the dog’s\r\ngentle snoring\r\nmy eyes dance\r\nsearching for spies\r\nin a room devoid\r\nof all life\r\nsave myself\r\nand a gently snoring\r\ndog",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "me(bothofus)",
+      "poemText": "",
+      "body": "me(bothofus)\r\n\r\nher eyes\r\n  burning into me\r\nSliding\r\nplease allow us to introduce ourselves\r\nhis name is irony\r\n  and he’s normally in control\r\nand him,\r\n  just ignore him\r\nhe makes the decisions\r\n   at least the ones that really\r\n     matter\r\nlet’s see what we can\r\n   do about\r\nmaking this a little easier\r\n  let me pour you a\r\n    drink",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "sins",
+      "poemText": "",
+      "body": "#sins\r\n\r\nsing and swallow something sold\r\nsound of sorrow\r\nsins unfold\r\npour a drink\r\ndrain another\r\nlies are told\r\nlose a lover\r\nsing and swallow something sold\r\nsound of sorrow\r\nsins unfold\r\ndrain another\r\npour one more\r\ntruth is told\r\nsoul left sore\r\nsing and swallow something sold\r\nsound of silence\r\nsins unfold",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "introspective poetry",
+      "poemText": "",
+      "body": "#introspective poetry\r\n\r\nwriting introspective\r\npoetry can\r\n  be such\r\na drag\r\nso lets focus\r\ninstead on\r\n  bees\r\nthey bumble and\r\ndrift\r\n  spreading life\r\n  and making\r\n  sweets\r\n\r\nyou can thank me\r\n  for this poem\r\n   later",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "lies, alright?",
+      "poemText": "",
+      "body": "#lies, alright?\r\n\r\nsplashing colors\r\nswirling sounds\r\nthe words not spoken\r\nburn in my skull\r\nwhispers\r\n(vile) sinister\r\nwith undulating\r\nill intent\r\nsequestered in my mind\r\na simple song\r\nof glorious suspicions\r\nthe so called antics of\r\na childless child\r\nstormy weather, wind-\r\ntossed bows\r\na fire burning in\r\nthe heart of the\r\ndog\r\n(god) an angry conclusion\r\na far-stretched\r\nnotion\r\nof unquenchable longing\r\nstar-speckled eyes\r\nsear me into\r\nashy nothingness\r\na flurry of sparks\r\nfrom the ancient blacksmith’s\r\nhammer\r\nsend quivers down my\r\nbrain stem\r\na black cat and\r\na bottle of pills\r\nwhat a gut wrenching\r\ninvention\r\nfor one so full of suspicion",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "pretentious crap",
+      "poemText": "",
+      "body": "#pretentious crap\r\n\r\n\r\na cyclonic path of everbuilding doubt\r\na fragile pretense\r\nshattered\r\nby the mind altering\r\nchemicals that\r\nhold me accountable\r\nfor actions I have\r\nyet to conceive\r\ngut-wrenching, bowel-turning, blood-\r\ncurdling\r\nstreams of semi-viscous\r\nsin\r\npour forth from my eyes\r\nand bring life to my \r\nsenses\r\npseudogenesis\r\ntwisted tale of creation\r\nand on the seventh day he\r\nrested\r\nsometimes God gets all the\r\nbreaks",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "revolutions",
+      "poemText": "",
+      "body": "#revolutions\r\n\r\n\r\nforsooth the truth\r\nbehold\r\nuntold\r\nthe needless naught\r\nof which we\r\nwere taught\r\nthe untrue truth\r\nthat binds us\r\nfrom our youth\r\nAnd with that I’m done\r\nwith Mark’s\r\nstyle\r\n(for he kindly stays from mine)\r\nwhat I’m trying to\r\nsay\r\nis keep yourself\r\nfrom other’s words\r\nand find what you must\r\nfind",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "heretic",
+      "poemText": "",
+      "body": "#heretic\r\n\r\neverytime I open my\r\nmouth the\r\nwords\r\nspill onto my paper\r\ndrip drip\r\ndripping\r\ninto your eyes\r\nbut listen not to my\r\nwords\r\nfor I am not a poet\r\nI am a heretic\r\nand these\r\nwords\r\nmy words\r\nwill linger like\r\ncancer\r\nof the soul\r\nmy words\r\nwill decay your\r\nmorals\r\nand cast you out of\r\nthe grace of\r\ngod\r\nfor my\r\npoetry\r\nmy poetry\r\nis blasphemy",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "texts",
+      "poemText": "",
+      "body": "#texts\r\n\r\n\r\nI spend so much\r\ntime rerereading\r\ntexts\r\nmaking sure they\r\ntrigger some\r\nsynaptic crackfiresnap,\r\nsome memory\r\n(no matter how ill-\r\ndefined)\r\nI&#39;m scared you see.\r\nI&#39;ve been losing time\r\n(cracks in the plaster (running counter\r\nto the cracks I&#39;m familiar\r\nwith))\r\nand reading these\r\ntexts\r\nis the only way to know\r\nI haven&#39;t lost time\r\nwith you",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "long nights in a shitty motel",
+      "poemText": "",
+      "body": "#long nights in a shitty motel\r\n\r\n I wrote it on my arm\r\n     last night\r\nif lack of memory\r\n    serves me right\r\nI don’t really remember\r\n  yesterday\r\n  and less still of the\r\nday before\r\n   but I must have\r\nfound something in\r\nthat green haze\r\nfor here the beauty lies\r\nsimple, serene, resounding\r\n  truth\r\nit’s indisputable really\r\n     “I AM I”",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "rebirth",
+      "poemText": "",
+      "body": "rebirth\r\n\r\nthe root of\r\nmetempsychois\r\nis still just\r\npsychosis\r\ncan I have the\r\nmetem-\r\nfree of its dependee?\r\n or is it all\r\njust\r\ncircles?",
+      "outgoingLinks": [],
+      "images": []
+    },
+    {
+      "name": "untitled",
+      "poemText": "",
+      "body": "untitled\r\n\r\nThrashed about\r\nbeaten and broken\r\nunderstood to be\r\nsimply a token\r\nof insecurity\r\nlies\r\nand mistrust\r\nlost in this world of cardboard and plastic\r\nsin finds my soul decayed and placid\r\nwhat truth can be found\r\nfrom an electron-speckled screen\r\nNothing\r\nforever\r\nnever to be seen\r\nlife is a fiction written by fools\r\nfrom inside their safe walls\r\nbuilt with misguided tools\r\nsave me.",
+      "outgoingLinks": [],
+      "images": []
+    }
+  ],
+  "missingTargets": [
+    {
+      "from": "Intro",
+      "prompt": "Turn to page -&gt;crossroads",
+      "target": "Turn to page -&gt;crossroads"
+    },
+    {
+      "from": "Intro",
+      "prompt": "Turn to page -&gt;the rust goddess",
+      "target": "Turn to page -&gt;the rust goddess"
+    },
+    {
+      "from": "Intro",
+      "prompt": "Turn to page -&gt;let me tell you",
+      "target": "Turn to page -&gt;let me tell you"
+    },
+    {
+      "from": "my bones",
+      "prompt": "Turn to page -&gt;timelines",
+      "target": "Turn to page -&gt;timelines"
+    },
+    {
+      "from": "the rust goddess",
+      "prompt": "Turn to page-&gt;a question",
+      "target": "Turn to page-&gt;a question"
+    },
+    {
+      "from": "the rust goddess",
+      "prompt": "Turn to page-&gt;this party",
+      "target": "Turn to page-&gt;this party"
+    },
+    {
+      "from": "this party",
+      "prompt": "Turn to page-&gt;Nibiru",
+      "target": "Turn to page-&gt;Nibiru"
+    },
+    {
+      "from": "this party",
+      "prompt": "Turn to page-&gt;spring",
+      "target": "Turn to page-&gt;spring"
+    },
+    {
+      "from": "timelines",
+      "prompt": "Turn to page-&gt;Intro",
+      "target": "Turn to page-&gt;Intro"
+    },
+    {
+      "from": "timelines",
+      "prompt": "Turn to page-&gt;memory",
+      "target": "Turn to page-&gt;memory"
+    },
+    {
+      "from": "a question",
+      "prompt": "Turn to page-&gt;blank poem",
+      "target": "Turn to page-&gt;blank poem"
+    },
+    {
+      "from": "a question",
+      "prompt": "Turn to page-&gt;mistress",
+      "target": "Turn to page-&gt;mistress"
+    },
+    {
+      "from": "CJ",
+      "prompt": "Turn to page-&gt;this party",
+      "target": "Turn to page-&gt;this party"
+    },
+    {
+      "from": "nephilim",
+      "prompt": "Turn to page-&gt;new eyes",
+      "target": "Turn to page-&gt;new eyes"
+    },
+    {
+      "from": "nephilim",
+      "prompt": "Turn to page-&gt;cinnamon",
+      "target": "Turn to page-&gt;cinnamon"
+    },
+    {
+      "from": "my eyes",
+      "prompt": "Turn to page-&gt;angels in my brain",
+      "target": "Turn to page-&gt;angels in my brain"
+    },
+    {
+      "from": "my eyes",
+      "prompt": "Turn to page-&gt;rebellion",
+      "target": "Turn to page-&gt;rebellion"
+    },
+    {
+      "from": "angels in my brain",
+      "prompt": "Turn to page-&gt;1311",
+      "target": "Turn to page-&gt;1311"
+    },
+    {
+      "from": "angels in my brain",
+      "prompt": "Turn to page-&gt;nephilim",
+      "target": "Turn to page-&gt;nephilim"
+    },
+    {
+      "from": "simpler time",
+      "prompt": "Turn to page -&gt;take the wheel",
+      "target": "Turn to page -&gt;take the wheel"
+    },
+    {
+      "from": "aliens",
+      "prompt": "Turn to page-&gt;my bones",
+      "target": "Turn to page-&gt;my bones"
+    },
+    {
+      "from": "aliens",
+      "prompt": "Turn to page-&gt;drinking",
+      "target": "Turn to page-&gt;drinking"
+    },
+    {
+      "from": "aliens",
+      "prompt": "Turn to page -&gt;take the wheel",
+      "target": "Turn to page -&gt;take the wheel"
+    },
+    {
+      "from": "the things I hear",
+      "prompt": "Turn to page-&gt;new eyes",
+      "target": "Turn to page-&gt;new eyes"
+    },
+    {
+      "from": "the things I hear",
+      "prompt": "Turn to page-&gt;war",
+      "target": "Turn to page-&gt;war"
+    },
+    {
+      "from": "cinnamon",
+      "prompt": "Turn to page-&gt;new eyes",
+      "target": "Turn to page-&gt;new eyes"
+    },
+    {
+      "from": "cinnamon",
+      "prompt": "Turn to page-&gt;the things I hear",
+      "target": "Turn to page-&gt;the things I hear"
+    },
+    {
+      "from": "let me tell you",
+      "prompt": "Turn to page -&gt; Humira",
+      "target": "Turn to page -&gt; Humira"
+    },
+    {
+      "from": "let me tell you",
+      "prompt": "Turn to page -&gt;Nibiru",
+      "target": "Turn to page -&gt;Nibiru"
+    },
+    {
+      "from": "let me tell you",
+      "prompt": "Turn to page -&gt;the spider",
+      "target": "Turn to page -&gt;the spider"
+    },
+    {
+      "from": "crossroads",
+      "prompt": "Turn to page -&gt;uplifted",
+      "target": "Turn to page -&gt;uplifted"
+    },
+    {
+      "from": "crossroads",
+      "prompt": "Turn to page -&gt;hands",
+      "target": "Turn to page -&gt;hands"
+    },
+    {
+      "from": "crossroads",
+      "prompt": "Turn to page -&gt;my path",
+      "target": "Turn to page -&gt;my path"
+    },
+    {
+      "from": "memory",
+      "prompt": "Turn to page-&gt;Intro",
+      "target": "Turn to page-&gt;Intro"
+    },
+    {
+      "from": "my path",
+      "prompt": "Turn the page -&gt;70mph",
+      "target": "Turn the page -&gt;70mph"
+    },
+    {
+      "from": "uplifted",
+      "prompt": "Turn to page -&gt;my eyes",
+      "target": "Turn to page -&gt;my eyes"
+    },
+    {
+      "from": "him",
+      "prompt": "Turn to page -&gt;blink",
+      "target": "Turn to page -&gt;blink"
+    },
+    {
+      "from": "him",
+      "prompt": "Turn to page -&gt;simpler time",
+      "target": "Turn to page -&gt;simpler time"
+    },
+    {
+      "from": "hands",
+      "prompt": "Turn to page -&gt;delight",
+      "target": "Turn to page -&gt;delight"
+    },
+    {
+      "from": "hands",
+      "prompt": "Turn to page -&gt;uplifted",
+      "target": "Turn to page -&gt;uplifted"
+    },
+    {
+      "from": "wanderlust",
+      "prompt": "Turn to page -&gt;him",
+      "target": "Turn to page -&gt;him"
+    },
+    {
+      "from": "wanderlust",
+      "prompt": "Turn to page -&gt;simpler time",
+      "target": "Turn to page -&gt;simpler time"
+    },
+    {
+      "from": " Humira",
+      "prompt": "Turn to page-&gt;porch",
+      "target": "Turn to page-&gt;porch"
+    },
+    {
+      "from": " Humira",
+      "prompt": "Turn to page-&gt;dad&#39;s beer",
+      "target": "Turn to page-&gt;dad&#39;s beer"
+    },
+    {
+      "from": "spring",
+      "prompt": "Turn to page-&gt;CJ",
+      "target": "Turn to page-&gt;CJ"
+    },
+    {
+      "from": "blank poem",
+      "prompt": "Turn to page-&gt;meet someone",
+      "target": "Turn to page-&gt;meet someone"
+    },
+    {
+      "from": "Abigail",
+      "prompt": "Turn to page-&gt;wanderlust",
+      "target": "Turn to page-&gt;wanderlust"
+    },
+    {
+      "from": "meet someone",
+      "prompt": "Turn to page-&gt;Abigail",
+      "target": "Turn to page-&gt;Abigail"
+    },
+    {
+      "from": "blink",
+      "prompt": "Turn to page -&gt;timelines",
+      "target": "Turn to page -&gt;timelines"
+    },
+    {
+      "from": "dad&#39;s beer",
+      "prompt": "Turn to page-&gt;porch",
+      "target": "Turn to page-&gt;porch"
+    },
+    {
+      "from": "dad&#39;s beer",
+      "prompt": "Turn to page-&gt;drinking",
+      "target": "Turn to page-&gt;drinking"
+    },
+    {
+      "from": "70mph",
+      "prompt": "Turn to page-&gt;car crashes",
+      "target": "Turn to page-&gt;car crashes"
+    },
+    {
+      "from": "70mph",
+      "prompt": "Turn to page-&gt;the rain",
+      "target": "Turn to page-&gt;the rain"
+    },
+    {
+      "from": "70mph",
+      "prompt": "Turn to page-&gt;Staunton",
+      "target": "Turn to page-&gt;Staunton"
+    },
+    {
+      "from": "the spider",
+      "prompt": "Turn to page -&gt;let me tell you",
+      "target": "Turn to page -&gt;let me tell you"
+    },
+    {
+      "from": "drinking",
+      "prompt": "Turn to page-&gt;aliens",
+      "target": "Turn to page-&gt;aliens"
+    },
+    {
+      "from": "drinking",
+      "prompt": "Turn to page-&gt;my bones",
+      "target": "Turn to page-&gt;my bones"
+    },
+    {
+      "from": "drinking",
+      "prompt": "Turn to page -&gt;take the wheel",
+      "target": "Turn to page -&gt;take the wheel"
+    },
+    {
+      "from": "porch",
+      "prompt": "Turn to page-&gt;aliens",
+      "target": "Turn to page-&gt;aliens"
+    },
+    {
+      "from": "porch",
+      "prompt": "Turn to page-&gt;dad&#39;s beer",
+      "target": "Turn to page-&gt;dad&#39;s beer"
+    },
+    {
+      "from": "take the wheel",
+      "prompt": "Turn to page-&gt;my path",
+      "target": "Turn to page-&gt;my path"
+    },
+    {
+      "from": "take the wheel",
+      "prompt": "Turn to page-&gt;changeling",
+      "target": "Turn to page-&gt;changeling"
+    },
+    {
+      "from": "take the wheel",
+      "prompt": "Turn to page-&gt;wings",
+      "target": "Turn to page-&gt;wings"
+    },
+    {
+      "from": "delight",
+      "prompt": "Turn to page -&gt;hands",
+      "target": "Turn to page -&gt;hands"
+    },
+    {
+      "from": "delight",
+      "prompt": "Turn to page -&gt;uplifted",
+      "target": "Turn to page -&gt;uplifted"
+    },
+    {
+      "from": "boys of Tinder",
+      "prompt": "Turn to page-&gt;sketch",
+      "target": "Turn to page-&gt;sketch"
+    },
+    {
+      "from": "boys of Tinder",
+      "prompt": "Turn to page-&gt;date night",
+      "target": "Turn to page-&gt;date night"
+    },
+    {
+      "from": "date night",
+      "prompt": "Turn to page-&gt;a love poem to myself",
+      "target": "Turn to page-&gt;a love poem to myself"
+    },
+    {
+      "from": "an unabridged admission",
+      "prompt": "Turn to page-&gt;writtenpainting",
+      "target": "Turn to page-&gt;writtenpainting"
+    },
+    {
+      "from": "an unabridged admission",
+      "prompt": "Turn to page-&gt;paintings",
+      "target": "Turn to page-&gt;paintings"
+    },
+    {
+      "from": "new eyes",
+      "prompt": "Turn to page-&gt;1311",
+      "target": "Turn to page-&gt;1311"
+    },
+    {
+      "from": "car crashes",
+      "prompt": "Turn to page -&gt;timelines",
+      "target": "Turn to page -&gt;timelines"
+    },
+    {
+      "from": "1311",
+      "prompt": "Turn to page-&gt;sketch",
+      "target": "Turn to page-&gt;sketch"
+    },
+    {
+      "from": "1311",
+      "prompt": "Turn to page-&gt;boys of Tinder",
+      "target": "Turn to page-&gt;boys of Tinder"
+    },
+    {
+      "from": "sketch",
+      "prompt": "Turn to page-&gt;sketch2",
+      "target": "Turn to page-&gt;sketch2"
+    },
+    {
+      "from": "sketch",
+      "prompt": "Turn to page-&gt;paintings",
+      "target": "Turn to page-&gt;paintings"
+    },
+    {
+      "from": "sketch2",
+      "prompt": "Turn to page-&gt;sketch3",
+      "target": "Turn to page-&gt;sketch3"
+    },
+    {
+      "from": "sketch2",
+      "prompt": "Turn to page-&gt;paintings",
+      "target": "Turn to page-&gt;paintings"
+    },
+    {
+      "from": "sketch3",
+      "prompt": "Turn to page-&gt;an unabridged admission",
+      "target": "Turn to page-&gt;an unabridged admission"
+    },
+    {
+      "from": "sketch3",
+      "prompt": "Turn to page-&gt;paintings",
+      "target": "Turn to page-&gt;paintings"
+    },
+    {
+      "from": "writtenpainting",
+      "prompt": "Turn to page-&gt;paintings",
+      "target": "Turn to page-&gt;paintings"
+    }
+  ]
+}

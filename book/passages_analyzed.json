@@ -1,0 +1,1395 @@
+[
+  {
+    "pid": "1",
+    "name": "Intro",
+    "tags": "",
+    "cleanText": "1st, grow wings.\r\n2nd,\r\n3rd,\r\n4th,\r\nWhat do you want to see?\r\nSomeone I could love \r\nThe beauty I could make \r\nThings that never were",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page ->crossroads",
+        "text": "Turn to page",
+        "target": "crossroads"
+      },
+      {
+        "raw": "Turn to page ->the rust goddess",
+        "text": "Turn to page",
+        "target": "the rust goddess"
+      },
+      {
+        "raw": "Turn to page ->let me tell you",
+        "text": "Turn to page",
+        "target": "let me tell you"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "2",
+    "name": "my bones",
+    "tags": "poems rust-goddess x death",
+    "cleanText": "the rust Goddess\r\nreaches in\r\nand takes hold\r\nof my bones\r\nrotting out and\r\nreaching in to\r\ntake hold \r\nof my soul\r\nwith bones of \r\niron quickly\r\ngone\r\nI fall before\r\nher now\r\n\r\nFall before her now",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page ->timelines",
+        "text": "Turn to page",
+        "target": "timelines"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "3",
+    "name": "the rust goddess",
+    "tags": "rust-goddess poems",
+    "cleanText": "smoking bummed cigarettes\r\nquoting other people’s songs\r\nand when I think quiet enough\r\nmy own words may come to mind\r\nSo cross your legs, clasp your hands\r\nlet your thoughts wander till\r\nthe pencil starts to move\r\ninvent small gods, build bodies of rust\r\nand pledge unceasing devotion\r\nmove the pencil, write those words\r\nthe rust goddess\r\nhas much to say\r\nso heed well her words of wisdom \r\n\r\nWhat do you do?\r\nWrite  \r\nInvent a god\r\nIgnore her",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->a question",
+        "text": "Turn to page",
+        "target": "a question"
+      },
+      {
+        "raw": "Turn to page->this party",
+        "text": "Turn to page",
+        "target": "this party"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "4",
+    "name": "this party",
+    "tags": "poems rust-goddess x",
+    "cleanText": "I was at this party\r\nwith all my friends\r\nall standing round\r\nand all I remember\r\nis starting to drown\r\nI don't mean to perseverate\r\nupon this fancy\r\ndinner plate\r\nbut I just wanted to\r\nsmash it to dust\r\nlight a fire,\r\nwatch it rust\r\nbecause the rust Goddess\r\nis always standing round\r\nwaiting to tear it all\r\nto the ground\r\n\r\nWhat do you do?\r\nSmash it  \r\nDon't smash it",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->Nibiru",
+        "text": "Turn to page",
+        "target": "Nibiru"
+      },
+      {
+        "raw": "Turn to page->spring",
+        "text": "Turn to page",
+        "target": "spring"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "5",
+    "name": "Saint Gloria",
+    "tags": "poems rust-goddess",
+    "cleanText": "Saint Gloria\r\nSaint Gloria\r\ntattered wires\r\nwrap around\r\nSaint Gloria\r\nSaint Gloria\r\nthe rust Goddess\r\nhas her now\r\na poor sad\r\nforsaken soul\r\nSaint Gloria\r\nSaint Gloria\r\nthe rust Goddess always\r\ntakes her toll",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "6",
+    "name": "timelines",
+    "tags": "poems time Nexus i",
+    "cleanText": "the timelines are\r\nslipping\r\nsliding through my\r\nbrain\r\ncriss cross\r\nslip dash\r\ntossing into\r\nanother plane\r\n\r\n\r\n\r\nWhat do you do?\r\nBlink  \r\nBreathe",
+    "images": [
+      "PXL_20220215_040013515.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->Intro",
+        "text": "Turn to page",
+        "target": "Intro"
+      },
+      {
+        "raw": "Turn to page->memory",
+        "text": "Turn to page",
+        "target": "memory"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "7",
+    "name": "a question",
+    "tags": "poems rust-goddess writing hands x",
+    "cleanText": "if I loaned you my hands\r\ncould you write\r\nlike me?\r\nOr do you need my\r\neyes and heart\r\ntoo?\r\nHow much is muscle\r\nmemory\r\nplace the (\r\nisn't it\r\npeculiar?)\r\nhidden in the\r\nrafters\r\nthe rust\r\nGoddess\r\never after\r\n\r\nYes \r\nNo",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->blank poem",
+        "text": "Turn to page",
+        "target": "blank poem"
+      },
+      {
+        "raw": "Turn to page->mistress",
+        "text": "Turn to page",
+        "target": "mistress"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "8",
+    "name": "CJ",
+    "tags": "poems rust-goddess x",
+    "cleanText": "seven ball\r\ncorner pocket\r\nline the shots\r\nand then we\r\ndrop 'em\r\nwhiskey fire burns\r\nin my gut\r\nmaking me feel lucky\r\nan irresponsible\r\namount of money\r\non black\r\nit's in the rust\r\nGoddess' hands\r\nnow\r\nspin it\r\n\r\nGo to a party",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->this party",
+        "text": "Turn to page",
+        "target": "this party"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "9",
+    "name": "nephilim",
+    "tags": "poems angels i",
+    "cleanText": "angel wings\r\nand mortal sins\r\nthese two things\r\nshould not fit \r\ntogether\r\nmy broken heart\r\nand your wild locks\r\nthese two things\r\nshould not fit\r\ntogether\r\nbut they do\r\nthey do\r\nthey gloriously\r\ndo\r\nwith broken bones\r\nand graffitied \r\nstones\r\nthey do\r\nthey do\r\nthey gloriously\r\ndo\r\n\r\n\r\n\r\n\r\nA bottle of risperidone is in your hand.\r\nWhat do you do?\r\nTake your meds  \r\nMaybe later",
+    "images": [
+      "PXL_20220215_043013098.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->new eyes",
+        "text": "Turn to page",
+        "target": "new eyes"
+      },
+      {
+        "raw": "Turn to page->cinnamon",
+        "text": "Turn to page",
+        "target": "cinnamon"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "10",
+    "name": "Nibiru",
+    "tags": "poems rust-goddess Nibiru",
+    "cleanText": "the rust Goddess\r\nspoke to me\r\ntelling me secrets\r\nunknown\r\nand fair Nibiru\r\nis rising in the\r\neast again\r\nand what am I to do\r\nwith this?\r\nI don't even have a\r\nrocket\r\n\r\nWhat do you do?",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "11",
+    "name": "my eyes",
+    "tags": "poems angels i",
+    "cleanText": "swirl and twirl\r\nwhine and dine\r\nhold on tight\r\nthe time is nigh\r\nwith angels in my\r\nmind\r\nit's hard to see\r\nyou clearly dear\r\nwith so many angels in my\r\neyes\r\nthere's barely room\r\nfor you there\r\n\r\n\r\n\r\n\r\n\r\nWhat do you do?\r\nBlink \r\nFly Higher",
+    "images": [
+      "PXL_20220215_050458866.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->angels in my brain",
+        "text": "Turn to page",
+        "target": "angels in my brain"
+      },
+      {
+        "raw": "Turn to page->rebellion",
+        "text": "Turn to page",
+        "target": "rebellion"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "12",
+    "name": "battery",
+    "tags": "poems angels",
+    "cleanText": "battery\r\n\r\n\r\nwhen the angel's war\r\nlulls\r\nthey fill me with\r\ntheir excess souls\r\n(like a battery)\r\npushing me to the brink of\r\nbursting\r\nand I can hear \r\nthose souls\r\nscreaming inside \r\nme until\r\nthe angels drain \r\nme and  leave \r\nme broken",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "13",
+    "name": "angels in my brain",
+    "tags": "poems angels i",
+    "cleanText": "cheribum and seraphim\r\nare floating in my brain\r\nfighting against the\r\nmedicine\r\nthat makes me less insane\r\nan endless war that\r\nshakes and stirs\r\nthe pictures in my head\r\nwith wing and sword\r\nthey swoop and swirl\r\nand fill my heart with dread\r\n\r\n\r\n\r\n\r\nA bottle of risperidone is in your hand.\r\nWhat do you do?\r\nTake your meds  \r\nMaybe later",
+    "images": [
+      "PXL_20220215_050729829.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->1311",
+        "text": "Turn to page",
+        "target": "1311"
+      },
+      {
+        "raw": "Turn to page->nephilim",
+        "text": "Turn to page",
+        "target": "nephilim"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "14",
+    "name": "simpler time",
+    "tags": "poems angels",
+    "cleanText": "simpler time\r\n\r\n\r\nI'm yearning for\r\na simpler time\r\nwhen we were\r\nangels in the sky\r\nno broken bones\r\nno bloodshot eyes\r\njust simple wings\r\nand clouds so high\r\nso take my hand\r\nand take a step\r\nlet's try and fly\r\nwith what wings\r\nwe have left\r\n\r\nWhat do you do?\r\nDrive",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page ->take the wheel",
+        "text": "Turn to page",
+        "target": "take the wheel"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "15",
+    "name": "aliens",
+    "tags": "poems angels space x i",
+    "cleanText": "I got too high\r\nto write a poem\r\nso I'll just \r\nfucking tell you\r\nangels are amongst\r\nus\r\nand the government \r\nknows\r\nand aliens were\r\nhere a long time\r\nago \r\n\r\n\r\n\r\n\r\nWhat do you do?\r\nHave a smoke \r\nHave a drink\r\nGo for a drive",
+    "images": [
+      "PXL_20220214_043308752.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->my bones",
+        "text": "Turn to page",
+        "target": "my bones"
+      },
+      {
+        "raw": "Turn to page->drinking",
+        "text": "Turn to page",
+        "target": "drinking"
+      },
+      {
+        "raw": "Turn to page ->take the wheel",
+        "text": "Turn to page",
+        "target": "take the wheel"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "16",
+    "name": "war",
+    "tags": "poems angels",
+    "cleanText": "war\r\n\r\n\r\nI fall asleep and\r\nI am at war\r\nflashes of angels\r\nin shining armor\r\nspark across my\r\noptic nerves\r\ntheir spears\r\ngrinding into my\r\nmemories\r\nuntil there is a victor\r\nuntil there is a \r\nsilence\r\nuntil we hang there\r\ncrucified\r\nour weapons laid\r\nbeside us",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "17",
+    "name": "the things I hear",
+    "tags": "poems angels i",
+    "cleanText": "the things I hear\r\n\r\n\r\nfly into the stratosphere\r\ntalk about the things I hear\r\nall the angels there\r\nscreaming in my head\r\npushing my hands to deeds\r\nuntoward\r\nwield my weapon like a sword\r\nI just want to clarify\r\nthey need my blood to sanctify\r\nthe land to have their war\r\nsmashing shields,\r\nclashing swords\r\nthey sent their snake\r\nto poison my veins\r\nswitch the dreams inside\r\nmy head\r\nuntil I draw my blood\r\nfor them\r\nand spill it\r\non the ground\r\n\r\n\r\n\r\n\r\nA syringe of risperidone is in your hand.\r\nWhat do you do?\r\nTake your meds  \r\nMaybe later",
+    "images": [
+      "PXL_20220215_045911737.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->new eyes",
+        "text": "Turn to page",
+        "target": "new eyes"
+      },
+      {
+        "raw": "Turn to page->war",
+        "text": "Turn to page",
+        "target": "war"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "18",
+    "name": "cinnamon",
+    "tags": "poems angels i",
+    "cleanText": "cinnamon\r\n\r\n\r\nthe smell of\r\ncinnamon\r\nlazy on the\r\nwind\r\nthe angels\r\ncoming down\r\nto torment me again\r\nwith wicked wing\r\nand sickly\r\nsword\r\nthey chase across\r\nthe land\r\nthey hope to \r\ncatch\r\nand snap and\r\nbite\r\nto take their power\r\nfrom my\r\nhand\r\n\r\n\r\n\r\n\r\nA bottle of risperidone is in your hand.\r\nWhat do you do?\r\nTake your meds  \r\nMaybe later",
+    "images": [
+      "PXL_20220214_043236281.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->new eyes",
+        "text": "Turn to page",
+        "target": "new eyes"
+      },
+      {
+        "raw": "Turn to page->the things I hear",
+        "text": "Turn to page",
+        "target": "the things I hear"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "19",
+    "name": "a stone from home",
+    "tags": "poems abstract",
+    "cleanText": "a stone from home\r\n\r\n\r\na stone from\r\nhome\r\nspinning down\r\ninto the well\r\nskittering and bouncing\r\npast my head\r\nwhere I'm hunkered\r\ndown and\r\nhiding out\r\nI just can't let\r\nthem find me",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "20",
+    "name": "God",
+    "tags": "poems god",
+    "cleanText": "God\r\n\r\n\r\nand if God is\r\ndead,\r\nwho do I pray to\r\nabout my\r\nsurvivor's guilt?",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "21",
+    "name": "let me tell you",
+    "tags": "poems psychosis x i",
+    "cleanText": "there have been spiders\r\nclimbing up my arms\r\nand I feel the web\r\nsettle over me\r\nbut this web is not\r\nspider silk\r\nit's carefully cultivated\r\nchosen and bolstered\r\nlies for the government\r\nand I think you should \r\nknow\r\nwe faked the moon \r\nlanding\r\nand that's just \r\nthe start\r\n\r\n\r\n\r\n\"untethered from our destinies\"\r\n\r\n\r\nWhat do you do?\r\nFollow the lies \r\nInvestigate the moon landing \r\nThink about spiders",
+    "images": [
+      "PXL_20220212_041333419.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page -> Humira",
+        "text": "Turn to page",
+        "target": "Humira"
+      },
+      {
+        "raw": "Turn to page ->Nibiru",
+        "text": "Turn to page",
+        "target": "Nibiru"
+      },
+      {
+        "raw": "Turn to page ->the spider",
+        "text": "Turn to page",
+        "target": "the spider"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "22",
+    "name": "crossroads",
+    "tags": "poems road love relationship x",
+    "cleanText": "and every time we came to a\r\ncrossroad\r\nI prayed for a red light\r\nbut your damndable luck\r\nkept the greens\r\nacoming\r\nall I wanted was to steal \r\na single\r\nkiss\r\na prize on par with\r\nPrometheus\r\nand his burning flame\r\nrising higher in my heart \r\nthan those reds that\r\nnever came\r\nto steal a thought from Hailey\r\n(for sometimes I feel like Sam)\r\nyou've got me wound tighter\r\nthan my left-wrist twist\r\nso baby\r\npull off the road\r\nand let me\r\nget that \r\nkiss\r\n\r\nWhat do you do?\r\n\r\nPull off the road  \r\nTake their hand  \r\nKeep going",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page ->uplifted",
+        "text": "Turn to page",
+        "target": "uplifted"
+      },
+      {
+        "raw": "Turn to page ->hands",
+        "text": "Turn to page",
+        "target": "hands"
+      },
+      {
+        "raw": "Turn to page ->my path",
+        "text": "Turn to page",
+        "target": "my path"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "23",
+    "name": "memory",
+    "tags": "poems x fragment",
+    "cleanText": "puffing cigarettes\r\nand talking about\r\nthe good old days\r\n(before all the cigarettes)\r\nmeandering through memories\r\nand classic tales\r\nwhen it strikes\r\nme\r\nthe times\r\nare far from over\r\n(really just begun)\r\nso let’s puff another\r\ncigarette and talk\r\nabout that \r\n\r\n[3rd line]\r\n\r\nBlink",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->Intro",
+        "text": "Turn to page",
+        "target": "Intro"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "24",
+    "name": "my path",
+    "tags": "poems god happy x i",
+    "cleanText": "the clouds\r\n(Like the picassoed\r\nfists of god)\r\nguide my path into the sky\r\nI follow\r\n\r\n\r\n\r\n\r\nDrive",
+    "images": [
+      "PXL_20220215_053533509.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn the page ->70mph",
+        "text": "Turn the page",
+        "target": "70mph"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "25",
+    "name": "threshold",
+    "tags": "poems relationship love",
+    "cleanText": "the faintest smile\r\nplays across\r\nthose pressed-thin lips\r\nIt’s almost as if I can see\r\na thought dance\r\nacross your\r\nsynapses\r\nand for a moment\r\n(just a moment)\r\nyour eyes shine\r\nso bright I\r\nhalf expect to\r\nsee your imaginings\r\nprojected onto\r\nthe canvas laid\r\nbefore you\r\nI can always\r\nfeel my breath catch\r\nthen,\r\nstanding at the threshold\r\nof your world",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "26",
+    "name": "uplifted",
+    "tags": "poems angels happy love",
+    "cleanText": "and in the park\r\nthat day\r\nnothing captivated us\r\nno steel structures\r\ndrew our eyes\r\nand so\r\n(in defiance of\r\nour upbringing)\r\nwe grew wings\r\nand left the\r\ngrass behind\r\n\r\n\r\nWhat do you do?\r\nFly",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page ->my eyes",
+        "text": "Turn to page",
+        "target": "my eyes"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "27",
+    "name": "him",
+    "tags": "poems antagonist abigail x i",
+    "cleanText": "a grin among the\r\nbranches\r\na smile white with\r\nbone and\r\ndrip drip drip\r\ndripping\r\nsaliva (sour)\r\nand Abigail screams\r\nand we all\r\nhear her\r\nand no one\r\nhears her\r\nand if she\r\n(SHE)\r\nis scared\r\nso should we all\r\nbe\r\nbut that grin\r\na smile white with\r\nbone and\r\nattached a face\r\npale (but not as\r\npale as Abigail’s)\r\nhis suit unrumpled\r\nand he sits\r\nand the words\r\nbegin \r\n\r\n\r\n\r\n\r\nWhat do you do?\r\nListen  \r\nDon't listen",
+    "images": [
+      "PXL_20220212_035504630.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page ->blink",
+        "text": "Turn to page",
+        "target": "blink"
+      },
+      {
+        "raw": "Turn to page ->simpler time",
+        "text": "Turn to page",
+        "target": "simpler time"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "28",
+    "name": "hands",
+    "tags": "poems hands love romance x",
+    "cleanText": "there are songs\r\nto sing about\r\nthe way\r\nwe hold our hands\r\ntogether\r\nintertwined as if\r\nto find\r\nsome token of\r\nremembrance\r\na simple touch\r\nthat holds\r\nback much\r\nof what could\r\nhunt and\r\nfind us\r\n\r\nWhat do you do?\r\nKeep holding  \r\nPull of the road",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page ->delight",
+        "text": "Turn to page",
+        "target": "delight"
+      },
+      {
+        "raw": "Turn to page ->uplifted",
+        "text": "Turn to page",
+        "target": "uplifted"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "29",
+    "name": "wanderlust",
+    "tags": "poems drive x",
+    "cleanText": "wanderlust\r\n(if lust had\r\nsurvived the\r\nmedia smear campaign)\r\nwander-longings\r\na wander-yearn\r\npuling your heart strings\r\nacross this land\r\nup into the mount-\r\nains\r\nleaving trace amounts\r\nof rubber\r\nforming a crisscrossing\r\nmap\r\nveins across\r\nthe earth \r\n\r\nBut he was watching wasn't he?\r\nWe don't have to talk about him.\r\nWe can talk about better days.\r\n\r\n\r\nWhat do you do?\r\nTalk about him  \r\nTalk about better days",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page ->him",
+        "text": "Turn to page",
+        "target": "him"
+      },
+      {
+        "raw": "Turn to page ->simpler time",
+        "text": "Turn to page",
+        "target": "simpler time"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "30",
+    "name": "Scrapbook",
+    "tags": "",
+    "cleanText": "Column 1\r\n\r\n\r\n\r\n\r\n\r\n\r\nWhat do you do?",
+    "images": [
+      "PXL_20220214_043308752.jpg"
+    ],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "31",
+    "name": "Humira",
+    "tags": "poems paranoia x i",
+    "cleanText": "I keep seeing\r\ncommercials for\r\nHumira\r\nbut I know that\r\nit's a government\r\nplot a ploy a plan\r\na tricky trap to\r\nreduce our\r\nresistance to tuberculosis\r\nbut I don't know\r\nhow to stop this \r\ngovernment plot\r\nthis ploy this plan\r\nso I'll just lay\r\nhere and \r\ndrown this\r\nmigraine\r\n\r\n\r\n\r\nWhat do you do?\r\nHave a smoke \r\nHave a drink",
+    "images": [
+      "PXL_20220215_053755121.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->porch",
+        "text": "Turn to page",
+        "target": "porch"
+      },
+      {
+        "raw": "Turn to page->dad's beer",
+        "text": "Turn to page",
+        "target": "dad's beer"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "32",
+    "name": "spring",
+    "tags": "poems paranoia x",
+    "cleanText": "its almost funny\r\nhow little\r\nit takes\r\nthese days\r\na flash of light\r\nin a darkened\r\npane and the\r\nwheels begin\r\nto spin\r\nthose familiar suspicious\r\ngears click\r\nclick clicking\r\ninto place\r\nbut how is\r\none supposed\r\nto feel in the\r\nspring\r\nonce the flowers bloom\r\nevery hill\r\nis a grassy knoll \r\n\r\nGet a drink",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->CJ",
+        "text": "Turn to page",
+        "target": "CJ"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "33",
+    "name": "blank poem",
+    "tags": "poem activty x",
+    "cleanText": "prove it...\r\nWhen you finish",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->meet someone",
+        "text": "Turn to page",
+        "target": "meet someone"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "34",
+    "name": "Abigail",
+    "tags": "poems abigail x",
+    "cleanText": "snark mouthed,\r\nsnaggle toothed\r\na crooked smile\r\nin a dress a\r\nsize too big\r\nwe danced until\r\nwe forgot that\r\nwe didn’t know how\r\nto dance \r\n\r\nKeep learning",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->wanderlust",
+        "text": "Turn to page",
+        "target": "wanderlust"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "35",
+    "name": "meet someone",
+    "tags": "introduction x",
+    "cleanText": "That was beautiful. \r\nI want you to meet someone.\r\nShe's very important to me.\r\nShe isn't real.\r\nShe has saved my life so many times.",
+    "images": [
+      "PXL_20220212_063741920.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->Abigail",
+        "text": "Turn to page",
+        "target": "Abigail"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "36",
+    "name": "blink",
+    "tags": "poems abigial i",
+    "cleanText": "blink and you’’ll\r\nmiss it\r\nbut never have I\r\nseen them blink\r\nunwavering\r\nthey watch\r\ntelling him\r\ntelling all they\r\nsee\r\nand they see most\r\neverything\r\nbut they don’t see\r\nher\r\nprecious Abigail\r\nalways in her Sunday\r\nbest\r\n“dress for everyday\r\nas if it’s your last”\r\na sigh\r\n“between the jello shots\r\nand the Ambien\r\nwho can really say?”\r\nborn (like the rest of\r\nus) veiled\r\nto the world\r\nkilled in the haze of\r\nsomeone else’s\r\nself-medication\r\nyet here\r\nshe stands\r\nhunted\r\nterrified\r\nunafraid\r\n\r\n\r\n\r\nWhat do you do?\r\nBlink",
+    "images": [
+      "IMG_20220214_231011.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page ->timelines",
+        "text": "Turn to page",
+        "target": "timelines"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "37",
+    "name": "dad's beer",
+    "tags": "poems x",
+    "cleanText": "and Dad’s beer sat warm in\r\nmy stomach\r\nas I pondered slipping clutches\r\nand failing transmissions\r\nflying through the night\r\ngrinding gears\r\nup the mountain\r\nstarry nights\r\nabove me\r\nstarry nights\r\nabove you\r\nand your car\r\nand here I am wishing\r\non Dad’s warm beer in\r\nmy stomach\r\nthat your slipping clutch\r\nand failing transmission\r\nget you\r\nhome safe \r\n\r\nWhat do you do?\r\nHave a smoke \r\nHave a drink",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->porch",
+        "text": "Turn to page",
+        "target": "porch"
+      },
+      {
+        "raw": "Turn to page->drinking",
+        "text": "Turn to page",
+        "target": "drinking"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "38",
+    "name": "70mph",
+    "tags": "poems drive x",
+    "cleanText": "sitting and watching\r\nthe mile markers\r\nflit away\r\none eye to the sky\r\nas the clouds lazily\r\nleapfrog each other\r\nand I can’t help\r\nbut smile to\r\nthink you may be\r\ndoing the same,\r\nsitting and watching \r\nthe mile markers\r\nflit away \r\n\r\nWhat do you do?\r\nFaster \r\nSlower \r\nStop",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->car crashes",
+        "text": "Turn to page",
+        "target": "car crashes"
+      },
+      {
+        "raw": "Turn to page->the rain",
+        "text": "Turn to page",
+        "target": "the rain"
+      },
+      {
+        "raw": "Turn to page->Staunton",
+        "text": "Turn to page",
+        "target": "Staunton"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "39",
+    "name": "the spider",
+    "tags": "poems psychosis x",
+    "cleanText": "a spider’s leg\r\n  is hovering\r\nover my right\r\n  arm again\r\nit weaves and\r\n  bobs\r\nin time to my\r\n  nervous energy\r\nit fades away\r\n  when I settle\r\n  down\r\nit’s not scary\r\n (I come to realize)\r\n  just strange\r\n  is this\r\n  life\r\n  now? \r\n  \r\n  Blink",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page ->let me tell you",
+        "text": "Turn to page",
+        "target": "let me tell you"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "40",
+    "name": "mistress",
+    "tags": "poems",
+    "cleanText": "mistress\r\n#\r\n\r\nAnd in times of greatest need\r\nI always turn to\r\npoetry\r\nShe's a mistress unlike any other\r\nwho never screens her calls\r\nshe whispers silent nothings\r\nand moans her Verse into\r\nmy ear\r\nspeaking of any taboo I\r\nwish to hear\t\r\nOur relationship is one of\r\ndebauchery ripe\r\nwith holding of hands\r\nand tender moments\r\nbut fear not\r\ndear reader\r\nwe are not without\r\nour violent unions\r\nand frigid silences\r\nbut as of yet they’ve only\r\nled to a closer tie\r\nand though shes a fictitious\r\npersonification\r\nI still love her\r\nsmile",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "41",
+    "name": "drinking",
+    "tags": "poems x",
+    "cleanText": "I've been drinking \r\nmore than I've\r\nbeen writing\r\nand smoking more\r\nthan I drink\r\nand nothing seems\r\nquite so right\r\nas hiding from\r\nthe wind\r\nI hear their \r\nvoices softly\r\nwhipping\r\nround my\r\nskull\r\nmumbles, cries, screams,\r\nand moans\r\nbegin to take\r\na toll\r\n\r\nWhat do you do?\r\nHave a smoke \r\nHave a drink\r\nGo for a drive",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->aliens",
+        "text": "Turn to page",
+        "target": "aliens"
+      },
+      {
+        "raw": "Turn to page->my bones",
+        "text": "Turn to page",
+        "target": "my bones"
+      },
+      {
+        "raw": "Turn to page ->take the wheel",
+        "text": "Turn to page",
+        "target": "take the wheel"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "42",
+    "name": "porch",
+    "tags": "poems x i",
+    "cleanText": "sitting on my porch\r\nwith a spliff in\r\none hand and a\r\npen\r\nin the other\r\n(I’ve never been a\r\nleft-handed smoker;\r\ntonight I’ll make an\r\nexception)\r\nthe day’s storm clouds\r\nlazily cover the\r\nstars\r\nand someone is\r\nsetting off\r\nfireworks\r\nin august\r\nIt’s\r\na good night\r\n\r\n\r\n\r\n\r\nWhat do you do?\r\nHave a smoke \r\nHave a drink",
+    "images": [
+      "PXL_20220214_042741699.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->aliens",
+        "text": "Turn to page",
+        "target": "aliens"
+      },
+      {
+        "raw": "Turn to page->dad's beer",
+        "text": "Turn to page",
+        "target": "dad's beer"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "43",
+    "name": "take the wheel",
+    "tags": "poems x",
+    "cleanText": "toss the keys and\r\nshine the headlights\r\nWho has the wheel now?\r\nhow loud is their voice?\r\na simple monotone?\r\ncounting\r\none\r\n1(oneoneoneone)\r\n2358\r\nkeeping time to the heart(head)\r\nholding it all in\r\ntoss the keys and\r\nshine the headlights\r\nnew fingers on\r\nthe wheel\r\nand with trembling\r\nhands she lights\r\na cigarette\r\nI have to kill myself\r\nslowly,\r\nto feel I’m really\r\nalive\r\nKeys?\r\ntossed.\r\nHeadlights?\r\nshone.\r\nthe new one\r\nthe voice from\r\noutside\r\nhands grip the\r\nwheel\r\ntighter\r\nfaster\r\nI’m done \r\n\r\n\r\nWhere do you sit?\r\nDriver seat \r\nShotgun \r\nIn the back",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->my path",
+        "text": "Turn to page",
+        "target": "my path"
+      },
+      {
+        "raw": "Turn to page->changeling",
+        "text": "Turn to page",
+        "target": "changeling"
+      },
+      {
+        "raw": "Turn to page->wings",
+        "text": "Turn to page",
+        "target": "wings"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "44",
+    "name": "delight",
+    "tags": "poems",
+    "cleanText": "happily holding\r\nand smile filled\r\nfolding\r\nof simple, miraculous\r\nhands\r\nspirit filling songing\r\nand lip quivering\r\nlonging\r\nred stars collapsing and\r\nsynapses snapping\r\nwith open mouth gasping\r\nas the universe slowly\r\nexplodes\r\nand still the\r\nhappily holding\r\nand smile filled\r\nfolding\r\nof simple, miraculous\r\nhands \r\n\r\nWhat do you do?\r\nKeep holding  \r\nPull of the road",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page ->hands",
+        "text": "Turn to page",
+        "target": "hands"
+      },
+      {
+        "raw": "Turn to page ->uplifted",
+        "text": "Turn to page",
+        "target": "uplifted"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "45",
+    "name": "crackpop",
+    "tags": "poems",
+    "cleanText": "scintillating\r\nsin spat\r\nsoar into\r\nthe ethersphere\r\nbroken bones\r\nspore soaked\r\nsighs run red-\r\nhot rivulets\r\nthrough my mind\r\nsearing shut\r\nmy synapses\r\nburning off my\r\nsenses\r\nA medic’s\r\nscalpel hastily\r\nheated on a\r\nlighter\r\nthe same lighter\r\nthat ignited\r\nthe cigarette\r\nthat\r\ndrew the\r\nsniper’s fire\r\na gunshot\r\n(impersonal)\r\nthrough the left\r\neye. ripping\r\ntearing\r\nrespectfully\r\ncauterizing\r\nerasing the exit\r\nwound to keep\r\nthe roundthought\r\ninside",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "46",
+    "name": "the rain",
+    "tags": "poems",
+    "cleanText": "the rain is\r\n dripping on my\r\nwindshield\r\n    and my tattered\r\nwiper blades\r\n  valiantly wipe them\r\naway\r\n  clearing the glass -\r\n  and my mind\r\n  the world goes from\r\n     a blur\r\n  to crystal clear in a\r\n   single slash\r\n only to fall prey to\r\n   the liquid occlusion\r\n   once again\r\n  yet through this\r\n    futility my\r\n    wipers soldier on\r\n   nobly slicing out\r\n   glimpses of the\r\n   blacktop ahead",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "47",
+    "name": "bees are dying at an alarming rate",
+    "tags": "poems",
+    "cleanText": "bees are dying\r\nat an alarming\r\nrate and\r\nI’m looking in a\r\nmirror wondering\r\nif my hair looks\r\nbetter parted to the\r\nleft and\r\nbees are dying\r\nat an alarming\r\nrate and\r\nI don’t know\r\nfor sure but\r\nmaybe a thousand\r\ndied while I\r\nwas adjusting my\r\nshirt\r\nand if all the\r\nbees die something\r\nsciencey and\r\nbad happens and\r\nI’m standing\r\nhere trying to\r\ndecide if I’m\r\ntoo old for a\r\nlipring and\r\nbees are dying\r\nat an alarming\r\nrate",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "48",
+    "name": "boys of Tinder",
+    "tags": "poems relationship x",
+    "cleanText": "posing there with abs\r\nglistening\r\nan empty profile\r\nbeckoning\r\nand is that all you have to\r\noffer\r\na six pack and\r\ndesigner jeans\r\npushing me to swipe\r\nand fuck\r\ntap and be fucked\r\nso tell me something\r\nmore than those abs and\r\npricey clothes\r\nbecause I’m cute enough\r\nand I’m charming enough\r\nto be with that soulless\r\nSixpack\r\nfor the 5 dollar cover\r\nat any bar\r\nso tell me something\r\n(anything)\r\nor I will keep swiping\r\nyou over my left\r\nshoulder\r\nlike salt in the Devil’s\r\neye\r\n\r\nWhat do you do?\r\nWrite a poem  \r\nSwipe right",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->sketch",
+        "text": "Turn to page",
+        "target": "sketch"
+      },
+      {
+        "raw": "Turn to page->date night",
+        "text": "Turn to page",
+        "target": "date night"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "49",
+    "name": "date night",
+    "tags": "poems relationship",
+    "cleanText": "this seems like\r\nthe kind of\r\nday\r\nwhere I just\r\nneed to focus on\r\nmyself\r\njust get some ice\r\ncream\r\nmaybe go to the park\r\njust have a date\r\nwith myself\r\nand if I play my cards\r\nright\r\nmaybe I’ll\r\nget lucky \r\n\r\nWhat do you do?\r\nPlay your cards right",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->a love poem to myself",
+        "text": "Turn to page",
+        "target": "a love poem to myself"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "50",
+    "name": "a love poem to myself",
+    "tags": "poems relationship",
+    "cleanText": "I'm the kind\r\nof asshole\r\nwho never\r\nreturns calls\r\nyou're the kind of\r\nasshole\r\nthat dubs earth-\r\nshattering screams\r\ninto my relaxation\r\nrecords\r\nyour overachieving\r\nass\r\nis the yang to\r\nmy apathy\r\nwe make a\r\ndangerous\r\ncouple",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "51",
+    "name": "leftwrist twist",
+    "tags": "poems",
+    "cleanText": "Have you ever\r\nbeen in love?\r\na smirk a smile\r\na half-assed grin\r\ndo fictitious personifications\r\ncount?\r\nif so then\r\ntwice but\r\nreally just with\r\none\r\nHailey (the one\r\nwith ribbon at her\r\nwrist)\r\nand her quieter self \r\nher of smiles and secrets\r\nand silent places\r\n(the one with\r\nribbon at her wrist)",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "52",
+    "name": "connected",
+    "tags": "poems relationship",
+    "cleanText": "my fingertips graze\r\nthat place on\r\nthe back of\r\nyour neck\r\njust barely\r\nabove the spot\r\nwhere thoughts\r\ncollect and\r\ncoalesce\r\nand translate\r\ninto movement\r\nand actions\r\nand my fingertips\r\nare my conduit\r\nsharing those signals\r\nmoving in time\r\nto your\r\nsynaptic\r\nfeedback",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "53",
+    "name": "risk",
+    "tags": "drive poems",
+    "cleanText": "batwings and butterflies\r\nbusted jaws and hurricanes\r\nfind your place among\r\nthe lost, broken, and sedated\r\nnothing ventured, nothing gained\r\nnothing lost\r\nnothing sane\r\ntorn apart\r\nleft behind\r\nthe lady in the pink dress\r\nsays it all\r\nwith her silent words\r\nand cricket song\r\nmoving slowly\r\nthrough space and time\r\nnot sure how I got here",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "54",
+    "name": "an unabridged admission",
+    "tags": "x",
+    "cleanText": "“haven’t you seen\r\nenough to know\r\nthat nothing will change?\r\ngrass will grow\r\nmatadors will be gored\r\nand shoes will walk\r\n    (onward)\r\nnothing changes except\r\nthe lividity of our hopes\r\n  (darkening each time\r\n\r\n#of transient guilt\r\n\r\n\r\nwe blink)\r\nand dreams that\r\nswell to fill out\r\nbursting seams\r\nand with open\r\nmouths we stare\r\ninto the sky\r\ngrasping at\r\nabsolution”\r\n\r\n\r\nWhat do you do?\r\nWrite a poem \r\nPaint",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->writtenpainting",
+        "text": "Turn to page",
+        "target": "writtenpainting"
+      },
+      {
+        "raw": "Turn to page->paintings",
+        "text": "Turn to page",
+        "target": "paintings"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "55",
+    "name": "changeling",
+    "tags": "poems",
+    "cleanText": "the wind blows loose\r\nthe multicolor\r\nscintillation\r\nof your hair\r\nand with the\r\nshimmer shammer\r\nfae wings are\r\ndrawn to mind\r\nand with those\r\nwings fluttering against\r\nmy parietal lobe\r\nit’s barely a step\r\nto smell the fair\r\nfolks blood within\r\nyour veins\r\ntheir laugh upon\r\nyour lips\r\ntheir adventure in\r\nyour heart",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "56",
+    "name": "deal",
+    "tags": "",
+    "cleanText": "I don’t have\r\nmuch\r\nbut it’s all yours to take\r\nand I’ll strike\r\na deal\r\nwith you\r\nif it flutters your heart\r\njust right\r\nI’ll wrap you in poetry\r\nwriting all the words\r\nthat come to mind\r\nI’ll hand my soul to\r\nyou scribbled on\r\npaper\r\nwith a liberal dash\r\nof imagery and\r\nrhyme\r\nand the modest\r\nprice I ask\r\nis just a tender\r\ntouching of the\r\nlips",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "57",
+    "name": "warmth",
+    "tags": "poems",
+    "cleanText": "the warmth always\r\nastonishes me\r\nhow can being\r\nso warm\r\nbe so comforting\r\nshaking off that\r\nfamiliar cold\r\nthe shawl woven\r\n(and worn with\r\npride)\r\nof tangled half-\r\ntruths(\r\nhalf-smiles)\r\nhalf-lies\r\nand yet the warmth\r\nalways astonishes\r\nme\r\nalways draws me\r\ncloser",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "58",
+    "name": "rebellion",
+    "tags": "poems",
+    "cleanText": "swirl and spin\r\nand turn and\r\nSing\r\nSkyward bound\r\nand determined as\r\nHell. even\r\nthe father can’t\r\nstop us now\r\nwith 9 feet\r\nof ribbon we\r\nbind our\r\nleft arms to\r\nthe sky\r\nreunited",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "59",
+    "name": "Staunton",
+    "tags": "poems drive",
+    "cleanText": "I’ve spent\r\n hours on\r\nthis unfeeling\r\n highway\r\n  because lately\r\nwhen I close my\r\n eyes all\r\n    I\r\n see is your\r\n  smile\r\nand I want\r\n  (if only for a\r\n  moment)\r\nfor reality\r\nto mirror\r\nmy daydreams",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "60",
+    "name": "new eyes",
+    "tags": "poems meds i",
+    "cleanText": "the privilege of the\r\nemotionally dead\r\nis to never be unsure\r\nno broken fragments\r\nof hidden doubt\r\nflorescent fields\r\nof greenred grass\r\na picture book haunting\r\nof a dirty\r\nback alley\r\nso give me Tricyclics\r\ngive me SSRIs\r\nhand me more truth\r\nor at least more trusting eyes\r\n\r\n\r\n.\r\n\r\nWhat do you do?\r\nSleep",
+    "images": [
+      "PXL_20220215_053156730.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->1311",
+        "text": "Turn to page",
+        "target": "1311"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "61",
+    "name": "car crashes",
+    "tags": "poetry drive x i",
+    "cleanText": "and car crashes\r\nare such a\r\nromantic endeavor\r\nthe total\r\nand complete\r\ngiving of yourself\r\nto the road\r\nA love affair\r\nwith\r\nthe yellow line\r\nA crimson splash\r\nspeckles the road\r\nin the vague outline\r\nof a heart\r\nAnd we quietly\r\nate our chinese\r\nfood\r\ncontemplating the\r\nsudden outpouring of\r\ninsight\r\nand the shy one\r\n(with a grin)\r\nbegan to speak\r\nemboldened by\r\nthe chance to\r\nbe the clever one\r\nWhat about the other car?\r\nAnd the response came\r\nIt’s a polyamorous relationship\r\n\r\n\r\n\r\n\r\nFall in love",
+    "images": [
+      "PXL_20220215_040523016.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page ->timelines",
+        "text": "Turn to page",
+        "target": "timelines"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "62",
+    "name": "1311",
+    "tags": "poems meds",
+    "cleanText": "700mg to level me out\r\n10 to take it easy\r\na brisk walk\r\nthrough fluorescent halls\r\nwhile I’m working\r\ntowards a moment of clarity\r\nanother milligram to stop the\r\nshakes\r\nand hold my pencil steady\r\n600 more to stop the pain\r\nand keep my thinking level\r\n1311 swirls inside my head\r\nas I work on\r\nmy epiphany\r\n\r\nWhat do you do?\r\nWrite a poem  \r\nSwipe through dating aps",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->sketch",
+        "text": "Turn to page",
+        "target": "sketch"
+      },
+      {
+        "raw": "Turn to page->boys of Tinder",
+        "text": "Turn to page",
+        "target": "boys of Tinder"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "63",
+    "name": "sketch",
+    "tags": "x",
+    "cleanText": "What do you do?\r\nTry to write a poem \r\nPaint",
+    "images": [
+      "PXL_20220212_210139131.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->sketch2",
+        "text": "Turn to page",
+        "target": "sketch2"
+      },
+      {
+        "raw": "Turn to page->paintings",
+        "text": "Turn to page",
+        "target": "paintings"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "64",
+    "name": "sketch2",
+    "tags": "x",
+    "cleanText": "What do you do?\r\nTry to write a poem \r\nPaint",
+    "images": [
+      "PXL_20220212_210243574.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->sketch3",
+        "text": "Turn to page",
+        "target": "sketch3"
+      },
+      {
+        "raw": "Turn to page->paintings",
+        "text": "Turn to page",
+        "target": "paintings"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "65",
+    "name": "sketch3",
+    "tags": "x",
+    "cleanText": "What do you do?\r\nTry desperatly to write a poem \r\nPaint",
+    "images": [
+      "PXL_20220211_203408826.jpg"
+    ],
+    "links": [
+      {
+        "raw": "Turn to page->an unabridged admission",
+        "text": "Turn to page",
+        "target": "an unabridged admission"
+      },
+      {
+        "raw": "Turn to page->paintings",
+        "text": "Turn to page",
+        "target": "paintings"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "66",
+    "name": "paintings",
+    "tags": "",
+    "cleanText": "",
+    "images": [
+      "PXL_20220201_022655045.jpg",
+      "PXL_20220202_045851771.jpg"
+    ],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "67",
+    "name": "writtenpainting",
+    "tags": "",
+    "cleanText": "What do you do?\r\nPaint",
+    "images": [],
+    "links": [
+      {
+        "raw": "Turn to page->paintings",
+        "text": "Turn to page",
+        "target": "paintings"
+      }
+    ],
+    "isLeaf": false
+  },
+  {
+    "pid": "68",
+    "name": "wings",
+    "tags": "",
+    "cleanText": "there are so many\r\nbirds overhead\r\nand I can feel my\r\nevery cell\r\ncall out to them\r\nbreaking off and\r\ntaking flight\r\npulled skyward by\r\nthe sound of their \r\nwings",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "69",
+    "name": "dance",
+    "tags": "",
+    "cleanText": "swirling and spinning\r\ntwirling about\r\nyour legs\r\nwhite with\r\nblue dots\r\n(of the polka\r\ntype)\r\npicking up the\r\nmoon's beams\r\nrunning away from\r\nthe ball,\r\nfinally finding reason\r\nto dance\r\n“and darling\r\nthat dress suits\r\nthe night so\r\nwell”",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "70",
+    "name": "how many fingers am I holding up?",
+    "tags": "",
+    "cleanText": "how many fingers am\r\nI holding\r\nup\r\nfour? seven?\r\nnine?\r\nAnd why can I\r\nnot tell?\r\nI try to count\r\n-burning up-\r\nwhile my fingers\r\nfade in and out\r\nhow many fingers am\r\nI holding\r\nup?\r\nyour guess is \r\nas good as\r\nmine",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "71",
+    "name": "hair",
+    "tags": "",
+    "cleanText": "your hair\r\nbetween my\r\nfingers\r\nswirling, moving\r\nthe tips then linger\r\nholding on\r\n(and holding out)\r\nlost in you\r\nand lost\r\nwithout",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "72",
+    "name": "cherub",
+    "tags": "",
+    "cleanText": "fox quick\r\nand sickly\r\nblack\r\nwrithing across\r\nthe forest floor\r\nthey slink and\r\nslither\r\ncoil and\r\nhide\r\nand I,\r\nwatching a cherub\r\nmaking its way\r\nacross\r\nmy woods",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "73",
+    "name": "oranges",
+    "tags": "",
+    "cleanText": "I've always \r\nloved the\r\nsmell of oranges\r\n(especially on\r\nyour skin)\r\nthey have a zest\r\nthat screams\r\nadventure\r\n(nights flying down\r\nthe highway)\r\nand that hint of acid\r\n(“Get a job, you're \r\nnot man enough\r\nfor me”)\r\nbut mostly they\r\nremind me of\r\n(you)",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "74",
+    "name": "when I say your name",
+    "tags": "",
+    "cleanText": "and when I say your\r\nname\r\n(your starlight\r\nin my\r\neyes)\r\nI hear the sound\r\nof horses,\r\nof chaos,\r\nand a fire\r\nbut the taste on\r\nmy lips \r\nis of \r\ncider and \r\nsunfire",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "75",
+    "name": "back on the road",
+    "tags": "",
+    "cleanText": "I'm back on\r\nthe road\r\nafter what feels\r\nlike forever\r\nmy hands still itch\r\nto throw myself\r\nonto the wrong side\r\nthe road keeps\r\ncoming\r\nflying past\r\nand all I can do\r\nis sigh",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "76",
+    "name": "1001",
+    "tags": "",
+    "cleanText": "one zero zero\r\none\r\neveryone the rain\r\n1001everyonetherain\r\none\r\nzero zero\r\none\r\neveryone the rain",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "77",
+    "name": "lines",
+    "tags": "",
+    "cleanText": "the lines in my eyes\r\nare getting wider\r\nall the time\r\nit's getting harder now\r\nto peer past them\r\nand see the stars\r\nso clear",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "78",
+    "name": "homeward bound",
+    "tags": "",
+    "cleanText": "homeward bound\r\nbut already\r\nthere\r\nI'm holding out\r\n(onto a prayer)\r\nand do you\r\nremember that day\r\nsix years from \r\nnow?\r\nWell hold my drink\r\nI think I'm \r\ndone",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "79",
+    "name": "burn out",
+    "tags": "",
+    "cleanText": "I'm a burn out\r\nhopped up\r\nand let down\r\nhoping I'm not\r\ntoo washed up\r\nto get the \r\nmessage out\r\njust praying\r\nthat my words\r\nwill touch something\r\ninside you\r\nhelp and guide\r\nyou to a\r\nhappier home",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "80",
+    "name": "the ending",
+    "tags": "",
+    "cleanText": "I kindly suggest you\r\nback off\r\ncause I'm about\r\nto pop off\r\nshow up\r\nthrow down\r\nnow you know\r\nwhats going round\r\nit's just that sometimes\r\nI feel so empty\r\nbut even then it \r\nthrills me\r\nfeeling all the things\r\nthat could kill me\r\nI'm left just thinking\r\nbout the ending\r\nand wondering where\r\nthat release could\r\nsend me",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "81",
+    "name": "allensville",
+    "tags": "",
+    "cleanText": "there's a place\r\nwhere the river\r\nmeets the road\r\nand underneath\r\nlies my heart\r\nbeat, beat,\r\nbeating\r\nlike graffiti\r\ndone in oil\r\npastel\r\njust out of reach\r\nof the stormy\r\nseason\r\nthe water always\r\nlapping, try\r\ntrying\r\nbut never quite\r\nreaching high\r\nenough",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "82",
+    "name": "thank you",
+    "tags": "",
+    "cleanText": "when I coughed\r\nmy lung fell out\r\nand spilled\r\ninto my coffee\r\nand you handed\r\nme a napkin\r\nto blot the\r\nwetness from my\r\ntie\r\nthank you for that",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "83",
+    "name": "so many",
+    "tags": "",
+    "cleanText": "“you've got so many\r\nhands”\r\nI remember telling\r\nher\r\nas we lay by the\r\nstream\r\nans she smiled and \r\nhushed me\r\n“you've got so many\r\nfears”\r\nand then we both \r\ngrew some\r\nmore",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "84",
+    "name": "full of eyes",
+    "tags": "",
+    "cleanText": "I'm full of eyes\r\nand my eyes\r\nare full\r\nof something \r\nnot much unlike \r\ntears\r\nand the moon is\r\nfull of secret bases\r\nhidden in their\r\nsecret places\r\nand I don't know\r\nwhat to do",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "85",
+    "name": "chemicals",
+    "tags": "",
+    "cleanText": "fire hearted\r\nbut yellow-bellied\r\nnever stable\r\nalways steadied\r\ndroves of chemicals\r\nswirl in my brain\r\nslowing images of\r\nsinister pain\r\nholding back that\r\nunquenchable longing\r\nstopping the stars\r\nof their strange, sad songing\r\ndroves of chemicals\r\nswim in my brain",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "86",
+    "name": "bullets",
+    "tags": "",
+    "cleanText": "Nights like this make\r\n   me want to\r\n  drive a heated\r\n knife deep inside my\r\nhead\r\n  I just want the red-\r\n   hot tip to touch the firing\r\n pins of the bullets that line\r\n my brain\r\n    because lately my\r\n  mind has felt like bullets\r\n   every thought so sudden\r\n      jarring\r\n       scary\r\n        loud\r\nIjust(dangerous)needthesebulletsoutofme\r\n  and I don't know\r\n   if a firing pin is even\r\n      how bullets work\r\n  I don't understand bullets\r\n     I don't understand much",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "87",
+    "name": "song",
+    "tags": "",
+    "cleanText": "“Its like shes dancing…\r\ncan’t she ever just\r\nwalk?”\r\nand dance\r\nwe(she)\r\ndid\r\nbouncing past\r\ntoiletries\r\nwaltzing amongst\r\nthe produce\r\nand from the\r\nfront pocket\r\nblasted the\r\nsong\r\nthat song\r\nthat holds\r\nit all together\r\nthe one that\r\nHailey\r\nsings/sang/sung",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "88",
+    "name": "morning",
+    "tags": "",
+    "cleanText": "I just don’t think you\r\nunderstand just\r\nhow great the\r\nmorning is\r\nI get up early\r\nrivaling even the\r\nbirds\r\nand celebrate\r\nmaking it through\r\nanother night\r\nwith a victory\r\ncigarette\r\nfor my hero\r\n(pointed tipward to the sky)\r\nIt's not every night\r\nyou fall from grace\r\nso I think that\r\nis ample cause\r\nfor celebration",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "89",
+    "name": "toby",
+    "tags": "",
+    "cleanText": "the dog’s gentle snores\r\nprod at me\r\nyelling that I shouldn’t\r\nbe here\r\nthere is a bed waiting\r\njust a few footfalls\r\naway a bed\r\nthat offers warmth\r\nand comfort\r\nand companionship\r\nyet still I sit\r\nlistening to the dog’s\r\ngentle snoring\r\nmy eyes dance\r\nsearching for spies\r\nin a room devoid\r\nof all life\r\nsave myself\r\nand a gently snoring\r\ndog",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "90",
+    "name": "me(bothofus)",
+    "tags": "",
+    "cleanText": "me(bothofus)\r\n\r\nher eyes\r\n  burning into me\r\nSliding\r\nplease allow us to introduce ourselves\r\nhis name is irony\r\n  and he’s normally in control\r\nand him,\r\n  just ignore him\r\nhe makes the decisions\r\n   at least the ones that really\r\n     matter\r\nlet’s see what we can\r\n   do about\r\nmaking this a little easier\r\n  let me pour you a\r\n    drink",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "91",
+    "name": "sins",
+    "tags": "",
+    "cleanText": "sing and swallow something sold\r\nsound of sorrow\r\nsins unfold\r\npour a drink\r\ndrain another\r\nlies are told\r\nlose a lover\r\nsing and swallow something sold\r\nsound of sorrow\r\nsins unfold\r\ndrain another\r\npour one more\r\ntruth is told\r\nsoul left sore\r\nsing and swallow something sold\r\nsound of silence\r\nsins unfold",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "92",
+    "name": "introspective poetry",
+    "tags": "",
+    "cleanText": "writing introspective\r\npoetry can\r\n  be such\r\na drag\r\nso lets focus\r\ninstead on\r\n  bees\r\nthey bumble and\r\ndrift\r\n  spreading life\r\n  and making\r\n  sweets\r\n\r\nyou can thank me\r\n  for this poem\r\n   later",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "93",
+    "name": "lies, alright?",
+    "tags": "",
+    "cleanText": "splashing colors\r\nswirling sounds\r\nthe words not spoken\r\nburn in my skull\r\nwhispers\r\n(vile) sinister\r\nwith undulating\r\nill intent\r\nsequestered in my mind\r\na simple song\r\nof glorious suspicions\r\nthe so called antics of\r\na childless child\r\nstormy weather, wind-\r\ntossed bows\r\na fire burning in\r\nthe heart of the\r\ndog\r\n(god) an angry conclusion\r\na far-stretched\r\nnotion\r\nof unquenchable longing\r\nstar-speckled eyes\r\nsear me into\r\nashy nothingness\r\na flurry of sparks\r\nfrom the ancient blacksmith’s\r\nhammer\r\nsend quivers down my\r\nbrain stem\r\na black cat and\r\na bottle of pills\r\nwhat a gut wrenching\r\ninvention\r\nfor one so full of suspicion",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "94",
+    "name": "pretentious crap",
+    "tags": "",
+    "cleanText": "a cyclonic path of everbuilding doubt\r\na fragile pretense\r\nshattered\r\nby the mind altering\r\nchemicals that\r\nhold me accountable\r\nfor actions I have\r\nyet to conceive\r\ngut-wrenching, bowel-turning, blood-\r\ncurdling\r\nstreams of semi-viscous\r\nsin\r\npour forth from my eyes\r\nand bring life to my \r\nsenses\r\npseudogenesis\r\ntwisted tale of creation\r\nand on the seventh day he\r\nrested\r\nsometimes God gets all the\r\nbreaks",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "95",
+    "name": "revolutions",
+    "tags": "",
+    "cleanText": "forsooth the truth\r\nbehold\r\nuntold\r\nthe needless naught\r\nof which we\r\nwere taught\r\nthe untrue truth\r\nthat binds us\r\nfrom our youth\r\nAnd with that I’m done\r\nwith Mark’s\r\nstyle\r\n(for he kindly stays from mine)\r\nwhat I’m trying to\r\nsay\r\nis keep yourself\r\nfrom other’s words\r\nand find what you must\r\nfind",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "96",
+    "name": "heretic",
+    "tags": "",
+    "cleanText": "everytime I open my\r\nmouth the\r\nwords\r\nspill onto my paper\r\ndrip drip\r\ndripping\r\ninto your eyes\r\nbut listen not to my\r\nwords\r\nfor I am not a poet\r\nI am a heretic\r\nand these\r\nwords\r\nmy words\r\nwill linger like\r\ncancer\r\nof the soul\r\nmy words\r\nwill decay your\r\nmorals\r\nand cast you out of\r\nthe grace of\r\ngod\r\nfor my\r\npoetry\r\nmy poetry\r\nis blasphemy",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "97",
+    "name": "texts",
+    "tags": "",
+    "cleanText": "I spend so much\r\ntime rerereading\r\ntexts\r\nmaking sure they\r\ntrigger some\r\nsynaptic crackfiresnap,\r\nsome memory\r\n(no matter how ill-\r\ndefined)\r\nI'm scared you see.\r\nI've been losing time\r\n(cracks in the plaster (running counter\r\nto the cracks I'm familiar\r\nwith))\r\nand reading these\r\ntexts\r\nis the only way to know\r\nI haven't lost time\r\nwith you",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "98",
+    "name": "long nights in a shitty motel",
+    "tags": "",
+    "cleanText": "I wrote it on my arm\r\n     last night\r\nif lack of memory\r\n    serves me right\r\nI don’t really remember\r\n  yesterday\r\n  and less still of the\r\nday before\r\n   but I must have\r\nfound something in\r\nthat green haze\r\nfor here the beauty lies\r\nsimple, serene, resounding\r\n  truth\r\nit’s indisputable really\r\n     “I AM I”",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "99",
+    "name": "rebirth",
+    "tags": "",
+    "cleanText": "rebirth\r\n\r\nthe root of\r\nmetempsychois\r\nis still just\r\npsychosis\r\ncan I have the\r\nmetem-\r\nfree of its dependee?\r\n or is it all\r\njust\r\ncircles?",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  },
+  {
+    "pid": "100",
+    "name": "untitled",
+    "tags": "",
+    "cleanText": "untitled\r\n\r\nThrashed about\r\nbeaten and broken\r\nunderstood to be\r\nsimply a token\r\nof insecurity\r\nlies\r\nand mistrust\r\nlost in this world of cardboard and plastic\r\nsin finds my soul decayed and placid\r\nwhat truth can be found\r\nfrom an electron-speckled screen\r\nNothing\r\nforever\r\nnever to be seen\r\nlife is a fiction written by fools\r\nfrom inside their safe walls\r\nbuilt with misguided tools\r\nsave me.",
+    "images": [],
+    "links": [],
+    "isLeaf": true
+  }
+]

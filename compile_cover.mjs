@@ -1,0 +1,328 @@
+import fs from 'fs';
+
+// Calculate exact dimensions for 184-page 6" x 9" paperback on 50# white paper:
+// Trim: 6.0" width x 9.0" height
+// Spine: 184 * 0.002252 = 0.414"
+// Bleed: 0.125" all sides
+// Total Width: 0.125 + 6.0 + 0.414 + 6.0 + 0.125 = 12.664" (911.8 pt)
+// Total Height: 0.125 + 9.0 + 0.125 = 9.25" (666.0 pt)
+
+const coverHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TIMETRAVEL — Full Cover Wrap Spread</title>
+  <style>
+    @page {
+      size: 12.664in 9.25in;
+      margin: 0;
+    }
+
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 12.664in;
+      height: 9.25in;
+      background: #0f1115;
+      color: #e6edf3;
+      font-family: 'EB Garamond', Georgia, serif;
+      -webkit-font-smoothing: antialiased;
+      overflow: hidden;
+    }
+
+    .spread-wrapper {
+      position: relative;
+      width: 12.664in;
+      height: 9.25in;
+      display: flex;
+    }
+
+    /* BACK COVER (0.125" bleed + 6.0" trim = 6.125") */
+    .back-cover {
+      width: 6.125in;
+      height: 9.25in;
+      padding: 1in 0.8in 1in 0.925in; /* accounting for 0.125 outer bleed */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px dashed rgba(255,255,255,0.08);
+      position: relative;
+      background: radial-gradient(circle at 30% 20%, #171b22 0%, #0d1017 100%);
+    }
+
+    .back-eyebrow {
+      font-family: 'Courier Prime', monospace;
+      font-size: 8pt;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #38bdf8;
+      margin-bottom: 0.25in;
+    }
+
+    .back-synopsis {
+      font-size: 10.5pt;
+      line-height: 1.65;
+      color: #c9d1d9;
+      text-align: justify;
+    }
+
+    .back-synopsis p {
+      margin: 0 0 0.15in 0;
+    }
+
+    .back-quote {
+      border-left: 2px solid #38bdf8;
+      padding-left: 0.2in;
+      margin: 0.25in 0;
+      font-style: italic;
+      color: #f0f6fc;
+      font-size: 11pt;
+      line-height: 1.5;
+    }
+
+    .back-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 0.2in;
+      margin-top: 0.2in;
+    }
+
+    .press-badge {
+      font-family: 'Courier Prime', monospace;
+      font-size: 7.5pt;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b949e;
+    }
+
+    .barcode-box {
+      width: 1.8in;
+      height: 1in;
+      background: #ffffff;
+      border: 1px solid #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      padding: 4px;
+    }
+
+    .barcode-bars {
+      font-family: 'Courier Prime', monospace;
+      font-size: 14pt;
+      letter-spacing: -1px;
+      line-height: 0.8;
+    }
+
+    .barcode-isbn {
+      font-family: 'Courier Prime', monospace;
+      font-size: 6.5pt;
+      letter-spacing: 0.05em;
+      margin-top: 4px;
+    }
+
+    /* SPINE (0.414") */
+    .spine {
+      width: 0.414in;
+      height: 9.25in;
+      background: #090c10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px dashed rgba(255,255,255,0.08);
+      position: relative;
+    }
+
+    .spine-text {
+      transform: rotate(90deg);
+      white-space: nowrap;
+      font-family: 'Courier Prime', monospace;
+      font-size: 8.5pt;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #f0f6fc;
+      display: flex;
+      align-items: center;
+      gap: 0.3in;
+    }
+
+    .spine-title {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .spine-author {
+      color: #8b949e;
+    }
+
+    /* FRONT COVER (6.0" trim + 0.125" bleed = 6.125") */
+    .front-cover {
+      width: 6.125in;
+      height: 9.25in;
+      padding: 1in 0.925in 1in 0.8in; /* accounting for 0.125 outer bleed */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      position: relative;
+      background: radial-gradient(circle at 70% 30%, #1a202c 0%, #0a0d14 100%);
+    }
+
+    .front-eyebrow {
+      font-family: 'Courier Prime', monospace;
+      font-size: 8pt;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #38bdf8;
+      margin-bottom: 0.1in;
+    }
+
+    .front-title {
+      font-family: 'Courier Prime', monospace;
+      font-size: 36pt;
+      font-weight: bold;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0;
+      text-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
+    }
+
+    .front-subtitle {
+      font-size: 11pt;
+      font-style: italic;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+      margin-top: 0.12in;
+    }
+
+    .front-art-box {
+      margin: 0.3in auto;
+      width: 3.8in;
+      height: 3.4in;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      padding: 6px;
+      background: #030712;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      position: relative;
+    }
+
+    .front-art-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(85%) contrast(125%) brightness(95%);
+    }
+
+    .front-author-block {
+      margin-top: 0.1in;
+    }
+
+    .front-author-label {
+      font-family: 'Courier Prime', monospace;
+      font-size: 7.5pt;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 0.04in;
+    }
+
+    .front-author-name {
+      font-size: 19pt;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #f8fafc;
+      font-family: 'EB Garamond', Georgia, serif;
+    }
+
+    .front-colophon-tag {
+      font-family: 'Courier Prime', monospace;
+      font-size: 7.5pt;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #475569;
+      margin-top: 0.15in;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="spread-wrapper">
+    <!-- BACK COVER -->
+    <div class="back-cover">
+      <div>
+        <div class="back-eyebrow">AN INTERACTIVE POETRY GAMEBOOK</div>
+        
+        <div class="back-synopsis">
+          <p>Between 2014 and 2022, I lived inside the storm. This is not a passive linear book of verse. Madness is branched. Chemistry is branched. Every morning and every evening presents a fork in the road.</p>
+          
+          <p>Step directly inside the emergency telemetry of a mind navigating bipolar cycles, motel desk insomnia, and the long journey toward chemical and somatic equilibrium.</p>
+
+          <p>Take your meds, or don't. Drive seventy miles per hour into the rain, or hunker down with a stone from home. Turn the page to discover where your timeline bends.</p>
+        </div>
+
+        <div class="back-quote">
+          “the root of metempsychosis is still just psychosis<br>
+          can I have the metem- free of its dependee?<br>
+          or is it all just circles?”
+        </div>
+      </div>
+
+      <div class="back-footer">
+        <div class="press-badge">
+          REQUIEM SPIRE PRESS<br>
+          SALEM, OREGON<br>
+          FIRST EDITION • 2026
+        </div>
+
+        <div class="barcode-box">
+          <div class="barcode-bars">||| | |||| || | ||| ||||</div>
+          <div class="barcode-isbn">ISBN 979-8-89240-000-0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPINE -->
+    <div class="spine">
+      <div class="spine-text">
+        <span class="spine-title">TIMETRAVEL</span>
+        <span>✦</span>
+        <span class="spine-author">ICY SHEETS</span>
+        <span>✦</span>
+        <span>REQUIEM SPIRE</span>
+      </div>
+    </div>
+
+    <!-- FRONT COVER -->
+    <div class="front-cover">
+      <div>
+        <div class="front-eyebrow">A CHOOSE-YOUR-OWN-ADVENTURE POETRY EXPERIENCE</div>
+        <div class="front-title">TIMETRAVEL</div>
+        <div class="front-subtitle">100 Interlocking Sections of Survival, Chemistry, and Song</div>
+      </div>
+
+      <div class="front-art-box">
+        <img src="../assets/images/PXL_20220319_204240244.jpg" alt="Cover Archival Art Plate" class="front-art-image">
+      </div>
+
+      <div class="front-author-block">
+        <div class="front-author-label">POEMS & NARRATIVE ARCHITECTURE BY</div>
+        <div class="front-author-name">ICY SHEETS</div>
+        <div class="front-colophon-tag">REQUIEM SPIRE PRESS</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+`;
+
+fs.writeFileSync('C:/Users/icyne/projects/timetravel/book/timetravel_cover_spread.html', coverHtml);
+console.log('Saved timetravel_cover_spread.html successfully!');
